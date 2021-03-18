@@ -1,9 +1,9 @@
-#Introduction to Sia
+# Introduction to Sia
 Sia has been around for several years, slowly yet constantly growing. You maybe heard about it being decentralized cloud storage and started watching it. You maybe traded or mined Siacoin, or maybe heard about some forks and controversies. And maybe you just discovered it.
 
 Whatever brough you here, you are looking for resources to understand what Sia really is and how it works. You want to know how this technology empowers users and how it turned a decentralized internet into reality through Skynet. This entire site is dedicated to guiding you through this exciting journey.
 
-##Decentralized cloud storage platform
+## Decentralized cloud storage platform
 Sia is a **decentralized cloud storage platform**.
 
 **Decentralized** means it has no central server or authority that could control the network on its own.
@@ -28,7 +28,7 @@ Check our [Mining Guide]() if you want to learn more.
 
 >If you are interested what would happen if vast majority of miners demanded some changes, make sure to check out the story of Bitcoin’s failed “SegWit2x” fork. Long story short, it was a very important demonstration that the nodes are making and enforcing the rules, not the miners even if backed by some of the biggest companies of the crypto world.
 
-##What are the advantages of using Sia?
+## What are the advantages of using Sia?
 Sia lets you backup any data in a way that **only allows you to get to it**. No government, no authority, not even the hosts who keep **encrypted** fragments of your data can access it and know what the data is or who it belongs to. They simply can’t. If you are not familiar with **encryption**, it is a method that uses a digital key *(you can imagine it as a password)* to change *(encode)* any data into something unreadable and only way to read *(decode)* it is to have the key and know the method used.
 
 >Since 2020, Sia software allows uploading to **Skynet**, which is a publishing layer utilizing Sia as a storage layer. It allows users to host apps and share content without need for any server or other infrastructure while focusing on **censorship resistance**. This means that if you want to make your data public and let others pin them, you can do so and in such case a host can tell what data you share (since you made it public). Check our [Introduction to Skynet]() to learn more.
@@ -47,7 +47,7 @@ You can also set your own conditions –  for example to have *(even more secu
 
 >Did you ever wonder **why there is minimum block reward** set to 30,000 SC per block and are you worried about inflation caused by endless supply? It is so by design as the majority of coins in the future is expected to be locked in contracts. **Minimum block reward will guarantee** that there is always enough new coins entering circulation so **the network can continue working properly** and users will be able to acquire coins to pay for storage.
 
-##Why is Sia important for me?
+## Why is Sia important for me?
 It’s important because** you care about your data and privacy**. You don’t want to lose your family photos or important data due to the end of some service *(remember Megaupload?)* or get it compromised by leaks, or even inaccessible at times when you need it most during some blackouts. You don’t want to get de-platformed.
 
 With Sia this won’t happen and if 3x redundancy is not letting you sleep at night because of your super important data, set it higher and even whitelist specific hosts in specific regions *(so you can always access your data even if entire countries turn dark)*. Even then it’s **way cheaper than traditional solutions**, but more secure than any and all of them.
@@ -71,7 +71,7 @@ Sia could go the same way as others and focus on price and marketing, but there 
 
 You can be sure **Sia will work because it doesn’t depend on the devs**. The network is permission-less and open-source, anyone can run it. If the dev team disappeared, it would continue running and very likely someone would take over its development. At least this was the case until now. Starting early in 2021, Sia development moves under the newly established **non profit organization** named [Sia Foundation]().
 
-> Covalent here: I do want to comment that "doesn't depend on the devs" is a tad misleading. Sure, if the devs up and left, the network itself wouldn't blow up. But like every other ecosystem of software, the system **needs** dedicated developers for both the front and back end or it will fizzle out. 
+> Covalent here: I do want to comment that "doesn't depend on the devs" is a tad misleading. Sure, if the devs up and left, the network itself wouldn't blow up. But like every other ecosystem of software, the system **needs** dedicated developers for both the front and back end or it will fizzle out.
 
 **Sia Foundation** will be funded (fork expected by end of Q1 2021) by addition of 30,000 SC(that is thirty thousand for those europeans out there) to block reward (you can find more details in the [Proposal](https://www.reddit.com/r/siacoin/comments/iox6ly/proposal_the_sia_foundation/) that was very warmly accepted by the community). While the inflation increases slightly (especially compared to majority of other projects), it will allow Foundation to focus on parts of the Sia core tech that were previously difficult to justify for a VC funded company.
 
