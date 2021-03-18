@@ -1,4 +1,4 @@
-#Welcome to Skynet Wiki!
+# Welcome to Skynet Wiki!
 **Skynet Wiki** is a community maintained knowledge base to help you on your journey through the decentralized world of **Sia** and **Skynet**.
 
 At the beginning there was a blockchain. It is an important technology that allowed decentralized networks like Sia or Bitcoin to be born. It uses consensus, P2P (peer to peer) network and PoW (Proof of Work) algorithm in order to:
@@ -17,4 +17,3 @@ Where to go next?
 Best guide to start with is [Introduction to Sia](). The site features many sections, so feel free to explore them. If you are looking for help, check our comprehensive [FAQ]() and make sure to use the Search feature with keywords of your interest.
 
 If you are curious what great stuff was built with Sia and Skynet so far, go ahead and start (discovering]()…
-

@@ -1,4 +1,4 @@
-#Skynet Portals
+# Skynet Portals
 As you probably already know, Skynet Portals are the access points to the [Skynet](). You can request any content from them using the `Skylinks` and upload as well.
 
 >Skynet Portals are special kinds of Sia nodes, ones that have contracts with all hosts on the network and because of that can have access to all `Skyfiles` on the network. Some do it for free, some can have some business models (like subscriptions, or ads – since it is open source, anyone can run one and implement or set own rules).
@@ -7,7 +7,7 @@ If you ask what happens when such a portal decides to block access to some Skyli
 
 In any case, you can do the same. You can go the comfortable way and use public portals same way as you used internet until now where illegal content has been blocked. Or setup your own one and use it without any restrictions. After all, it’s your coins – your service – your rules.
 
-##List of Public Portals (Free)
+## List of Public Portals (Free)
 >Free portals are operated and fully funded by the community to support it. Their operators pay the costs of all downloads/uploads to support the network. Some of these portals are very popular and the demand can sometimes make your experience slower. This should continously improve with more portals coming live and further optimizations being done.
 
 - [siasky](https://siasky.net) | Skynet Labs | official portal
@@ -25,7 +25,7 @@ In any case, you can do the same. You can go the comfortable way and use public 
 
 - Subscriptions expected to arrive in March 2021(probably) with the model being publicly available for other businesses to use. No permissions needed, fully open-source; assuming you're cool with paying a 20% dev fee.
 
-####How to get my portal listed?
+#### How to get my portal listed?
 If you wish for your portal to be listed here, just reach out to us on our official [discord](https://discord.gg/invite/sia).
 
 *Written by Danger (January 26, 2021)
