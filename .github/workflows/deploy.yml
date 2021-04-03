@@ -2,7 +2,7 @@ name: build and deploy mkdocs to github pages
 on:
   push:
     branches:
-      - master
+      - action-test-1
 
 jobs:
   deploy:
