@@ -1,8 +1,7 @@
 name: build and deploy mkdocs to github pages
 on:
-  pull_request_target:
-  push:
-    branches: [main]
+- pull_request_target:
+
 
 jobs:
   deploy:
@@ -10,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: "recursive"
           fetch-depth: 0       # Fetch all history for .GitInfo and .Lastmod
       - name: Setup Python
