@@ -12,16 +12,10 @@ jobs:
 steps:
   — uses: actions/checkout@v2
 
-  # — name: Deploy docs
   — uses: mhausenblas/mkdocs-deploy-gh-pages@master
-    # env:
-      # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # EXTRA_PACKAGES: build-base
 
-  # - name: run build
   - run: mkdocs build
 
-  # — name: Deploy to Skynet
   — uses: kwypchlo/deploy-to-skynet-action@main
     with:
       upload-dir: site
