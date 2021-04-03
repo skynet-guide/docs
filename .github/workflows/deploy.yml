@@ -1,21 +1,21 @@
-name: Deploy Sky Guide to Skynet
-
+name: Publish docs via GitHub Pages
 on:
-  pull_request:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
-  runs-on: ubuntu-latest
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
 
-steps:
-  — uses: actions/checkout@v2
-
-  — uses: mhausenblas/mkdocs-deploy-gh-pages@master
-  - run: mkdocs build
-
-  — uses: kwypchlo/deploy-to-skynet-action@main
-    with:
-      upload-dir: site
-      github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          EXTRA_PACKAGES: build-base
+          # GITHUB_DOMAIN: github.myenterprise.com
