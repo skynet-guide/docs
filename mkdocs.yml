@@ -12,7 +12,7 @@ nav:
         - History: pages/sia/history/en.md
         - Renting: pages/sia/renting/en.md
         - Seed Management: pages/sia/seedManagement/en.md
-        - Tokenomics: pages/sia/tokenomics/en.nd
+        - Tokenomics: pages/sia/tokenomics/en.md
         - Trading: pages/sia/trading/en.md
         - Wallet: pages/sia/wallet/en.md
     - Skynet:
@@ -29,7 +29,7 @@ nav:
         - Tools: pages/discover/tools/en.md
     - Rent:
         - Before You Start: pages/rent/before-you-start/en.md
-        - Renting On Sia: pages/rent/renting-on-sia(step by step)
+        - Renting On Sia: pages/rent/renting-on-sia/en.md
     - Host:
         Hosting On Sia: pages/hosting/hosting/en.md
     - Help:
