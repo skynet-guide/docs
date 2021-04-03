@@ -14,9 +14,9 @@ steps:
 
   # — name: Deploy docs
   — uses: mhausenblas/mkdocs-deploy-gh-pages@master
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      EXTRA_PACKAGES: build-base
+    # env:
+      # GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # EXTRA_PACKAGES: build-base
 
   # - name: run build
   - run: mkdocs build
