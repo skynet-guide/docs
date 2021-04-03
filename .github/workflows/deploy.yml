@@ -1,11 +1,9 @@
 name: build and deploy mkdocs to github pages
-# on:
-#   push:
-#     branches:
-#       - master
 on:
-  pull_request:
-    
+  push:
+    branches:
+      - master
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
