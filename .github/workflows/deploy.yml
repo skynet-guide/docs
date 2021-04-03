@@ -1,19 +1,27 @@
-name: Publish docs via GitHub
+name: Build markdown and public
+
+# Run this workflow every time a new commit pushed to your repository
 on:
   pull_request:
 
 jobs:
-  build:
-    name: Deploy docs
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  build-mkdocs:
+    # Name the Job
+    name: Builds and uploads docs
+    # Set the type of machine to run on
     runs-on: ubuntu-latest
-      steps:
-        - name: Checkout main
-          uses: actions/checkout@v2
 
-        - name: Deploy docs
-          uses: mhausenblas/mkdocs-deploy-gh-pages@master
-          # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
-          env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-            EXTRA_PACKAGES: build-base
-            # GITHUB_DOMAIN: github.myenterprise.com
+    steps:
+      # Checks out a copy of your repository on the ubuntu-latest machine
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      # Runs the Super-Linter action
+      - name: deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          DEFAULT_BRANCH: main
+          EXTRA_PACKAGES: build-base
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
