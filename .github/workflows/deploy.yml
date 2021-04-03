@@ -13,7 +13,6 @@ steps:
   — uses: actions/checkout@v2
 
   — uses: mhausenblas/mkdocs-deploy-gh-pages@master
-
   - run: mkdocs build
 
   — uses: kwypchlo/deploy-to-skynet-action@main
