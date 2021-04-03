@@ -1,8 +1,8 @@
 name: build and deploy mkdocs to github pages
 on:
+  pull_request:
   push:
-    branches:
-      - action-test-1
+    branches: [main]
 
 jobs:
   deploy:
