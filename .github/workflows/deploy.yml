@@ -30,3 +30,8 @@ jobs:
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./site
+      - name: Deploy to Skynet
+        uses: kwypchlo/deploy-to-skynet-action@main
+        with:
+          upload-dir: site
+          github-token: ${{ secrets.GITHUB_TOKEN }}
