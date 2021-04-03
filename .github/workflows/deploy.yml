@@ -1,6 +1,6 @@
 name: build and deploy mkdocs to github pages
 on:
-  pull_request:
+  pull_request_target:
   push:
     branches: [main]
 
