@@ -37,8 +37,7 @@
 #           registry-seed: ${{ secrets.REGISTRY_SEED }}
 name: "Pull Request Labeler"
 on:
-  pull_request_target:
-    types: [assigned, opened, synchronize, reopened]
+  pull_request:
 
 jobs:
   triage:
