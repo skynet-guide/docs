@@ -1,6 +1,9 @@
 name: build and deploy mkdocs to github pages
 on:
-  pull_request:
+  issue_comment:
+    types: [created]
+  pull_request_target:
+    types: [opened,closed,synchronize]
 
 jobs:
   deploy:
@@ -25,5 +28,5 @@ jobs:
       uses: kwypchlo/deploy-to-skynet-action@main
       with:
         upload-dir: site
-        github-token: ${{ secrets.PAT }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         registry-seed: ${{ secrets.REGISTRY_SEED }}
