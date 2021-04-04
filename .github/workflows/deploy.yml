@@ -25,5 +25,5 @@ jobs:
       uses: kwypchlo/deploy-to-skynet-action@main
       with:
         upload-dir: site
-        github-token: ${{ secrets.ACCESS_TOKEN }}
+        github-token: ${{ secrets.PAT }}
         registry-seed: ${{ secrets.REGISTRY_SEED }}
