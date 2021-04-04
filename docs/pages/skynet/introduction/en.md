@@ -52,7 +52,7 @@ As listed above, currently, Skynet has two real features; those being `Skyfiles`
 
 Currently the biggest things on Skynet are Skyfeed and content distribution by using Skynet as a CDN on sites like [DTube](https://dtube.video).
 
-#### [Skyfeed](skyfeed.hns.siasky.net)
+#### [Skyfeed](https://skyfeed.hns.siasky.net)
 Skyfeed is a first Facebook-esque social media built on top of Skynet by community member Redsolver. It’s flagship features are mainly that if you run your own portal no one can limit your speech, and that there are no ads or tracking to speak of.
 
 #### CDN Capabilities
