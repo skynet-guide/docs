@@ -24,7 +24,7 @@ The platform is using a **consensus mechanism** *(way of reaching an agreement o
 
 What this means is that miners are providing service to the network. They are important for it but can be replaced if their intentions become malicious and threaten the network. But this combined with the block reward is a very good incentive for them to act in best interest of the network. To be honest and provide security because they are rewarded for doing so. Doing otherwise would be way more expensive than any potential gain from doing so.
 
-Check our [Mining Guide]() if you want to learn more.
+Check our [Mining Guide](/pages/) if you want to learn more.
 
 >If you are interested what would happen if vast majority of miners demanded some changes, make sure to check out the story of Bitcoin’s failed “SegWit2x” fork. Long story short, it was a very important demonstration that the nodes are making and enforcing the rules, not the miners even if backed by some of the biggest companies of the crypto world.
 
