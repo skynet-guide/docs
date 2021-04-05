@@ -54,3 +54,5 @@ plugins:
       languages:
         en: english
         fr: français
+        de: deutsch
+        ru: русский
