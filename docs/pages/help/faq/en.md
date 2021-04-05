@@ -212,10 +212,10 @@ I’m going to be using Sia-UI to show this example, but it’s applicable to th
 </blockquote>
 
 So go to the “terminal” button:<br><br>
-<img src="/src/static/assets/FAQ/image-1.png">
+<img src="/static/assets/FAQ/image-1.png">
 
 Then type in `siac renter -v`. You’ll get something that looks like this at the top of the long output:<br><br>
-<img src="/src/static/assets/FAQ/image-1.png">
+<img src="/static/assets/FAQ/image-1.png">
 
 <br>
 So let me break down the 3 main catigories:
