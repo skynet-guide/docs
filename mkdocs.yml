@@ -47,3 +47,10 @@ theme:
     palette:
       primary: green
       scheme: slate
+
+plugins:
+  - i18n:
+      default_language: en
+      languages:
+        en: english
+        fr: français
