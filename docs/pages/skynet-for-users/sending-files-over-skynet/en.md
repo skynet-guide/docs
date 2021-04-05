@@ -15,7 +15,7 @@ But keep in mind: Both SiaSky and SkySend are not final at the time of writing. 
 ### How to upload and share your files up to 1GB without registration (up to 90 days)
 * Visit Siasky(https://siasky.net/) and you’ll find a self-explanatory interface
 
-<img src="/src/static/assets/sending-files-over-skynet/image-2.jpg">
+<img src="/static/assets/sending-files-over-skynet/image-2.jpg">
 
 * click on “Browse“ and choose a file for uploading from your device. If you want to send a bunch of files, which in total are less than 1GB, we recommend to pack them into one archive file, i.e. with 7-Zip. With 7-Zip you can also consider to protect your file or archive with a password to optimize security.
 * Depending on your internet connection, the upload will take some time.
@@ -29,7 +29,7 @@ If you are in need of sending single files or archives up to 8GB, we recommend S
 * Visit [SkySend](https://skysend.hns.siasky.net/), you find a minimalistic interface which offers everything you need.
 * Click on “Browse” and choose your file for upload. Depending on the file-size and your internet connection, it can take a while.
 
-<img src="/src/static/assets/sending-files-over-skynet/image-3.jpg">
+<img src="/static/assets/sending-files-over-skynet/image-3.jpg">
 
 * As you can see, the file is split and encrypted, giving you a maximum of security.
 * Once your upload has finished, you will get a link, that – as before – can be shared with anyone you like.
@@ -46,7 +46,7 @@ You can sign-up for free on siasky.net, get 100 GB free cloud storage for lifeti
 * Visit https://siasky.net/ and click on “Sign up now!“
 * Provide an email address and choose a password to setup your account
 
-<img src="/src/static/assets/sending-files-over-skynet/image-4.jpg">
+<img src="/static/assets/sending-files-over-skynet/image-4.jpg">
 
 * When you are logged in, any upload going through SiaSky.net will be collected on your dashboard with the appropriate Skylink. This includes not just SiaSky.net itself, but any Skynet app you are accessing through a SiaSky.net portal – like SkyID, Marstorage, SkyFeed, simply everything …
 
