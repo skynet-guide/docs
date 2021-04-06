@@ -1,6 +1,9 @@
 site_name: Skynet Wiki
 site_description: Community driven doccumentation of sia.
-site_author: MkDocs Team
+site_author: Skynet Guide Contributors
+
+use_directory_urls: false
+
 nav:
     - Home: index.md
     - Skynet For Users:
