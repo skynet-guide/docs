@@ -58,6 +58,5 @@ I know, you want to use it already. We are currently working on more guides that
 > [How To: Sending Large Files over Skynet](/pages/skynet-for-users/sending-files-over-skynet/en.html)
 
 
-*Written by Danger (March 25, 2021)*
-
+*Written by Danger (March 25, 2021)*  
 *Last updated by Covalent (April 1, 2021)*

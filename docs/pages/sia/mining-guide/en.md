@@ -1,7 +1,7 @@
 # Mining Guide
 First of all, you should know that mining is one of the most competitive activitites one can do. Miners are using expensive hardware (ASIC – Application-Specific Integrated Circuit) in order to race to find a special sequence of characters (called hash) purely by luck. Of course, you can get the luck on your side or join forces with others and split the reward each time your group (called Mining Pool) is successful. Let’s look at it in more detail.
 
-## What is blockchain?
+## What is blockchain? 
 Blockchain is nothing special, it is just kind of database where data are contained in structures called blocks and they are added on top of each other in a way that makes it impossible to change any block without changing all of the following blocks.
 
 What is making blockchain unique and amazing technology is decentralization. Blockchains like Bitcoin or Sia are decentralized which means that if you want to change anything, you need to get all computers participating in the network to agree with the change, which is practically impossible. That’s why it is called immutable.

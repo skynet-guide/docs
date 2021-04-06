@@ -30,3 +30,5 @@ These information are provided by SiaStats.info, built by Community member hakka
 * [Community benchmarks](https://siastats.info/benchmarking)
 * [Nodes](https://siastats.info/nodes)
 * [Market prices & calculator](https://siastats.info/market_prices)
+
+*Written by Danger(? ?, 2021)*

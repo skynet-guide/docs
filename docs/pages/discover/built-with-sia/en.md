@@ -31,6 +31,6 @@ ClearPHONE 620 is first mobile phone using Sia as its cloud storage. It is resul
 
 If you are an owner of product built with Sia and would like the your product information to be updated or added, contact us).
 
-*Written by ?(? ?, 2021)*
+*Written by Danger(? ?, 2021)*
 
 *Updated by Covalent(March 25, 2021)*

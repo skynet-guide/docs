@@ -1,5 +1,5 @@
 # Skynet Portals
-As you probably already know, Skynet Portals are the access points to the [Skynet](). You can request any content from them using the `Skylinks` and upload as well.
+As you probably already know, Skynet Portals are the access points to the [Skynet](/pages/skynet/introduction/en.html). You can request any content from them using the `Skylinks` and upload as well.
 
 >Skynet Portals are special kinds of Sia nodes, ones that have contracts with all hosts on the network and because of that can have access to all `Skyfiles` on the network. Some do it for free, some can have some business models (like subscriptions, or ads – since it is open source, anyone can run one and implement or set own rules).
 
@@ -20,7 +20,7 @@ In any case, you can do the same. You can go the comfortable way and use public 
 - [lightspeed](https://vault.lightspeedhosting.com) | Lightspeed Hosting
 - [skyportal](https://skyportal.xyz) | Delivator
 - [utxo](https://skynet.utxo.no)
-- List of Portals [Subscription]()
+- List of Portals [Subscription](/pages/skynet/monetized/en.html)
 >Subscription-based portals offer the best experience possible that can only be matched or exceeded by running your own portal. Subscribed users can enjoy access to Skynet at max speed for just a few dollars per month, not having to think or worry about anything else. Other users can use it as well, but with a rate limit. This is very similar to ads the traditional internet serves today as both approaches are designed to put there a delay for the user, motivating him to subscribe, but this is less annoying approach. Subscribed users make this model work, so many others can use it for free as well.
 
 - Subscriptions expected to arrive in March 2021(probably) with the model being publicly available for other businesses to use. No permissions needed, fully open-source; assuming you're cool with paying a 20% dev fee.
@@ -28,5 +28,5 @@ In any case, you can do the same. You can go the comfortable way and use public 
 #### How to get my portal listed?
 If you wish for your portal to be listed here, just reach out to us on our official [discord](https://discord.gg/invite/sia).
 
-*Written by Danger (January 26, 2021)
-Updated by Covalent (March 11, 2021)*
+*Written by Danger (January 26, 2021)*  
+*Updated by Covalent (March 11, 2021)*

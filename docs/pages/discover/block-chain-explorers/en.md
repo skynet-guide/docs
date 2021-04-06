@@ -3,6 +3,6 @@ Building a blockchain explorer is no easy task and due to lack of resources, Neb
 
 SiaStats | https://siastats.info
 
-*Written by ?(? ?, 2021)*
+*Written by Danger(? ?, 2021)*
 
 *Updated by Covalent(March 25, 2021)*
