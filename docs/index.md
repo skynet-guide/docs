@@ -9,11 +9,11 @@ At the beginning there was a blockchain. It is an important technology that allo
 
 Sia utilizes these to create decentralized cloud storage platform with open marketplace for data storage. Anyone can come and start renting or providing data storage at own prices and be in complete control of own data that are encrypted and erasure coded client side.
 
-This site is great example of these principles. It has been created by several members of Sia Community to help newcomers but also seasoned users find answers to any questions they might have. Each article goes through reviews by our [Contributors]() and represents our shared views and knowledge. It is our aim to provide all possible resources in order for you to make educated decision when it comes to using Sia and Skynet.
+This site is great example of these principles. It has been created by several members of Sia Community to help newcomers but also seasoned users find answers to any questions they might have. Each article goes through reviews by our [Contributors](/pages/help/contributors/en.html) and represents our shared views and knowledge. It is our aim to provide all possible resources in order for you to make educated decision when it comes to using Sia and Skynet.
 
 Additionally, new versions of this site will be made available through backups on Skynet. This will guarantee that no matter what, knowledge present here will be always accessible by anyone.
 
 Where to go next?
-Best guide to start with is [Introduction to Sia](). The site features many sections, so feel free to explore them. If you are looking for help, check our comprehensive [FAQ]() and make sure to use the Search feature with keywords of your interest.
+Best guide to start with is [Introduction to Sia](/pages/sia/introduction/en.html). The site features many sections, so feel free to explore them. If you are looking for help, check our comprehensive [FAQ](/pages/help/faq/en.html) and make sure to use the Search feature with keywords of your interest.
 
-If you are curious what great stuff was built with **Sia** and **Skynet** so far, go ahead and start [discovering]()…
+If you are curious what great stuff was built with **Sia** and **Skynet** so far, go ahead and start [discovering](/pages/discover/built-with-sia/en.html)…

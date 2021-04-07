@@ -33,3 +33,5 @@ Repertory allows you to mount Sia blockchain storage solution via FUSE on FreeBS
 ## In Development
 ### [Papyrus](https://gitlab.com/lukehmcc/papyrus)
 A simplified and modern UI to the Sia network build with `us` framework.
+
+*Written by Danger(? ?, 2021)*

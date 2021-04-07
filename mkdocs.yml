@@ -5,7 +5,7 @@ site_author: Skynet Guide Contributors
 use_directory_urls: false
 
 nav:
-    - Home: pages/home/en.md
+    - Home: index.md
     - Skynet For Users:
         - Sending Files Over Skynet: pages/skynet-for-users/sending-files-over-skynet/en.md
         - Why Do I Need Skynet?: pages/skynet-for-users/why-do-i-need-skynet/en.md
@@ -14,7 +14,7 @@ nav:
         - Foundation: pages/sia/foundation/en.md
         - History: pages/sia/history/en.md
         - Renting: pages/sia/renting/en.md
-        - Seed Management: pages/sia/seedManagement/en.md
+        - Seed Management: pages/sia/seed-management/en.md
         - Tokenomics: pages/sia/tokenomics/en.md
         - Trading: pages/sia/trading/en.md
         - Wallet: pages/sia/wallet/en.md

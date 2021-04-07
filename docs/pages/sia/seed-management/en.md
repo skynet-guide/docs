@@ -36,7 +36,7 @@ Then take a paper and a pen and start rolling your dice to create a truly random
 
 So… now you are able to save important data without worries and always be able to recover them (even remotely if you had to run away with empty hands and only your master password in your head). And (optionally) you instructed your close ones where they can find the database (drives or cloud) and master password (locked in place that noone can get to without you noticing). Be careful who you give these information to, but this is the kind of stuff you would want included in your last will if you want to make sure someone gets to it while you are alive — the location of databases and where to find the password.
 
-Now, fully aware of what this all means and being all set, we are finally ready to begin with Sia-UI or other wallet app – see our [Siacoin Wallets]() guide.
+Now, fully aware of what this all means and being all set, we are finally ready to begin with Sia-UI or other wallet app – see our [Siacoin Wallets](/pages/sia/wallets/en.html) guide.
 
 *Written by Danger (Jan 12, 2021)*
 
