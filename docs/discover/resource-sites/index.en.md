@@ -22,6 +22,5 @@ Official blog full of technical articles and guides. Must have resource for any 
 ### Official Portal | [Skynet](https://siasky.net)
 The official Skynet Labs portal is housed here.
 
-*Written by ?(? ?, 2021)*
-
+*Written by Danger(? ?, 2021)*  
 *Updated by Covalent(March 25, 2021)*

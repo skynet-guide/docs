@@ -19,3 +19,5 @@ SkynetWiki is community managed site where all of the contributors and reviewers
 * crypto_rocket | SkySpaces, Skapp
 
 > Do you have some idea? Nice guide, informative article, anything that you feel is missing here? Get in touch with us on SkynetWiki’s [Discord](https://discord.gg/jU7AC9Jt).
+
+*Written by Danger(? ?, 2021)*

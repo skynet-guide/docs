@@ -1,6 +1,6 @@
 # Skynet Apps(skapps)
 
-Collection of known Skynet Apps (Skapps) is quickly growing. Luckily, we don’t have to wait till the ecosystem gives birth to some full featured Skapp Store. We are introducing you some of the existing (and actively developed) Skapps here. In case you think your Skapp deserves more visibility and to be added to this list, feel free to get on our discord (link in [contributors]()) and tell us.
+Collection of known Skynet Apps (Skapps) is quickly growing. Luckily, we don’t have to wait till the ecosystem gives birth to some full featured Skapp Store. We are introducing you some of the existing (and actively developed) Skapps here. In case you think your Skapp deserves more visibility and to be added to this list, feel free to get on our discord (link in [contributors](/pages/help/contributors/en.html)) and tell us.
 
 ## Skapp Collections
 * [Sky Apps](https://skyapps.hns.siasky.net/#/apps/all)
@@ -31,6 +31,5 @@ Collection of known Skynet Apps (Skapps) is quickly growing. Luckily, we don’t
 
 >Developer: *“I want to explore other languages as well as develop sharing of CPU capacities (although this would be quite a challenge). Feel free to contact me on discord (mike76#7812).”*
 
-*Written by ?(? ?, 2021)*
-
+*Written by Danger(? ?, 2021)*  
 *Updated by Covalent(March 18, 2021)*

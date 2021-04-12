@@ -1,6 +1,6 @@
 <!-- Intro section -->
 # Sia Foundation & Fork 2021
-The Sia network is hardforking to implement the Sia Foundation: a new non-profit entity led by Luke Champine that builds and supports distributed cloud storage infrastructure, with a specific focus on the Sia storage platform. 
+The Sia network is hardforking to implement the Sia Foundation: a new non-profit entity led by Luke Champine that builds and supports distributed cloud storage infrastructure, with a specific focus on the Sia storage platform.
 ## Common points of interest
 ---
 <!-- Section speaking about where to converse about the foudation -->
@@ -9,7 +9,7 @@ Official way to communicate with The Sia Foundation is through the [Sia Forum](h
 <!-- Section that links to the proposal -->
 <details>
 <summary>
-<b> The Sia Foundation proposal </b> 
+<b> The Sia Foundation proposal </b>
 </summary>
 <blockquote class="reddit-card" data-card-created="1615816216"><a href="https://www.reddit.com/r/siacoin/comments/iox6ly/proposal_the_sia_foundation/">Proposal: The Sia Foundation</a> from <a href="http://www.reddit.com/r/siacoin">r/siacoin</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
@@ -90,11 +90,10 @@ If you have Siacoins stored in official Sia-UI wallet, all you need to do is to 
 ### If you hold Siacoins on exchange
 You don’t have to do anything, the exchange will update the node it connects to so you won’t have to. Also, the exchange controls the seed (private key) so it’s not your issue at all. Your Siacoin balance is the balance you have in their exchange’s internal database and it will be the same after the fork as it was before.
 
->It is good idea to **never keep your coins on Exchange** unless you are trading actively and you know what you are doing. It is rather rare today but many exchanges in the past ended up with users losing their assets. When you have coins on Exchange, they are not really yours since you don’t have the seed (private key). It is very similar to your bank account, the money are not yours. It is the bank that keeps them and allows you access it through its system. If that system goes down, what will you do? You can prevent this scenario by keeping coins in your [own wallet]() out of exchanges.
+>It is good idea to **never keep your coins on Exchange** unless you are trading actively and you know what you are doing. It is rather rare today but many exchanges in the past ended up with users losing their assets. When you have coins on Exchange, they are not really yours since you don’t have the seed (private key). It is very similar to your bank account, the money are not yours. It is the bank that keeps them and allows you access it through its system. If that system goes down, what will you do? You can prevent this scenario by keeping coins in your [own wallet](/pages/sia/wallet/en.html) out of exchanges.
 
 ### If you mine Siacoin
 Nothing changes. Only ones who need to update are the **mining pools**. We already updated our list of Mining Pools, so all that you find there confirmed the update.
 
-*Written by Danger (Updated: Jan 15, 2021)*
-
+*Written by Danger (Updated: Jan 15, 2021)*  
 *Updated by Covalent (March 16, 2021)*

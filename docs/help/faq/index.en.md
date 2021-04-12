@@ -1,5 +1,5 @@
 # Frequently Asked Questions
-If you know about any other questions that should be here, check out the [Contributors page]() and contact us.
+If you know about any other questions that should be here, check out the [Contributors page](/pages/help/contributors/en.html) and contact us.
 
 Last update: March 31, 2021 | Sia 1.5.5
 
