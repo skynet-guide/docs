@@ -81,7 +81,7 @@ If you plan to use a storage solution for longterm, it’s worth to look into pr
 * Dropbox Plus begins at 9.99$/month without extending your 2TB storage. The limit per transfer is set to 2GB. Concentrating on these numbers alone, the 16.99$/month-family-plan just gives another 5 users access to the same storage capacity.
 
 ## Conclusion
-SiaSky and SkySend – or in essence Sia’s layer two, Skynet – is your primary choice, if you don’t want your data being stored by a centralized corporation. Comparing storage capacity and price, SiaSky is within a throwing distance of the competitors in terms of price/performance, while allowing a fully open API for skapp devs to take advantage of. Skynet is in active development and new features will be added time after time. Using SiaSky storage, you can easily manage your files on Skynet. Read this guide to understand, [why you need Skynet](/pages/skynet-for-users/why-do-i-need-skynet/en.html). You will find everything else you need to know on our Skynet Wiki.
+SiaSky and SkySend – or in essence Sia’s layer two, Skynet – is your primary choice, if you don’t want your data being stored by a centralized corporation. Comparing storage capacity and price, SiaSky is within a throwing distance of the competitors in terms of price/performance, while allowing a fully open API for skapp devs to take advantage of. Skynet is in active development and new features will be added time after time. Using SiaSky storage, you can easily manage your files on Skynet. Read this guide to understand, [why you need Skynet](/skynet-for-users/why-do-i-need-skynet/index.en.html). You will find everything else you need to know on our Skynet Wiki.
 
 *Written by MLN284 (March 30, 2021)*  
 *Last updated by Covalent(April 1, 2021)*

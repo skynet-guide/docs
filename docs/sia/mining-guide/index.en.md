@@ -24,9 +24,9 @@ After that, process repeats with new block. Over and over.
 ## What are you telling me? That I need to find the block myself?
 > No, Neo. I’m trying to tell you that when you’re ready, you won’t have to.
 
-That’s one option. Some miners run their ASICs as kind of lottery. If you know that network hashrate (can find in [Network Metrics](/pages/discover/network-metrics/en.html)) is 8,600 TH/s and you have one miner with 2.2 THS hashrate, it means you are 1 / 3909 of the total hashrate. In other words, you should find roughly 1 block per 3909 blocks, which can be translated to 27 days. Of course, due to the luck factor, you can find 3 blocks in a week or no block in 3 months. But usually over longer period of time this gets quite accurate. Especially if you run more miners than one.
+That’s one option. Some miners run their ASICs as kind of lottery. If you know that network hashrate (can find in [Network Metrics](/discover/network-metrics/index.en.html)) is 8,600 TH/s and you have one miner with 2.2 THS hashrate, it means you are 1 / 3909 of the total hashrate. In other words, you should find roughly 1 block per 3909 blocks, which can be translated to 27 days. Of course, due to the luck factor, you can find 3 blocks in a week or no block in 3 months. But usually over longer period of time this gets quite accurate. Especially if you run more miners than one.
 
-And that gets us to the [Mining Pools](/pages/mining/mining-pools/en.html). These are special sites where you get the address of the server and then use it in configuration of your miner. Each computation (share) of your miner is sent to the pool and this allows many miners to co-operate. It is very fair since the mining pool knows exactly how many shares who sent (miners with higher hashrate will contribute more) and the rewards are then distributed fairly according to the number of shares submitted by you in relation to the total number of shares submitted by everyone using the same pool.
+And that gets us to the [Mining Pools](/mining/mining-pools/index.en.html). These are special sites where you get the address of the server and then use it in configuration of your miner. Each computation (share) of your miner is sent to the pool and this allows many miners to co-operate. It is very fair since the mining pool knows exactly how many shares who sent (miners with higher hashrate will contribute more) and the rewards are then distributed fairly according to the number of shares submitted by you in relation to the total number of shares submitted by everyone using the same pool.
 
 Now that we covered the principles, let’s look at what should you do.
 
@@ -41,7 +41,7 @@ This really depends on what is your **goal**.
 
 Also keep in mind it’s all very risky. Some manufacturing companies in the past didn’t hesitate to kill the ROI of own customers by over-producing units so much that only the manufacturer ever did any profit. There were also many miners that were promised and accepted pre-orders but never delivered. You should always verify that what you pay for is a real thing and that manufacturer doesn’t play against you.
 
-If you decided that you want to start mining, continue with our [Hardware](/pages/mining/hardware/en.md) guide to learn how to buy and setup a miner and what to be careful about.
+If you decided that you want to start mining, continue with our [Hardware](/mining/hardware/en.md) guide to learn how to buy and setup a miner and what to be careful about.
 
 *Written by Danger (Jan 14, 2021)*  
 *Updated by Covalent(April 5, 2021)*

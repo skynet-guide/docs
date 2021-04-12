@@ -1,5 +1,5 @@
 # Contact Support
-If you have any issue or question related to Sia, **check out our detailed [FAQ](/pages/help/faq/en.html) first**. You can also use the search feature and try to find relevant article or FAQ answer by providing some keywords, error, etc.
+If you have any issue or question related to Sia, **check out our detailed [FAQ](/help/faq/index.en.html) first**. You can also use the search feature and try to find relevant article or FAQ answer by providing some keywords, error, etc.
 
 Trying to look for answers here first will not only help you to get the answer instantly in most of the cases but also save the time needed to contact the support and describe your issue.
 
