@@ -11,17 +11,18 @@ theme:
     palette:
       primary: green
       scheme: slate
-    custom_dir: theme_overrides
+    # custom_dir: theme_overrides
 
 plugins:
   - search
   - i18n:
       default_language: en
       languages:
-        en: english
-        fr: français
-        de: deutsch
-        ru: русский
+        en: English
+        fr: Français
+        de: Deutsch
+        ru: Русский
+      # material_alternate: false
 
 # nav:
 #     - Home: index.md
