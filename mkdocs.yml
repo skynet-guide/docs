@@ -4,42 +4,6 @@ site_author: Skynet Guide Contributors
 
 use_directory_urls: false
 
-nav:
-    - Home: index.md
-    - Skynet For Users:
-        - Sending Files Over Skynet: pages/skynet-for-users/sending-files-over-skynet/en.md
-        - Why Do I Need Skynet?: pages/skynet-for-users/why-do-i-need-skynet/en.md
-    - Sia:
-        - Introduction To Sia: pages/sia/introduction/en.md
-        - Foundation: pages/sia/foundation/en.md
-        - History: pages/sia/history/en.md
-        - Renting: pages/sia/renting/en.md
-        - Seed Management: pages/sia/seed-management/en.md
-        - Tokenomics: pages/sia/tokenomics/en.md
-        - Trading: pages/sia/trading/en.md
-        - Wallet: pages/sia/wallet/en.md
-    - Skynet:
-        - Introduction To Skynet: pages/skynet/introduction/en.md
-        - Portals: pages/skynet/portals/en.md
-    - Discover:
-        - Storage Chains Compared(Sia vs Storj vs Fil vs 0Chain): pages/discover/storage-chains-compared/en.md
-        - Blockchain Explorers: pages/discover/block-chain-explorers/en.md
-        - Built With Sia: pages/discover/built-with-sia/en.md
-        - Foundation Tracker: pages/discover/foundation-tracker/en.md
-        - Network Metrics: pages/discover/network-metrics/en.md
-        - Resource Sites: pages/discover/resource-sites/en.md
-        - Skynet Apps(Skapps): pages/discover/skynet-apps/en.md
-        - Tools: pages/discover/tools/en.md
-    - Rent:
-        - Before You Start: pages/rent/before-you-start/en.md
-        - Renting On Sia: pages/rent/renting-on-sia/en.md
-    - Host:
-        Hosting On Sia: pages/hosting/hosting/en.md
-    - Help:
-        - FAQ(Look Here First): pages/help/faq/en.md
-        - Contact Support: pages/help/contact-support/en.md
-        - Contributors: pages/help/contributors/en.md
-
 theme:
     name: material
     favicon: static/assets/favicon.png
@@ -47,3 +11,51 @@ theme:
     palette:
       primary: green
       scheme: slate
+    # custom_dir: theme_overrides
+
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      languages:
+        en: English
+        fr: Français
+        de: Deutsch
+        ru: Русский
+      # material_alternate: false
+
+# nav:
+#     - Home: index.md
+#     - Skynet For Users:
+#         - Sending Files Over Skynet: skynet-for-users/sending-files-over-skynet/index.en.md
+#         - Why Do I Need Skynet?: skynet-for-users/why-do-i-need-skynet/index.en.md
+#     - Sia:
+#         - Introduction To Sia: sia/introduction/index.en.md
+#         - Foundation: sia/foundation/index.en.md
+#         - History: sia/history/index.en.md
+#         - Renting: sia/renting/index.en.md
+#         - Seed Management: sia/seedManagement/index.en.md
+#         - Tokenomics: sia/tokenomics/index.en.md
+#         - Trading: sia/trading/index.en.md
+#         - Wallet: sia/wallet/index.en.md
+#     - Skynet:
+#         - Introduction To Skynet: skynet/introduction/index.en.md
+#         - Portals: skynet/portals/index.en.md
+#     - Discover:
+#         - Storage Chains Compared(Sia vs Storj vs Fil vs 0Chain): discover/storage-chains-compared/index.en.md
+#         - Blockchain Explorers: discover/block-chain-explorers/index.en.md
+#         - Built With Sia: discover/built-with-sia/index.en.md
+#         - Foundation Tracker: discover/foundation-tracker/index.en.md
+#         - Network Metrics: discover/network-metrics/index.en.md
+#         - Resource Sites: discover/resource-sites/index.en.md
+#         - Skynet Apps(Skapps): discover/skynet-apps/index.en.md
+#         - Tools: discover/tools/index.en.md
+#     - Rent:
+#         - Before You Start: rent/before-you-start/index.en.md
+#         - Renting On Sia: rent/renting-on-sia/index.en.md
+#     - Host:
+#         Hosting On Sia: hosting/index.en.md
+#     - Help:
+#         - FAQ(Look Here First): help/faq/index.en.md
+#         - Contact Support: help/contact-support/index.en.md
+#         - Contributors: help/contributors/index.en.md
