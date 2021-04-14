@@ -2,6 +2,10 @@ name: Build and deploy mkdocs to skynet and github pages
 on:
   push:
     branches: [main]
+  pull_request_target:
+    types: [labeled]
+    branches:
+      - master
 
 jobs:
   deploy:
