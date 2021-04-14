@@ -47,12 +47,5 @@ Due to the contract formation fees of contracting hosts, if you’re storing les
 
 Now if you understand all that and still wish to rent on Sia, feel free! Check out the [Renting Guide](/pages/rent/renting-on-sia/index.html).
 
-## Before You Host:
-It’s good idea to start small, get familiar with it and then add more storage when it makes sense for you.
 
-To be continued...
-
-## Before You Mine:
-Coming soon
-
-*Last Updated by Covalent (March 29, 2021)*
+*Written by: Covalent, Last Edit: April 14, 2021*

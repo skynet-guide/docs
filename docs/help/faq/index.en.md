@@ -237,4 +237,4 @@ This is where the issues mostly arise. If this section goes unfunded, new contra
 One more thing to keep in mind is that it may say that you have “700 H” or whatever, but H means hasting which is actually 1e-24 SC. To learn more about how the token works and the different denominations, look <a href="">here</a>.
 </details>&nbsp;
 
-*Last updated by Covalent(March 31, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

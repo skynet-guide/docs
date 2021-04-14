@@ -25,10 +25,10 @@ These information are provided by SiaStats.info, built by Community member hakka
 * [Initial distribution](https://siastats.info/siafunds_ipo)
 * [Current distribution](https://siastats.info/siafunds_distribution)
 * [Other metrics and tools](https://siastats.info/consensus)
-## Consensus download (bootstrapping)
+## Other metrics and tools
 * [Sia 101 infographics](https://siastats.info/sia101)
 * [Community benchmarks](https://siastats.info/benchmarking)
 * [Nodes](https://siastats.info/nodes)
 * [Market prices & calculator](https://siastats.info/market_prices)
 
-*Written by Danger(? ?, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

@@ -55,5 +55,4 @@ Technical details aside, the use of encryption makes it so you can safely send s
 ### Setting up a renter
 To set up a renter, follow the steps in [Renting on Sia](/rent/renting-on-sia/index.html).
 
-*Written by Covalent (Jan 12, 2021)*  
-*Updated by Covalent (March 12, 2021)*
+*Written by: Covalent, Last Edit: April 14, 2021*

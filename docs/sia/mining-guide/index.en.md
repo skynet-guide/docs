@@ -43,5 +43,4 @@ Also keep in mind it’s all very risky. Some manufacturing companies in the pas
 
 If you decided that you want to start mining, continue with our [Hardware](/mining/hardware/en.md) guide to learn how to buy and setup a miner and what to be careful about.
 
-*Written by Danger (Jan 14, 2021)*  
-*Updated by Covalent(April 5, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

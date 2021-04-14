@@ -73,4 +73,4 @@ Skynet is still under heavy development by Skynet Labs and a breadth of features
 
 This article is pretty much done, to learn more read about [building on skynet](/skynet/building-on-skynet/index.html).
 
-*Written by Covalent (Updated: March 11, 2021)*
+*Written by: Covalent, Last Edit: April 14, 2021*

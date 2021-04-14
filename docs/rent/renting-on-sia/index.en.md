@@ -124,4 +124,4 @@ And your file has now been uploaded to the decentralized web!
 
 For more info read around the site or check out the [Sia Discord](https://discord.com/invite/sia), we’re always here to help!
 
-*Written by Covalent (Last updated March 30, 2021)*
+*Written by: Covalent, Last Edit: April 14, 2021*

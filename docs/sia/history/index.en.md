@@ -46,5 +46,4 @@ In early 2021 **1.5.3** with various improvements and fixes to recently added fe
 
 Currently **1.5.6** is looming in the horizon with the promise of bringing recursive monitization to Skynet as well as splitting the Foundation `siad` codebase away from the Skynet `skyd` codebase. Learn more about the future(or present if you're reading this in the future) [here](https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea?source=collection_home---4------1-----------------------).
 
-*Written by Danger (Jan 12, 2021)*  
-*Updated by Covalent (March 15, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

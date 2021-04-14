@@ -83,5 +83,4 @@ If you plan to use a storage solution for longterm, it’s worth to look into pr
 ## Conclusion
 SiaSky and SkySend – or in essence Sia’s layer two, Skynet – is your primary choice, if you don’t want your data being stored by a centralized corporation. Comparing storage capacity and price, SiaSky is within a throwing distance of the competitors in terms of price/performance, while allowing a fully open API for skapp devs to take advantage of. Skynet is in active development and new features will be added time after time. Using SiaSky storage, you can easily manage your files on Skynet. Read this guide to understand, [why you need Skynet](/skynet-for-users/why-do-i-need-skynet/index.html). You will find everything else you need to know on our Skynet Wiki.
 
-*Written by MLN284 (March 30, 2021)*  
-*Last updated by Covalent(April 1, 2021)*
+*Written by: MLN284 & Danger, Covalent, Last Edit: April 14, 2021*

@@ -95,5 +95,4 @@ Where to continue from here? Try [Introduction to Skynet.](/skynet/introduction/
 
 >You can find more details of Sia’s early days in the [History](/sia/history/index.html) section.
 
-*Written by Danger (Jan 9, 2021)*  
-*Updated by Covalent (March 9, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

@@ -80,5 +80,4 @@ The original Sia renter ranks hosts based on age, pricing, collateral ratio, ava
 ## Where to go next?
 If you want to start hosting, it is also good to know more about the renters. [Our guide](/rent/renting-on-sia/index.html) will lead you through everything you should know before you start.
 
-*Written by Nate (Updated by Nate: January 26, 2021)*  
-*Updated by Covalent (March 12, 2021)*
+*Written by: Nate & Covalent, Last Edit: April 14, 2021*
