@@ -5,13 +5,25 @@ site_author: Skynet Guide Contributors
 use_directory_urls: false
 
 theme:
-    name: material
-    favicon: static/assets/favicon.png
-    logo: static/assets/favicon.png
-    palette:
+  name: material
+  favicon: static/assets/favicon.png
+  logo: static/assets/favicon.png
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: green
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
-    # custom_dir: theme_overrides
+      primary: green
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
 plugins:
   - search
@@ -23,7 +35,6 @@ plugins:
         de: Deutsch
         ru: Русский
       # material_alternate: false
-
 # nav:
 #     - Home: index.md
 #     - Skynet For Users:
