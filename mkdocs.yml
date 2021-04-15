@@ -5,13 +5,25 @@ site_author: Skynet Guide Contributors
 use_directory_urls: false
 
 theme:
-    name: material
-    favicon: static/assets/favicon.png
-    logo: static/assets/favicon.png
-    palette:
+  name: material
+  favicon: static/assets/favicon.png
+  logo: static/assets/favicon.png
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: green
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
       scheme: slate
-    # custom_dir: theme_overrides
+      primary: green
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
 
 plugins:
   - search
@@ -22,40 +34,3 @@ plugins:
         fr: Français
         de: Deutsch
         ru: Русский
-      # material_alternate: false
-
-# nav:
-#     - Home: index.md
-#     - Skynet For Users:
-#         - Sending Files Over Skynet: skynet-for-users/sending-files-over-skynet/index.en.md
-#         - Why Do I Need Skynet?: skynet-for-users/why-do-i-need-skynet/index.en.md
-#     - Sia:
-#         - Introduction To Sia: sia/introduction/index.en.md
-#         - Foundation: sia/foundation/index.en.md
-#         - History: sia/history/index.en.md
-#         - Renting: sia/renting/index.en.md
-#         - Seed Management: sia/seedManagement/index.en.md
-#         - Tokenomics: sia/tokenomics/index.en.md
-#         - Trading: sia/trading/index.en.md
-#         - Wallet: sia/wallet/index.en.md
-#     - Skynet:
-#         - Introduction To Skynet: skynet/introduction/index.en.md
-#         - Portals: skynet/portals/index.en.md
-#     - Discover:
-#         - Storage Chains Compared(Sia vs Storj vs Fil vs 0Chain): discover/storage-chains-compared/index.en.md
-#         - Blockchain Explorers: discover/block-chain-explorers/index.en.md
-#         - Built With Sia: discover/built-with-sia/index.en.md
-#         - Foundation Tracker: discover/foundation-tracker/index.en.md
-#         - Network Metrics: discover/network-metrics/index.en.md
-#         - Resource Sites: discover/resource-sites/index.en.md
-#         - Skynet Apps(Skapps): discover/skynet-apps/index.en.md
-#         - Tools: discover/tools/index.en.md
-#     - Rent:
-#         - Before You Start: rent/before-you-start/index.en.md
-#         - Renting On Sia: rent/renting-on-sia/index.en.md
-#     - Host:
-#         Hosting On Sia: hosting/index.en.md
-#     - Help:
-#         - FAQ(Look Here First): help/faq/index.en.md
-#         - Contact Support: help/contact-support/index.en.md
-#         - Contributors: help/contributors/index.en.md
