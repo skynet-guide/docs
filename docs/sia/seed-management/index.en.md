@@ -38,5 +38,4 @@ So… now you are able to save important data without worries and always be able
 
 Now, fully aware of what this all means and being all set, we are finally ready to begin with Sia-UI or other wallet app – see our [Siacoin Wallets](/sia/wallets/index.html) guide.
 
-*Written by Danger (Jan 12, 2021)*  
-*Updated by Covalent (March 12, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

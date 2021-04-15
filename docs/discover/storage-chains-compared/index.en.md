@@ -230,4 +230,4 @@ Arweave gives the interesting proposition of immutable data forever stored on th
 
 The only issue is that **data isn’t incentivized to stay on chain** because the miners don’t get paid more over time for storing the data. They only keep accruing more and more data which will, in all likely-hood, lead to a fork in a couple years to allow miners to ditch data. In my opinion, it’s a bad design and cannot practically hold more than a couple KB per user and sustain itself.
 
-*Written by Covalent; last updated March 25, 2021*
+*Written by: Covalent & Danger, Last Edit: April 14, 2021*

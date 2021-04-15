@@ -87,10 +87,4 @@ They are used for **revenue sharing** on the Sia network; a **3.9% fee from ever
 ## Where to buy?
 If you are interested in buying Siacoin or Siafund, check our [Trading guide](/discover/trading-guide/index.html). It will lead you through everything you need to to know in order to securely and responsibly manage your assets and execute trade orders.
 
-**Other useful guides:**
-
-- **Siacoin Wallets**
-- **Secure Seed Management**
-
-*Written by Danger (Jan 10, 2021)*  
-*Updated by Covalent (March 1, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

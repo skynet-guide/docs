@@ -10,7 +10,7 @@ In any case, you can do the same. You can go the comfortable way and use public 
 ## List of Public Portals (Free)
 >Free portals are operated and fully funded by the community to support it. Their operators pay the costs of all downloads/uploads to support the network. Some of these portals are very popular and the demand can sometimes make your experience slower. This should continously improve with more portals coming live and further optimizations being done.
 
-- [siasky](https://siasky.net) | Skynet Labs | official portal
+- [siasky.net](https://siasky.net) | Skynet Labs | official portal
 - [siasky dev server](https://siasky.dev) | Skynet Labs | development portal
 - [skydrain](https://skydrain.net) | Fornaxian Technologies | has custom interface
 - [sialoop](https://sialoop.net) | Hakkane | has custom interface
@@ -20,13 +20,13 @@ In any case, you can do the same. You can go the comfortable way and use public 
 - [lightspeed](https://vault.lightspeedhosting.com) | Lightspeed Hosting
 - [skyportal](https://skyportal.xyz) | Delivator
 - [utxo](https://skynet.utxo.no)
-- List of Portals [Subscription](/skynet/monetized/index.html)
->Subscription-based portals offer the best experience possible that can only be matched or exceeded by running your own portal. Subscribed users can enjoy access to Skynet at max speed for just a few dollars per month, not having to think or worry about anything else. Other users can use it as well, but with a rate limit. This is very similar to ads the traditional internet serves today as both approaches are designed to put there a delay for the user, motivating him to subscribe, but this is less annoying approach. Subscribed users make this model work, so many others can use it for free as well.
 
-- Subscriptions expected to arrive in March 2021(probably) with the model being publicly available for other businesses to use. No permissions needed, fully open-source; assuming you're cool with paying a 20% dev fee.
+## List of Subscription-based Portals
+>Subscription-based portals offer the best experience possible that can only be matched or exceeded by running your own portal, but of course that's a way more expensive option. Subscribed users can enjoy access to Skynet at much higher speeds for just a few dollars per month with price depending on selected tier which also affects amount of storage available. But you as an user are still in control - the data are not on the portal, but on the decentralized Sia network and you can ask other portal (can be your own) to start pinning them anytime if you're not happy with portal you used before.
+- [siasky.net](https://siasky.net) | Skynet Labs | official portal
 
-#### How to get my portal listed?
+
+## How to get my portal listed?
 If you wish for your portal to be listed here, just reach out to us on our official [discord](https://discord.gg/invite/sia).
 
-*Written by Danger (January 26, 2021)*  
-*Updated by Covalent (March 11, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

@@ -77,5 +77,4 @@ This option is great since it allows you near instant access. No need to sync bl
 
 Once your wallet is unlocked, just click Send and specify `recipient's address` and `amount` you want to send. Sia Central will let you know about transaction fee and remaining balance. Once satisfied, just confirm transaction by clicking on `Send` button.
 
-*Written by Danger (Jan 12, 2021)*  
-*Updated by Covalent (March 12, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*

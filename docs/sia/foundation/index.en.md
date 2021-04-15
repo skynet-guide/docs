@@ -1,6 +1,6 @@
 <!-- Intro section -->
-# Sia Foundation & Fork 2021
-The Sia network is hardforking to implement the Sia Foundation: a new non-profit entity led by Luke Champine that builds and supports distributed cloud storage infrastructure, with a specific focus on the Sia storage platform.
+# Sia Foundation
+The Sia network hardforked at beginning of 2021 to implement the Sia Foundation: a new non-profit entity led by Luke Champine that builds and supports distributed cloud storage infrastructure, with a specific focus on the Sia storage platform.
 ## Common points of interest
 ---
 <!-- Section speaking about where to converse about the foudation -->
@@ -9,7 +9,7 @@ Official way to communicate with The Sia Foundation is through the [Sia Forum](h
 <!-- Section that links to the proposal -->
 <details>
 <summary>
-<b> The Sia Foundation proposal </b>
+<b> The Sia Foundation proposal</b>
 </summary>
 <blockquote class="reddit-card" data-card-created="1615816216"><a href="https://www.reddit.com/r/siacoin/comments/iox6ly/proposal_the_sia_foundation/">Proposal: The Sia Foundation</a> from <a href="http://www.reddit.com/r/siacoin">r/siacoin</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
@@ -19,31 +19,24 @@ Official way to communicate with The Sia Foundation is through the [Sia Forum](h
 <!-- Second dropdown about the circulating supply -->
 <details>
 <summary>
-<b>How does this fork affect the Siacoins in circulation?</b>
+<b>How did this fork affect the Siacoins in circulation?</b>
 </summary>
-You can see it on this <a href="https://siastats.info/macroeconomicshttps://siastats.info/macroeconomics">SiaStats</a> chart. The inflation is going to be about 10% in 2021 and then will decrease to roughly 5% per year. We noticed some people being concerned about exit scam so it is fair to explain who the developers of Sia are. They are the same peoples who worked for years with different model than anyone else. Where other projects went with ICO, pre-mines, airdrops, trusted setups and other more or less centralized solutions that allowed them to literally print money and keep a lot for themselves without ever risking anything, since they were paid ahead, Sia developers did this all with zero SC investment from the community, no ICO or pre-mine.
+You can see it on this <a href="https://siastats.info/macroeconomics">SiaStats</a> chart. The inflation increased in 2021 by roughly 10%, but that's only because of 1.57 GS that the Sia Foundation directly received as you can see <a href="https://foundation-tracker.siacentral.com">here</a> and because of the 30KS per block that are being paid out monthly. This means it will be around 5% in the following years and slowly decrease.
 
-But let’s look at the inflation a bit closer. In 2019 not so long time ago the inflation was much higher. And even today, majority of crypto projects have higher inflation than this one. Huge difference with Sia is that all of the new coins added on top of original block reward will be transparently used for good of the Sia network.
+Sia Foundation is non-profit, so it must follow laws and as you can see in the tracker above, we can transparently see its fund management.
 
-How can we so be sure? Well, there is a law for it, Sia Foundation is registered as non-profit and needs to be transparent with its expenses and funding.
+Due to legal reasons and requirements, Sia Foundation also paid 800M SC to the Skynet Labs for the Sia IP ownership (at the time this was decided and approved by community, it was worth of $1,000,000 - for comparison, about 15% of total development cost of Sia). That said, both teams are closely co-operating with the same goals as ever, making Sia the backbone of future internet. Sia Foundation focuses on the core tech and Skynet Labs work on the Skynet, bringing mainstream adoption to Sia.
 
-<blockquote>
-Developers didn’t use the Siacoin to fund the development in any way, but there was isolated offering of network’s supplementary token called <a src="">Siafund</a> that raised $120,000 (initially called Sianotes). See the link for more information.
-</blockquote>
-<br>
-Another thing to explain is that many people got used that when some project launches mainnet, it is immediately usable and should go for adoption. But that is because majority of these projects are trying to replace Bitcoin, act as money. Sia could be used as money back since 2015, but was it ready to provide decentralized storage? No. It got there with 1.4.0 update in April 2019. But even that was just a beginning, it is getting much closer to that state today in 2021 when Skynet and <a src="">first real products</a> are just getting finished and launched. And now, finally, developers around the world can finally react and build exciting apps with it. Will it be fast? No, as with every new technology, it takes time to be adopted.
+We are putting effort to explain it because it's very common in crypto world that whenever any dev team receives a lot of coins, it's seen as exit scam. Also, splits are usually seen as bad thing.
 
-<h2>
-How does it compare with other projects?
-</h2>
-There are many projects that claim decentralization. Many are not truly decentralized but benefit from people thinking they are. And others are, but in very limited way, absolutely unusable for anything but tiny quantities of data. And some others are decentralized, but not in the same vein as Sia. There is also another cucial distinction that people often miss; there is a difference between a decentralized app and decentralized storage network. For example, Sia is a decentralized storage network (layer 1), that can be used by Skynet, a decentralized internet (layer 2). And then there are decentralized apps that can be built on top of decentralized internet, Skynet.
+But not for Sia and Skynet, both projects helping each other. And not when it comes to these devs. They are the same peoples who worked for years with different model than anyone else. Where other projects went with ICO, pre-mines, airdrops, trusted setups and no risk since they were paid ahead, Sia developers did this all with zero SC contribution from the community, no ICO or pre-mine. Until now.
 
-Another facet to consider is inflation; a good comparison to draw would be Sia to Filecoin. Simple fact is that Filecoin has several hundred times higher inflation and if you are watching coinmarketcap, the supply is frozen and showing 45 million FIL, while there is already over 110 million in existence. And there will be over 1 billion in its first 2 years. It’s fully diluted market cap is about 250x that of Sia (this value can be different due to markets never sleeping) higher than Sia and Filecoin is a living proof that projects with questionable approaches, heavily experimental tech and unsustainable methods of growth can easily get away with anything.
+It's quite ironic that only thanks to birth of Sia Foundation receiving SC from the blockchain, all the previous "investments" from people who bought SC can be finally seen as investments into the network and the non-profit entity working developing it.
 
 <h2>
 What about Sia’s own unlimited supply?
 </h2>
-In the end it’s all about supply and demand. Over time, it could happen that majority of circulating supply ends up locked in storage contracts and/or held by people. This could make it very difficult for people using to pay for their storage. That’s why Sia is always going to have a block reward so there is always a way to get SC. You can read more about it in <a src="">Introduction to Sia</a>.
+In the end it’s all about supply and demand. Over time, it could happen that majority of circulating supply ends up locked in storage contracts and/or held by people. This could make it very difficult for people using to pay for their storage. That’s why Sia is always going to have a block reward so there is always a way to get SC. You can read more about it in our Introduction to Sia.
 
 Since we know the block reward, we can tell how many SC there will be at any point in future. And we can tell that while supply is maybe theoretically infinite, it is truly infinite only if our lifes were infinite. The fact is that in our lifetimes, the supply will double maybe in next 8 years. But for Filecoin, it will double in next few weeks.
 
@@ -64,7 +57,7 @@ Up to the point in time before its activation, both blockchains have identical h
 
 If you had SC before the fork, when the network split happened, you had same history (seed, blocks, addresses, transactions) on both blockchains, but after that moment, each blockchain went own way. That means you had same amount of different coins that weren’t compatible with each other – if you made transaction with SCC after the fork or mined coins on SCC chain, they would only exist on SCC blockchain, not on Sia. And vice versa.
 <blockquote>
-Since this fork is welcome by vast majority of the community (if you don’t understand what it means, check out <a scr="">History of Sia</a>, the <a href="https://www.reddit.com/r/siacoin/comments/iox6ly/proposal_the_sia_foundation">Proposal</a> or <a src="">Sia Foundation</a>), <i>there is no legacy chain expected to survive</i>. You can still access your legacy coins if you use the old wallet software at any point in future, but there will be no one who continues using it. In other words, it will(in all likelyhood) be worthless.
+Since this fork was well accepted by vast majority of the community<i>there is no legacy chain expected to survive</i>. You can still access your legacy coins if you use the old wallet software at any point in future, but there will be no one who continues using it. In other words, it will(in all likelyhood) be worthless.
 </blockquote>
 </details>
 <br>
@@ -95,5 +88,4 @@ You don’t have to do anything, the exchange will update the node it connects t
 ### If you mine Siacoin
 Nothing changes. Only ones who need to update are the **mining pools**. We already updated our list of Mining Pools, so all that you find there confirmed the update.
 
-*Written by Danger (Updated: Jan 15, 2021)*  
-*Updated by Covalent (March 16, 2021)*
+*Written by: Danger & Covalent, Last Edit: April 14, 2021*
