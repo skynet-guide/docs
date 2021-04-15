@@ -1,7 +1,9 @@
 name: Build and deploy mkdocs to skynet and github pages
 on:
-  push:
-    branches: [main]
+  pull_request_target:
+    types: [labeled]
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -9,6 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: ${{ github.event.pull_request.head.sha }}
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Python
         uses: actions/setup-python@v1
@@ -26,10 +29,3 @@ jobs:
         with:
           upload-dir: site
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          registry-seed: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && secrets.REGISTRY_SEED || '' }}
-          registry-datakey: covalentisanextremelygoodwebdev
-      - name: Deploy to github pages
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: skynet.guide
