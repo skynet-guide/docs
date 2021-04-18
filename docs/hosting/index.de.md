@@ -48,7 +48,7 @@ Verträge erzeugen einen direkten Zahlungskanal zwischen Host und Renter, um sch
 
 Hoster und Renter hinterlegen jeweils Siacoin für die gesamte Vertragslaufzeit. Bei der Erstellung eines Vertrags einigen sich Hoster und Renter jeweils auf die Beträge für Collateral sowie Allowance und die Laufzeit ihres Vertrags. Die Sicherheit, zu viel eingezahlte Allowance und die Einnahmen gehen nach Vertragsende automatisch an den rechtmäßigen Eigentümer.
 
-Der Host hat Möglichkeiten, unattraktive Verträge abzulehnen. Der Renter bestimmt die Dauer des Vertrags und wie viel Sicherheit der Host zurücklegen muss. Der Host kann jedoch begrenzen, wie hoch das Collateral für einen einzigen Vertrag und wie lange die Laufzeit maximal sein dürfen. 
+Der Host hat Möglichkeiten, unattraktive Verträge abzulehnen. Der Renter bestimmt die Dauer des Vertrags und wie viel Sicherheit der Host zurücklegen muss. Der Host kann jedoch begrenzen, wie hoch das Collateral für einen einzigen Vertrag und wie lange die Laufzeit maximal sein dürfen.
 
 **Max Duration** ist die maximale Dauer für einen Vertrag und wird für gewöhnlich in Monaten berechnet: im Durchschnitt drei Monate. Hosts werden nur am Ende einer Vertragslaufzeit bezahlt. Verpflichtet sich ein Host für sechs Monate und kann keinen Beweis für die Speicherung erbringen, werden Einnahmen und das Collateral verbrannt.
 
@@ -59,7 +59,7 @@ Der Host hat Möglichkeiten, unattraktive Verträge abzulehnen. Der Renter besti
 ## Preise
 Hoster legen ihre eigenen Preise fest. Der Marktplatz dient dem freien und offenen Wettbewerb zwischen Hostern, um Rentern den bestmöglichen Nutzwert bieten zu können. Historisch bedingt, gab es immer ein Hoster-Überangebot, deswegen sind die Einnahmen vergleichsweise niedrig. Das schließt profitables Hosting jedoch nicht aus. Gut angebundene und reputable Hosts können auch bei höheren Kosten in der Nutzergunst steigen.
 
-**Storage Price** sind die Kosten, um Daten auf einem Host abzulegen. Berechnet werden sie in Siacoin pro Terabyte pro Monat. Zwischen **1 und 2 US-Dollar pro Terabyte** sind ein guter Einstiegspreis. 
+**Storage Price** sind die Kosten, um Daten auf einem Host abzulegen. Berechnet werden sie in Siacoin pro Terabyte pro Monat. Zwischen **1 und 2 US-Dollar pro Terabyte** sind ein guter Einstiegspreis.
 
 **Download Bandwidth Price** sind die Kosten, um Daten von einem Host herunterzuladen – auch bekannt als „egress“. Berechnet werden sie in Siacoin pro Terabyte. Zwischen **1 und 5 US-Dollar pro Terabyte** sind ein guter Einstiegspreis. Mit steigendem Wettbewerb kann es sinnvoll sein, die Preise zu erhöhen – gerade bei einer Gigabit-Anbindung ohne Volumenbegrenzung oder in Regionen mit wenig Hosts.
 
@@ -70,12 +70,12 @@ Hoster legen ihre eigenen Preise fest. Der Marktplatz dient dem freien und offen
 **Contract Price** sind die Kosten, um einen Vertrag mit dem Host zu erstellen. Diese sollten nicht mehr als **1 SC** betragen. Der Contract Price dient dazu, Kosten für Transaktionen oder für Speicherbelege zu decken. Die Standardeinstellung **0,15 SC** reicht im Regelfall. Das Belegen von gesicherten Daten kostet weniger als 0,01 SC.
 
 ## Ankündigung
-Hosts müssen entweder eine IP- oder eine DNS-Adresse mitteilen, unter der Renter sich mit Hosts verbinden können. Die Ankündigung enthält vier Bestandteile: die IP/Domain, der Port, der öffentliche Schlüssel des Hosts und eine Signatur. Das erleichtert Rentern die Übersicht und die Verbindung zu neuen und Updates für bestehende Hosts. 
+Hosts müssen entweder eine IP- oder eine DNS-Adresse mitteilen, unter der Renter sich mit Hosts verbinden können. Die Ankündigung enthält vier Bestandteile: die IP/Domain, der Port, der öffentliche Schlüssel des Hosts und eine Signatur. Das erleichtert Rentern die Übersicht und die Verbindung zu neuen und Updates für bestehende Hosts.
 
 Die Ankündigung einer DNS-Adresse wie myhost.hosting.com:9982 antelle einer IP-Adresse hilft Hosts mit dynamischen IPs, multiple Ankündigungen zu vermeiden.
 
 ## Ranking
-Renter filtern Hosts nach eigenen Vorlieben. Es gibt kein zentrales Ranking-System für Hosts. Das Ranking findet beim Renter nach verschiedenen, eigenen Kriterien statt. In vielen Fällen kann die Bewertung eines Hosts für verschiedene Renter unterschiedlich sein. 
+Renter filtern Hosts nach eigenen Vorlieben. Es gibt kein zentrales Ranking-System für Hosts. Das Ranking findet beim Renter nach verschiedenen, eigenen Kriterien statt. In vielen Fällen kann die Bewertung eines Hosts für verschiedene Renter unterschiedlich sein.
 
 Das ursprüngliche Ranking basierte auf Alter, Preisen, Collateral-Ratio, verfügbarem Speicherplatz und geschätzter Uptime. Wählen Renter einen Host aus, geschieht dies nicht unbedingt nur nach dem Rang. Deswegen sollte der Rang für Hoster keine wichtige Maßgabe sein. Um in die Top 50 zu kommen, müssten Hosts den Großteil ihres Einnahmepotenzials opfern. Es gibt auch Ranking-Systeme, die Transfergeschwindgkeit, Verfügbarkeit und Latenz über den Preis stellen.
 
@@ -85,4 +85,4 @@ Das ursprüngliche Ranking basierte auf Alter, Preisen, Collateral-Ratio, verfü
 - **[Sia Host Manager](https://siacentral.com/host-manager)** | Alternative zu Sia-UI mit einem besseren Finanz-Tracking und Fiat-Preisbindung.
 
 ## Was nun?
-Wenn du als Host starten möchtest, ist es sinnvoll mehr über Renter zu erfahren. Unser Guide führt Dich durch alle Punkte, die du [vor dem Start wissen](https://skynetwiki.tech/before-you-start/) solltest.
+Wenn du als Host starten möchtest, ist es sinnvoll mehr über Renter zu erfahren. Unser Guide führt Dich durch alle Punkte, die du [vor dem Start wissen](/before-you-start/) solltest.

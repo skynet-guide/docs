@@ -188,7 +188,7 @@ Where is the Sia roadmap?
 After the establishment of Sia Foundation in January 2021, the place to go to view, discuss and propose new and planned features is the <a href="https://forum.sia.tech">Sia Forum</a>.
 <br>
 <br>
-If you are interested in what’s planned for Skynet. Best places to watch are <a href="https://discord.com/invite/sia">Sia discord</a>, <a href="https://siasky.net>siasky</a> and of course our <a href="https://skynetwiki.tech>SkynetWiki</a>. We are going to work hard to always bring you the latest news and apps from Skynet.
+If you are interested in what’s planned for Skynet. Best places to watch are <a href="https://discord.com/invite/sia">Sia discord</a>, <a href="https://siasky.net>siasky</a> and of course our <a href="https://sky-guide.hns.siasky.net>Skynet Guide</a>. We are going to work hard to always bring you the latest news and apps from Skynet.
 </details>
 <br>
 
