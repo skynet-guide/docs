@@ -12,7 +12,7 @@ Sia nutzt diese Prizipien, um eine Plattform für eine dezentrale Cloud mit eine
 
 Diese Website ist ein großartiges Beispiel für diese Prinzipien. Sie wurde von verschiedenen Mitgliedern der Sia-Community erstellt, um Neulingen und Fortgeschrittenen Antworten auf jedwede Fragen zu bieten. Jeder Artikel unterläuft eine Prüfung durch unsere Mitwirkende und repräsentiert unsere gemeinsamen Ansichten und unser Wissen. Unser Ziel ist es, Dir alles Nötige an Quellen und Informationen bereitzustellen, damit Du eine kluge Entscheidung treffen kannst, wenn die Technologien von Sia und Skynet für Dich in Frage kommen.
 
-https://sky-guide.hns.siasky.net/contributors/
+[Contributors](/help/contributors/index.html)
 
 
 Zusätzlich werden neue Versionen dieser Webseite durch Backups via Skynet bereitgestellt. Das garantiert, dass das Wissen dieser Seite zu jeder Zeit allen Menschen zur Verfügung steht.
@@ -21,10 +21,19 @@ Wie geht es weiter?
 
 Den besten Einstieg ermöglicht Dir die Einführung in Sia. Die Quelle bietet unterschiedliche Bereiche, die Du gerne durchforsten kannst. Solltest Du Hilfe benötigen, werfe einen Blick auf unser umfassendes FAQ und suche nach geeigneten Stichwörtern zu Themen Deiner Wahl.
 
+<<<<<<< HEAD
 https://sky-guide.hns.siasky.net/introduction-to-sia/
 
+=======
+[Introduction to Sia](/sia/introduction/index.html)
+>>>>>>> 31b744622be086945c218dd30bb44ae1facc3d38
 
 
 Bist Du neugierig, was für großartige Apps und Projekte mit Sia und Skynet möglich sind, bist Du herzlich eingeladen, hier weiter zu stöbern …
 
+<<<<<<< HEAD
 https://sky-guide.hns.siasky/discover/
+=======
+[Discover](/discover/built-with-sia/index.html)
+
+>>>>>>> 31b744622be086945c218dd30bb44ae1facc3d38
