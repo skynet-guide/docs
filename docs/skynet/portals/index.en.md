@@ -9,7 +9,6 @@ In any case, you can do the same. You can go the comfortable way and use public 
 
 ## List of Public Portals (Free)
 >Free portals are operated and fully funded by the community to support it. Their operators pay the costs of all downloads/uploads to support the network. Some of these portals are very popular and the demand can sometimes make your experience slower. This should continously improve with more portals coming live and further optimizations being done.
-
 - [siasky.net](https://siasky.net) | Skynet Labs | official portal
 - [siasky dev server](https://siasky.dev) | Skynet Labs | development portal
 - [skydrain](https://skydrain.net) | Fornaxian Technologies | has custom interface
