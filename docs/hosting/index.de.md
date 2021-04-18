@@ -85,4 +85,4 @@ Das ursprüngliche Ranking basierte auf Alter, Preisen, Collateral-Ratio, verfü
 - **[Sia Host Manager](https://siacentral.com/host-manager)** | Alternative zu Sia-UI mit einem besseren Finanz-Tracking und Fiat-Preisbindung.
 
 ## Was nun?
-Wenn du als Host starten möchtest, ist es sinnvoll mehr über Renter zu erfahren. Unser Guide führt Dich durch alle Punkte, die du [vor dem Start wissen](https://skynetwiki.tech/before-you-start/) solltest.
+Wenn du als Host starten möchtest, ist es sinnvoll mehr über Renter zu erfahren. Unser Guide führt Dich durch alle Punkte, die du [vor dem Start wissen](/rent/before-you-start/index.html) solltest.
