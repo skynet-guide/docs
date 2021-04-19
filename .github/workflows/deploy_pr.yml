@@ -1,18 +1,11 @@
-name: Build and deploy mkdocs to skynet and github pages
-on:
-  pull_request_target:
-    types: [labeled]
-    branches:
-      - main
+name: Build mkdocs and upload to skynet on PR
+on: pull_request
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          ref: ${{ github.event.pull_request.head.sha }}
-          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Setup Python
         uses: actions/setup-python@v1
         with:
