@@ -41,6 +41,6 @@ This really depends on what is your **goal**.
 
 Also keep in mind it’s all very risky. Some manufacturing companies in the past didn’t hesitate to kill the ROI of own customers by over-producing units so much that only the manufacturer ever did any profit. There were also many miners that were promised and accepted pre-orders but never delivered. You should always verify that what you pay for is a real thing and that manufacturer doesn’t play against you.
 
-If you decided that you want to start mining, continue with our [Hardware](/mining/hardware/en.md) guide to learn how to buy and setup a miner and what to be careful about.
+If you decided that you want to start mining, best you can do is probably to join Sia Foundation discord and ask in #mining channel for up to date hardware recommendations. You can also learn from others how to buy and setup a miner and what to be careful about.
 
 *Written by: Danger & Covalent, Last Edit: April 14, 2021*
