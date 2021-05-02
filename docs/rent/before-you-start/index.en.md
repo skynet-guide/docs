@@ -45,7 +45,7 @@ The Skynet Team doesn’t have much time for anything but Skynet, but luckily th
 ### Storing Less Than 1TB isn’t practical
 Due to the contract formation fees of contracting hosts, if you’re storing less than 1TB of data, you will end up spending the pricing is inflated greatly. This is becase you need to form some number of contracts no matter how much you plan to store and the more you store, the smaller part of your overall expenses will be spent on contract forming.
 
-Now if you understand all that and still wish to rent on Sia, feel free! Check out the [Renting Guide](/pages/rent/renting-on-sia/index.html).
+Now if you understand all that and still wish to rent on Sia, feel free! Check out the [Renting Guide](/rent/renting-on-sia/index.html).
 
 
 *Written by: Covalent, Last Edit: April 14, 2021*
