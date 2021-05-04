@@ -21,6 +21,7 @@ All of the content is available for free and can be used and re-used as you wish
 * Nate | Sia Central, Sia Host Manager
 * redsolver | SkyFeed
 * gumil89 | Spanish Translator
+* figurestudios
 
 > Do you have some idea? Nice guide, informative article, anything that you feel is missing here? Get in touch with us on Skynet Guide's [Discord](https://discord.gg/jU7AC9Jt).
 
