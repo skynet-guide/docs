@@ -1,5 +1,5 @@
 # Network Metrics
-These information are provided by SiaStats.info, built by Community member hakkane. If you want to develop app that displays these, you can use its [API](https://siastats.info/api).
+This information is provided by SiaStats.info, built by Community member hakkane. If you want to develop an app that displays these, you can use its [API](https://siastats.info/api).
 
 ## Network
 * [Last blocks](https://siastats.info/last_blocks)
@@ -31,4 +31,4 @@ These information are provided by SiaStats.info, built by Community member hakka
 * [Nodes](https://siastats.info/nodes)
 * [Market prices & calculator](https://siastats.info/market_prices)
 
-*Written by: Danger & Covalent, Last Edit: April 14, 2021*
+*Written by: Danger & Covalent, figurestudios, Last Edit: April 14, 2021*
