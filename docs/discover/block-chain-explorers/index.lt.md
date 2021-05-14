@@ -3,5 +3,5 @@ Sukurti "blockchain" tyrinėtoją nėra lengva užduotis ir dėl resursų trūku
 
 SiaStats | https://siastats.info
 
-*Paraš4: Danger & Covalent, Paskutinį kartą atnaujinta: April 14, 2021*
-Išvertė: lorenNso, Paskutinį kartą atnaujinta: Gegužės 13, 2021
+*Paraš4: Danger & Covalent, Paskutinį kartą atnaujinta: Balandžio 14, 2021*
+*Išvertė: lorenNso, Paskutinį kartą atnaujinta: Gegužės 13, 2021*

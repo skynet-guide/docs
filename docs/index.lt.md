@@ -1,5 +1,5 @@
 # Sveiki atvykę į Skynet gidą!
-**Skynet Gidas** yra bendruomenės išlaikoma ir prižiūrima vieta, kuri padėtų jums apsiprasti ir palengvintų jūsų kelionę decentralizuotos talpinimo debesų "cloud" platformos **"Sia"** ir ant šios platformos viršaus pastatyto decentralizuoto interneto **"Skynet** pasaulyje.
+**Skynet Gidas** yra bendruomenės išlaikoma ir prižiūrima vieta, kuri padėtų jums apsiprasti ir palengvintų jūsų kelionę decentralizuotos talpinimo debesų "cloud" platformos **Sia** ir ant šios platformos viršaus pastatyto decentralizuoto interneto **Skynet** pasaulyje.
 
 Pačioje pradžioje buvo sukurtas blockchain. Tai yra svarbi technologija, kuri sudarė galimybę atsirasti tokiems decentralizuotiems tinklams kaip Sia arba Bitcoin. Technologija naudoją "sutarimo mechanizmą" (consensus), P2P (peer to peer) tinklą and PoW (Proof of Work) algoritmą tam, kad galėtų:
 

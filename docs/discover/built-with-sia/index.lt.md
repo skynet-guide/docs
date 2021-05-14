@@ -32,4 +32,4 @@ ClearPHONE 620 yra pirmasis mobilusis telefonas, naudojantis Sia debesų talpini
 Jeigu esate produkto kūrėjas, kuris yra sukurtas su Sia ir norėtumėte, jog jūsų informacija būtų atnaujinta ar pridėta, susisiekite su mumis).
 
 *Parašė: Danger & Covalent, Paskutinį kartą atnaujinta: Balandžio 14, 2021*
-Išvertė: lorenNso, Paskutinį kartą atnaujinta: Gegužės 13, 2021
+*Išvertė: lorenNso, Paskutinį kartą atnaujinta: Gegužės 13, 2021*

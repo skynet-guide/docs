@@ -1,4 +1,5 @@
 # Interneto metrikai
+# Interneto metrikai
 Informaciją pateikė SiaStats.info, sukurta bendruomėns nario hakkane. Jeigu norite sukurti programėlę, vaizduojančią šiuos rodmenis, galite naudotis šiuo [API](https://siastats.info/api).
 
 ## Internetas
@@ -30,5 +31,5 @@ Informaciją pateikė SiaStats.info, sukurta bendruomėns nario hakkane. Jeigu n
 * [Bendruomenės benchmarks](https://siastats.info/benchmarking)
 * [Nodes](https://siastats.info/nodes)
 * [Rinkos kainos & Skaičiavimas](https://siastats.info/market_prices)
-Parašė: Danger & Covalent, figurestudios, Paskutinį kartą atnaujinta: April 14, 2021*
-Išvertė: lorenNso, Paskutinį kartą atnaujinta: Gegužės 13, 2021
+Parašė: Danger & Covalent, figurestudios, Paskutinį kartą atnaujinta: Balandžio 14, 2021*
+*Išvertė: lorenNso, Paskutinį kartą atnaujinta: Gegužės 13, 2021*
