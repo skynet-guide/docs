@@ -41,4 +41,4 @@ The collection of known Skynet Apps (Skapps) is quickly growing. Luckily, we don
 
 >Developer: *“I want to explore other languages as well as develop sharing of CPU capacities (although this would be quite a challenge). Feel free to contact me on discord (mike76#7812).”*
 
-*Written by: Danger & Covalent, Figurestudios, Last Edit: May 5, 2021*
+*Written by: Danger, Covalent, and Figurestudios, Last Edit: May 20, 2021*
