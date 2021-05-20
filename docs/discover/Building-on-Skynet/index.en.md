@@ -13,11 +13,20 @@ Workshops | https://www.youtube.com/watch?v=-7i4ZVdTZFs&list=PLPv00ttW4uXMR0NAGq
 SkyDB web-app Example | https://blog.sia.tech/skydb-example-a-note-to-self-app-ccd4e7ba31ba
 
 # Making a Game
-
+### SkyGameSDK
 Games on Skynet? That sounds hard - how do I even make that work? Luckily, the community member stelballe has built an installable SDK (Software Development Kit) on top of Unity, which makes it easy to use a bunch of online-features on Skynet; sending data with SkyDB or the registry; saving files/data using MySky; or simply using local features such as saving to local storage! You can see a video showcasing the setup here:
 
-https://youtu.be/QqZqeWKEqoo
+Presentation - https://youtu.be/QqZqeWKEqoo
 
 SkyGameSDK | https://github.com/figurestudios/SkyGameSDK
 
-*Written by: figurestudios, Last Edit: May 15, 2021*
+### WebGames IDE
+Are you willing to sacrifice online-functionality, or do you just prefer an all-browser experience? Look no further - WebGames IDE is for you!
+
+Presentation - https://youtu.be/TBdgtPZMoKk?t=4183
+
+Start developing [here](https://webgames-ide.hns.siasky.net/).
+
+[[source]](https://github.com/ericflo/webgames-ide)
+
+*Written by: figurestudios, Last Edit: May 20, 2021*
