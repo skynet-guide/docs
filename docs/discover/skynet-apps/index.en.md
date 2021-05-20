@@ -25,10 +25,20 @@ The collection of known Skynet Apps (Skapps) is quickly growing. Luckily, we don
 [Note To Self](https://note-to-self.hns.siasky.net/) – Write notes to yourself and read notes from friends [[source]](https://github.com/kwypchlo/note-to-self)
 
 [Hacker Paste](https://hackerpaste.hns.siasky.net/) – Decentralized “Paste.bin”
+### Games
+[ArmyClash](https://blakerasor.hns.siasky.net) - Decentralized Game utilizing Skynet for networking. [[source]](https://github.com/mikopeck/ArmyClash)
+
+[SkyNect-4](https://skynect4.hns.siasky.net) - Decentralized "Connect-4" Game.
+
+[SkyChess](https://skychess.hns.siasky.net/) - Decentralized Chess Game. [[source]](https://github.com/redsolver/skychess)
 ### Coding
 
 [SkyLearn](https://skylearn.hns.siasky.net/) – Online Python coding app [[source]](https://github.com/mike76-dev/skylearn)
 
+[https://webgames-ide.hns.siasky.net/](WebGames IDE) - Tool to build games without leaving the browser. [[source]](https://github.com/ericflo/webgames-ide)
+
+[https://github.com/figurestudios/SkyGameSDK](SkyGameSDK) - A plugin for Unity to allow networking & other Skynet functionalities. [[Source]](https://github.com/figurestudios/SkyGameSDK)
+
 >Developer: *“I want to explore other languages as well as develop sharing of CPU capacities (although this would be quite a challenge). Feel free to contact me on discord (mike76#7812).”*
 
-*Written by: Danger & Covalent, Figurestudios, Last Edit: May 5, 2021*
+*Written by: Danger, Covalent, and Figurestudios, Last Edit: May 20, 2021*
