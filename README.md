@@ -13,4 +13,4 @@
    ```
 
 # Special thanks
-To [squidfunk](https://github.com/squidfunk) for creating [mkdocs-material](https://github.com/squidfunk/mkdocs-material) and [ultrabug](https://github.com/ultrabug) with [mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n).
+To [the team behind mkdocs](https://www.mkdocs.org/about/release-notes/#maintenance-team) for creating [mkdocs](https://www.mkdocs.org/), [squidfunk](https://github.com/squidfunk) for creating [mkdocs-material](https://github.com/squidfunk/mkdocs-material) and [ultrabug](https://github.com/ultrabug) for [mkdocs-static-i18n](https://github.com/ultrabug/mkdocs-static-i18n).
