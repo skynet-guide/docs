@@ -5,12 +5,12 @@ Renting on Windows 10 with Sia-UI
 So first off you’re gonna want to head to the official [Sia website](https://sia.tech/). And head to the download page.
 ![](/static/assets/renting-on-sia/image-4.png)
 
-Then from there download the linux binary.
+Then from there download the windows binary.
 ![](/static/assets/renting-on-sia/image-5.png)
 
 >Note, if you would like to compile it from the source, you can find the daemon code [here](https://gitlab.com/NebulousLabs/Sia), and the UI code [here](https://gitlab.com/NebulousLabs/Sia-UI). But in all likely-hood if you can do that, you don’t need this article ;p
 
-Now click on the .exe file that has been downloaded. Now linux doesn’t like cryto apps at all. So linux will automatically block the file when you try to open it. Thankfully, it’s easy to get around. Just click “more info”
+Now click on the .exe file that has been downloaded. Now windows doesn’t like cryto apps at all. So windows will automatically block the file when you try to open it. Thankfully, it’s easy to get around. Just click “more info”
 ![](/static/assets/renting-on-sia/image-6.png)
 
 And then “Run Anyway”
