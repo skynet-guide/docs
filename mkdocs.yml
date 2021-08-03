@@ -39,3 +39,7 @@ plugins:
         ru: Русский
         es: Español
         lt: Lietuvių
+
+markdown_extensions:
+  - toc:
+      permalink: "#"
