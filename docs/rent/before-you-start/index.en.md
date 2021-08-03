@@ -19,7 +19,7 @@ In order to sync the blockchain, you must download and maintain a ~22GB consensu
 
 > One way around this issue is to use Luke Champine’s `us` (see [here](https://github.com/lukechampine/us)). It allows you to use something called a `shard` node which can run the consensus on a remote server for many clients at the same time, thus shifting the load away from the edge clients. In such case you have to depend on centralized server, even if it’s yours.
 
-> Another future option is the planned implementation of [Utreexo](https://dci.mit.edu/utreexo), which would effectively allow you to run a full node but instead of having to store the whole chain history, you’d only have to store the chain state (which would be around 50 KB). This would be great, but due to the [Sia Foundation](/pages/sia/foundation/index.html) being in its infancy, I wouldn’t expect Utreexo to be complete till at earliest 2022.
+> Another future option is the planned implementation of [Utreexo](https://dci.mit.edu/utreexo), which would effectively allow you to run a full node but instead of having to store the whole chain history, you’d only have to store the chain state (which would be around 50 KB). This would be great, but due to the [Sia Foundation](/sia/foundation/index.html) being in its infancy, I wouldn’t expect Utreexo to be complete till at earliest 2022.
 
 ### Backups are Unreliable
 If you are to run your node continuously and you never run into any bugs (which actually aren’t too common in `siad`), you likely will never lose a single file over any period of time when renting on Sia. Only issue is, it isn’t exactly practical to constantly run something like a Sia renter node and this is where backups come into play. The renter node can be backed up in two ways:
@@ -32,7 +32,7 @@ Seed based file recovery is currently unreliable. It is quoted as 95% reliable b
 
 > Covalent: “I cannot speak on others experiences, but in my personal experience seed based file recovery has a reliability of 50% at best. It SHOULD NOT be relied upon for important data, treat it as a nice to have, not a foundation to rely on.”
 
-While Sia Foundation is expected to address this, it might take some time. Until then, if you are looking for something more reliable, one such way is to use Skynet or some of the [apps built with it](/pages/discover/skynet-apps/index.html).
+While Sia Foundation is expected to address this, it might take some time. Until then, if you are looking for something more reliable, one such way is to use Skynet or some of the [apps built with it](/discover/skynet-apps/index.html).
 
 ### Development of Sia-UI
 The community understands that developers started this all with good intentions but also for profit. Investors backing up development expect some results which made it difficult to justify development of features that do not directly bring results as for example Skynet can. This is the main reason why the team didn’t have much time for Sia-UI in 2020 and why some things were seen as a priority over things mentioned above.
