@@ -370,20 +370,17 @@ Make sure you have your 29-word seed before you start.
 
   You might run into an issue that your node is not syncing because it cannot find other nodes to connect to. The list that is hard-coded in the app is several years old and needs an update. Meanwhile, you can fix this issue easily by adding nodes manually.
   <blockquote>
-  gateway connect 88.98.208.124:9981<br>
-  gateway connect 88.131.107.45:9981<br>
-  gateway connect 167.86.109.162:9981<br>
-  gateway connect 63.141.234.114:9981<br>
-  gateway connect 199.195.252.152:9981<br>
-  gateway connect 72.69.188.134:9981<br>
-  gateway connect 188.83.8.209:9981<br>
-  gateway connect 65.21.79.100:9981<br>
-  gateway connect 80.101.32.17:9981<br>
+    siac gateway connect 88.98.208.124:9981<br>
+    siac gateway connect 88.131.107.45:9981<br>
+    siac gateway connect 167.86.109.162:9981<br>
+    siac gateway connect 63.141.234.114:9981<br>
+    siac gateway connect 199.195.252.152:9981<br>
+    siac gateway connect 72.69.188.134:9981<br>
+    siac gateway connect 188.83.8.209:9981<br>
+    siac gateway connect 65.21.79.100:9981<br>
+    siac gateway connect 80.101.32.17:9981<br>
   </blockquote>
-  <br>
-
-  Enter these commands (one line at a time) in the Sia-UI's terminal or through siac if you're using CLI (need to add `siac` before the command).
-  
+  Enter these commands (one line at a time) in the Sia-UI's terminal or in your own terminal if you're using the CLI.
 </details>
 
 <!-- wallet choice -->
