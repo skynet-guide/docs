@@ -17,16 +17,16 @@ Last update: March 31, 2021 | Sia 1.5.5
   <summary>
       Cannot send or receive Siacoin (SC)
   </summary>
-  Since there is no centralized server you can ask for current balance in the decentralized network like Sia, each user has their own copy of the blockchain that he must sync with and verify. This means your wallet can show and work only with results based on the data you already have and synced.
+  Since there is no centralized server you can ask for current balance in the decentralized network like Sia, each user has their own copy of the blockchain that they must sync with and verify. This means your wallet can show and work only with results based on the data you already have and synced.
   <br><br>
-  <b>If you cannot see incoming transaction</b> but it is visible in blockchain explorer like <a href="https://siastats.info">siastats</a>, it means the transaction is already yours, you are just not synced to the Sia blockchain. You are synced to wrong blockchain, which is common issue for returning users who missed the 2018 fork and launched version older than 1.3.7 before checking for update. That got you to a situation where you synced past the point of automatic resolution and are trying to sync blocks from incompatible blockchain, which new versions of Sia won’t accept. You will see correct balance once you re-sync to Sia blockchain. See <a href="">instructions</a> how to re-sync.
+  <b>If you cannot see incoming transaction</b> but it is visible in blockchain explorer like <a href="https://siastats.info">siastats</a>, it means the transaction is already yours, you are just not synced to the Sia blockchain and need to wait for 100% sync (if a new user) or you are synced to wrong blockchain, which is common issue for returning users who missed the 2018 and/or 2021 fork and launched legacy version before checking for update. That got you to a situation where you synced past the point of automatic resolution and are trying to sync blocks from incompatible blockchain, which new versions of Sia won’t accept. You will see correct balance once you re-sync to Sia blockchain. See <a href="">instructions</a> how to re-sync.
   <br><br>
   <b>If you sent transaction but it never arrived in the other wallet</b>, you also most likely cannot see it in the blockchain explorer like <a href="https://siastats.info">siastats</a>. If this is the case, you didn’t send Siacoin (SC). You are synced to wrong blockchain for same reason as explained above. Instead of SC you sent the coins on the legacy blockchain and that’s why other Sia users and exchanges cannot detect it. This transaction never happened on Sia network which means that once you re-sync, you will still find the coins in your wallet. You can follow these <a href="">instructions</a> to re-sync.
   <br><br>
   <b>If you cannot send a transaction</b> and it shows nothing after clicking the “Send” button, you are maybe trying to send full balance. Try it again but send 0.5 SC less. This is needed since the wallet is not counting transaction fees in the transaction. The fees are paid from the remaining SC inn your wallet so it is good idea to always leave some tiny amount (1 SC or less) instead of sending it all. If this doesn’t help, try <a href="">cleaning up your transaction pool</a>.
 
   <blockquote>
-  You might want to know that Sia Foundation is going to work on Utreexo this year (2021), a feature that will dramatically reduce blockchain requirements, so you will be able to sync nearly instantly and without gigabytes of data. This will open way towards easy to use lite wallets and apps accessing Sia directly from a node running on any of your devices.
+  You might want to know that Sia Foundation is currently working on Utreexo with "expected" release by end of 2021 or early in 2022, a feature that will dramatically reduce blockchain requirements, so you will be able to sync nearly instantly and with kilobytes instead of gigabytes of data. This will open way towards easy to use lite wallets and apps accessing Sia directly from a node running on any of your devices.
   </blockquote>
 </details>
 
@@ -76,12 +76,17 @@ Last update: March 31, 2021 | Sia 1.5.5
   Mac: ~/Library/Application Support/Sia-UI/sia/<br>
   </blockquote>
 
+<br>
+Make sure you have your 29-word seed before you start.
+<br><br>
+
   1. Open Sia Data Folder (either manually using location above or from the About section accessed by i button.
   2. Make sure Sia is not running and then rename entire the sia folder to sia_backup for example.
-  3. Make sure you are running latest version. If not, update.
+  3. Make sure you are running latest version. If not, update first.
   4. Re-launch Sia and wait until you are 100% synced before trying anything.
   5. Load wallet from a seed (or create new wallet, depending on what you want). Once you are done, remember that in order to unlock the wallet you need to enter your seed again.
-  6. Give it some time. On some computers it can sometimes take up to an hour to display correct balance.
+  6. Give it some time. On some computers it can sometimes take up to an hour to display correct balance. It is normal to see no transactions and zero balance as transactions are being scanned and appear over time.
+  7. If everything is ok, you can delete the sia_backup folder to free unused space.
 
   <blockquote>
   Your 29-word seed is the default password and you need to enter it into password field after each recovery. You can change your password then but remember, the custom password is always just local one – protecting the wallet data in this specific computer.
@@ -117,15 +122,21 @@ Last update: March 31, 2021 | Sia 1.5.5
   <summary>
     Is there any HW Wallet integration?
   </summary>
-  Yes, there is official one using `Ledger Nano S`, but we do not recommend to use it since it is for advanced users only.
-  <br>
+
+  `Ledger Nano S` users have two options. First is the official integration you can find on the Sia support site, but but we do not recommend to use it since it is for advanced users only.
+  <br><br>
   Instead, we recommend you to check out the <a href="https://wallet.siacentral.com">Sia Central Lite wallet</a>. Works with any browser and allows you to use your `Ledger Nano S`. We see it as currently best possible experience for anyone looking to hold SC.
-
   <blockquote>
-  If you want to do more, rent or host, you will need to run full node and download Sia-UI.
+  If you are worried to use a wallet link from third party site, you can access it by visiting the `official Sia site`, clicking `download` and scrolling down to the `list of recommended apps` where Sia Central Lite Wallet is mentioned by the Sia developers. You might also want to know that Nate, its author, officially joined Sia Foundation as a developer in Q2 2021.
   </blockquote>
+  <br>
 
-  Unfortunately, there is no support that developers could use to integrate it with other options as newer Ledger, Trezor and other HW Wallets.
+  If you have `Ledger Nano X`, there is currently no way to use it with Sia but watch out for the `official Ledger App` updates. In Q2 2021 Sia Foundation announced they resumed communication with Ledger and a new integration is done and waiting to be reviewed.
+  
+  <blockquote>
+  If you want to do more, rent or host, you will need to run full node and download Sia-UI.<br>
+  Unfortunately, there is no support that developers could use to integrate it with other options as Trezor and other HW Wallets.
+  </blockquote>
 </details>
 
 <!-- tiny outgoing txn -->
@@ -297,7 +308,7 @@ Last update: March 31, 2021 | Sia 1.5.5
   </summary>
   If you are using latest <a href="https://sia.tech/get-started">version</a> and are 100% synced, don't worry if you see no transactions at all. It sometimes takes few minutes, especially for older wallets, to finish scanning your transactions before they appear.
   <br><br>
-  Unfortunately there is no indicator for it as it wasn't much issue in the past, but the blockchain is growing. This is expected to change with Utreexo which is something the team is working on (more details in <a href="https://sia.tech/transparency/2021-q1.pdf">Q1 2021 report</a>)
+  Unfortunately there is no indicator for it as it wasn't much issue in the past, but the blockchain is growing. This is expected to change with Utreexo which is something the team is working on (more details in <a href="https://sia.tech/transparency/2021-q1.pdf">Q1 2021 report</a>).
 </details>
 
 <!-- daemon unreachable  -->
@@ -351,66 +362,42 @@ Last update: March 31, 2021 | Sia 1.5.5
   Other way is less secure as you are relying on someone else's consensus. It can decrease your sync time by about 90%. In case of HDD, you will probably still end up waiting for maybe a half of day or longer. If you want to proceed, check this <a href="https://siastats.info/consensus">community site</a> for more details.
 </details>
 
+<!-- I am stuck at Block Height 0 -->
+<details>
+  <summary>
+    Sync process - I am stuck at Block Height 0
+  </summary>
+
+  You might run into an issue that your node is not syncing because it cannot find other nodes to connect to. The list that is hard-coded in the app is several years old and needs an update. Meanwhile, you can fix this issue easily by adding nodes manually.
+  <blockquote>
+  gateway connect 88.98.208.124:9981<br>
+  gateway connect 88.131.107.45:9981<br>
+  gateway connect 167.86.109.162:9981<br>
+  gateway connect 63.141.234.114:9981<br>
+  gateway connect 199.195.252.152:9981<br>
+  gateway connect 72.69.188.134:9981<br>
+  gateway connect 188.83.8.209:9981<br>
+  gateway connect 65.21.79.100:9981<br>
+  gateway connect 80.101.32.17:9981<br>
+  </blockquote>
+  <br>
+
+  Enter these commands (one line at a time) in the Sia-UI's terminal or through siac if you're using CLI (need to add `siac` before the command).
+  
+</details>
+
 <!-- wallet choice -->
 <details>
   <summary>
     How can I store Siacoin (SC) securely? What wallets are available?
   </summary>
-  Official <a href="https://support.sia.tech/your-sia-wallet/wallet-overview">Sia-UI</a> Wallet.
-  <br><br>
-  Community Resources
-  Available <a href="/sia/wallet/index.html">wallets</a>.<br>
-  <a href="/sia/seed-management/index.html">Secure seed management</a>.
-</details>
-
-<!-- Sia-UI clean install -->
-<details>
-  <summary>
-    Sia-UI: Clean Installation
-  </summary>
-  Make sure you have your 29-word seed before you start.
-  <br><br>
-  <b>Windows</b>: %UserProfile%\AppData\Roaming\Sia-UI\sia
-  <b>Linux</b>: ~/.config/Sia-UI/sia/
-  <b>Mac</b>: ~/Library/Application Support/Sia-UI/sia/
-  <br><br>
-  Note for Mac users: there are multiple Library folders. If you have issues locating the correct one, go to Finder > Open > Open Folder and just copy/paste the path above in.
-  <br><br>
-  1) Make sure Sia-UI is not running and you have <a href="https://sia.tech/get-started"> latest version</a> installed. It is also good idea to delete old versions and shortcuts to avoid accidentally launching old version once you are done.
-  <br><br>
-  2) Open the path above and rename "sia" folder to "sia_backup". This is recommended approach so you can return to that backup if needed and you keep the file contract data in case you are hosting or renting (so you can copy them back in).
-  <br><br>
-  3) Re-launch Sia-UI and wait until it is 100% synced (trying to load wallet from your seed earlier will result in error). This can take some time as explained earlier in the syncing section.
-  <br><br>
-  4) On the initial screen, select option "Restore from seed" and enter your 29-word seed. See common issues related to seed in an earlier FAQ.
-  <br><br>
-  5) Wait until blockchain scanning is finished. Don't panic if you see no transactions as explained in the wallet section of the FAQ.
-  <br><br>
-  You should have access to your wallet now. To unlock it enter your seed (your default password after recovery) into password field. If copy/paste doesn't work, use CTRL+C and CTRL+V. You can then set new local password by clicking "Change Password".
-  <br><br>
-  If everything works, you can delete the "sia_backup" folder. If you are renting or hosting, make sure you are 100% synced and then return the renter and host folders back into the Sia data folder.
+  Official Wallet: <a href="https://support.sia.tech/your-sia-wallet/wallet-overview">Sia-UI</a>
+  <br>
+  Community Resources: Our <a href="/sia/wallet/index.html">Wallet</a> and
+  <a href="/sia/seed-management/index.html">Secure seed management</a> guides.
 </details>
 
 ## Trading
-<!-- previous markets -->
-<details>
-  <summary>
-  Last 2 years on markets - sell pressure and accumulation
-  </summary>
-  Remember how we kept underperforming entire market for no reason despite all the progress? I think smart money would have to be blind to not know this will be huge:)
-  <br><br>
-  We've seen several opportunities to break out of the depths but no... we've seen whales playing for too long. We've seen 2 years long accumulation phase that marked the lowest price few months ago. The fact we got so low doesn't mean everyone sold there... you don't need actual trades to move prices. Moving walls and playing people's minds is sufficient.
-  <br><br>
-  And I think whoever held significant amount and wanted to sell, did so before. Some of them lately when they noticed price is recovering which allowed some people who bought too high to sell at not so dramatical loss, probably even in profit. Not against BTC but yes in fiat.
-  <br><br>
-  Now, we broke resistance (Apr 5, 2021), it held as support and whales are no longer suppressing the price. It's like a spring. Look at how well it outperforms and climbs in rank while the attention is still low. And some people who sold early might even start jumping back.
-  <br><br>
-  In any case, never forget that markets are just tools to move money from impatient people to patient. And others will do anything they can do to improve their own positions.
-  <br><br>
-  What you can see now is that people learned to sell the spikes with intention to buy more lower. This means more and more SC are in hands of people understanding the supply and that each coin in such hands is coin that won't slow down the momentum.
-  <br><br>
-  At the same time, speculation is not the only thing growing. The decentralized internet, Skynet, is growing exponentially and presenting a new accelerating source of SC demand and spending. Don't underestimate its reach.
-</details>
 
 <!-- max supply -->
 <details>
