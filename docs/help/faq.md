@@ -1,4 +1,4 @@
-# Frequently Asked Questions
+# FAQs
 If you know about any other questions that should be here, check out the [Contributors page](/help/contributors/index.html) and contact us.
 
 Last update: March 31, 2021 | Sia 1.5.5
