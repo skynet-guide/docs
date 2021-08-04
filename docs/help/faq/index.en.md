@@ -448,4 +448,4 @@ Make sure you have your 29-word seed before you start.
 </details>
 
 <br>
-*Written by: Danger & Covalent, Last Edit: April 14, 2021*
+*Written by: Danger & Covalent, Last Edit: August 4, 2021*
