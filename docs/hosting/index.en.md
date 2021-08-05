@@ -78,6 +78,6 @@ The original Sia renter ranks hosts based on age, pricing, collateral ratio, ava
 - [Sia Host Manager](https://siacentral.com) | alternative to Sia-UI with better financial tracking and fiat price pinning.
 
 ## Where to go next?
-If you want to start hosting, it is also good to know more about the renters. [Our guide](/rent/renting-on-sia/index.html) will lead you through everything you should know before you start.
+If you want to start hosting, it is also good to know more about the renters. [Our guide](/renting/renting-on-sia.html) will lead you through everything you should know before you start.
 
 *Written by: Nate & Covalent, Last Edit: April 14, 2021*

@@ -2,10 +2,10 @@
 As gone over in the introduction to Sia article, Sia is `decentralized storage platform`. It is composed mainly of three parties, renters, miners, and hosts. In this article, I will be going over the renter module; so I will be going over what it is, how it works, and how you can set one up today.
 
 ## What is renting?
-In essence, a Sia renter nodes only do a couple of things. They pay hosts to store data for them as well as paying the host to download that data once uploaded. They do that in tandem with fancy math and a dedicated cryptocurrency to make sure the data is safe and highly available. Now, of course, in practice it’s a tad more complicated than that. But that’s all you really have to know in order to use it. So if you don’t particularly care about the technical side to it but want to store data on the Sia network, just skip to the [Setting up a renter](/rent/renting-on-sia/index.html) section.
+In essence, a Sia renter nodes only do a couple of things. They pay hosts to store data for them as well as paying the host to download that data once uploaded. They do that in tandem with fancy math and a dedicated cryptocurrency to make sure the data is safe and highly available. Now, of course, in practice it’s a tad more complicated than that. But that’s all you really have to know in order to use it. So if you don’t particularly care about the technical side to it but want to store data on the Sia network, just skip to the [Setting up a renter](/renting/renting-on-sia.html) section.
 
 ## How does it work?
-Before reading this it is probably best if you read the [Introduction to Sia](/sia/introduction/index.html) article written by Danger so I don’t have to re-explain everything.
+Before reading this it is probably best if you read the [Introduction to Sia](/sia/introduction.html) article written by Danger so I don’t have to re-explain everything.
 
 Okay, now that you have read that, how does a renter node actually work assuming there is an established network of hosts and miners already doing their jobs? Well the main components/aspects that make a functional renter are following in no particular order:
 
@@ -29,7 +29,7 @@ This is kind of a basic component to the renter node, but the whole idea of Sia 
 
 > By default, the Sia renter uploads each file 3 times, so 3x redundancy. Though it is a tad more complex than that because it also uses **erasure coding** to increase reliability.
 
->Also Skynet uses 10x redundancy because 3x wasn’t fast enough when it was initially created. Learn more in [Introduction to Skynet](/skynet/introduction/index.html). Though this is actually changing. Basically, the base sector(used to find the file on the hosts) is going to stay at 10x redundancy, but for anthing over that it will be stored in a 3x(10 of 30) redundancy scheme to lower costs. For something like video streaming, the origional 4MB sector should store a couple seconds worth of video(5 seconds at  8mbps) which should give `siad` plenty of time to find the location of the rest of the sectors.
+>Also Skynet uses 10x redundancy because 3x wasn’t fast enough when it was initially created. Learn more in [Introduction to Skynet](/skynet/introduction.html). Though this is actually changing. Basically, the base sector(used to find the file on the hosts) is going to stay at 10x redundancy, but for anthing over that it will be stored in a 3x(10 of 30) redundancy scheme to lower costs. For something like video streaming, the origional 4MB sector should store a couple seconds worth of video(5 seconds at  8mbps) which should give `siad` plenty of time to find the location of the rest of the sectors.
 
 ### Storage contracts
 Storage contracts are the magic that make Sia a truly permissionless storage network. On a high level, a storage contract is a payment channel between the renter and host with some metadata on top of it; for more info on payment channels listen to this [talk](https://www.youtube.com/watch?v=Hzv9WuqIzA0).
@@ -45,7 +45,7 @@ I’m gonna stop here because it can get incredibly complex and nuanced, and you
 ### Erasure coding
 Erasure coding is the second trick Sia uses to increase the availability of data. For a technical explanation, read [this](https://oceanstore.cs.berkeley.edu/publications/papers/pdf/erasure_iptps.pdf). If you didn’t read that the basic idea is this, fragmentation of data provides a far greater amount of reliability than redundancy does. So in order to take advantage of that, a normal Sia renter node uses a 10 of 30 scheme. So basically, instead of just uploading each sector to a different node 3 times, it does fancy math to zip-tie 10 sectors together make it so any 10 of the 30 uploaded sectors can retrieve the data of what was originally put in. Unfortunately, this does come at the cost of increasing the minimum file size to 40MB, but the devs thought it okay to do that because it made the renter node much more reliable.
 
->Side note, Skynet does not use erasure coding because it wasn’t fast enough on release, learn more in [Introduction to Skynet](/skynet/introduction/index.html). Again, as stated earlier, this is somewhat changing.
+>Side note, Skynet does not use erasure coding because it wasn’t fast enough on release, learn more in [Introduction to Skynet](/skynet/introduction.html). Again, as stated earlier, this is somewhat changing.
 
 ### Encryption
 Encryption is effectively just fancy math that allows you to take data and a “password”(also knows as a private key), then turn that into another piece of data that can only be viewed if you have the corresponding private key. To get a better explanation with nice visuals, check out this [3blue1brown video](https://www.youtube.com/watch?v=S9JGmA5_unY).
@@ -53,6 +53,6 @@ Encryption is effectively just fancy math that allows you to take data and a “
 Technical details aside, the use of encryption makes it so you can safely send sensitive data to hosts without worry of them being able to view it. You never send the private key of your data to the host, so to them it’s just random jibber-jabber that they get paid to store. Security wise, it’s the same as just using a hard-drive you own.
 
 ### Setting up a renter
-To set up a renter, follow the steps in [Renting on Sia](/rent/renting-on-sia/index.html).
+To set up a renter, follow the steps in [Renting on Sia](/renting/renting-on-sia.html).
 
 *Written by: Covalent, Last Edit: April 14, 2021*

@@ -1,12 +1,12 @@
 # Introduction to Skynet
-Before reading this article, you should read the [Introduction to Sia](/sia/introduction/index.html) article and the technical side of renting article to have a better bearing of how everything works, and who is behind the project. While the top level ideas can be grasped pretty easily, the design behind Sia can be pretty complex, so keep that in mind.
+Before reading this article, you should read the [Introduction to Sia](/sia/introduction.html) article and the technical side of renting article to have a better bearing of how everything works, and who is behind the project. While the top level ideas can be grasped pretty easily, the design behind Sia can be pretty complex, so keep that in mind.
 
 >If you want to read what Skynet is, can do today and can achieve in future from authors themselves, don’t miss [A Deep Dive into Skynet](https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea) on the Sia blog (published in Feb 2021).
 
 ## What is Skynet?
 Skynet is a first party layer two solution to a decentralized file space that was built on top of the existing Sia network. So basically it allows file sharing.
 
-Often, people will ask if Sia is dead because Skynet has taken over the devs priorities for the time being(though it is soon core development will be taken over by the Sia Foundation, read more [here](/sia/foundation/index.html)). This is a misconception. Unlike other projects like IPFS & Filecoin who are by the same devs but have completely different code bases, Sia has to exist for Skynet to work. After all, a Skynet renter node is just a Sia renter node with a lot of contracts. So Sia itself won’t, and hasn’t, halted production since the inception of Skynet.
+Often, people will ask if Sia is dead because Skynet has taken over the devs priorities for the time being(though it is soon core development will be taken over by the Sia Foundation, read more [here](/sia/foundation.html)). This is a misconception. Unlike other projects like IPFS & Filecoin who are by the same devs but have completely different code bases, Sia has to exist for Skynet to work. After all, a Skynet renter node is just a Sia renter node with a lot of contracts. So Sia itself won’t, and hasn’t, halted production since the inception of Skynet.
 
 > You can find official Siasky.net support site and guides [here](https://support.siasky.net).
 
@@ -20,7 +20,7 @@ So the base level for how Skynet works is it that every node that wants to be ab
 Then when you want to query a specific `Skylink` (think if you’re requesting a video on Skyfeed), your Skynet node make a bunch of requests to hosts it has contracted with to see if they have the `Skylink` in question. The first host to respond with the data chunk then sends over the file to the renter node, and gets paid. In practice, fetch latency can be incredibly small, rivaling that of the centralized internet.
 
 ## How does Skynet work in practice?
-Unfortunately, as of today you cannot just run a Skynet portal in your browser (though this is being worked on by the [Sia Foundation](/sia/foundation/index.html) with [Utreexo](https://forum.sia.tech/t/core-development-utreexo/54/14) support). Due to the many limitations of running a Sia full node talked about in the [Before You Start](/renting/before-you-start/index.html) article, running a renter node is hard on your system. The main hard parts are:
+Unfortunately, as of today you cannot just run a Skynet portal in your browser (though this is being worked on by the [Sia Foundation](/sia/foundation.html) with [Utreexo](https://forum.sia.tech/t/core-development-utreexo/54/14) support). Due to the many limitations of running a Sia full node talked about in the [Before You Start](/renting/before-you-start.html) article, running a renter node is hard on your system. The main hard parts are:
 
 - Consensus is 22GB (not exactly something you can do in browser)
 - It requires high up-time to maintain files
@@ -30,7 +30,7 @@ Unfortunately, as of today you cannot just run a Skynet portal in your browser (
 So how did the team work around this? Well the idea is to use something called a **Skynet Portal**.
 
 ## Skynet Portals
-A Skynet portal is a simple concept in practice. It effectively is an entry point to using the Sia network without having to run a node yourself. So someone else runs a dedicated server running a Sia node with Skynet turned on, and there’s a front end in front of that that allows users to interact with it. For example, check out [siasky](https://siasky.net), Skynet Lab’s official portal. You can find more portals in our list of [Skynet Portals](/skynet/portals/index.html).
+A Skynet portal is a simple concept in practice. It effectively is an entry point to using the Sia network without having to run a node yourself. So someone else runs a dedicated server running a Sia node with Skynet turned on, and there’s a front end in front of that that allows users to interact with it. For example, check out [siasky](https://siasky.net), Skynet Lab’s official portal. You can find more portals in our list of [Skynet Portals](/skynet/portals.html).
 
 But what separates this from any other centralized file sharing platform out there like Dropbox or Mediafire? Well the main differentiator is that since the portals use the Sia network as a backend instead of their own servers, every file is available on every portal. For example Big Buck Bunny (an old Blender open source video file) is fully available at [siasky.net](https://siasky.net/CACqf4NlIMlA0CCCieYGjpViPGyfyJ4v1x3bmuCKZX8FKA), [skyportal.xyz](https://skyportal.xyz/CACqf4NlIMlA0CCCieYGjpViPGyfyJ4v1x3bmuCKZX8FKA) and every other Skynet Portal at this Sia link: sia://CACqf4NlIMlA0CCCieYGjpViPGyfyJ4v1x3bmuCKZX8FKA. But these are not a duplicates of the file. You always access the same file, just through different portals. This is the next level up from federated, it’s decentralized!
 
@@ -58,7 +58,7 @@ Skyfeed is a first Facebook-esque social media built on top of Skynet by communi
 #### CDN Capabilities
 The first thing that Skynet was advertised as was a CDN with decentralized frills, and it is still pretty good at that. Though, because of the traditional web architecture that web portals are built on, they completely rely on horizontal load balancing to scale. Also due to the nature of Sia, speeds cap at about 1GBPS per node, so a huge amount of nodes and load balancing is required to accomplish something like a large live event. For example, if you wanted to have a streaming platform with 100k concurrent viewers, you would need 1k-2k nodes at a minimum (depending on quality of the stream). This will be fixed once Utreexo is implemented(or host→user websockets), but for the time being, it’s a lot of work just like any other CDN. Though, unlike traditional web architectures, the actual pool of data itself can be massive per portal node because they have access to every `Skyfile` and `SkyDB` entry.
 
->Discover more [Skynet Apps](/discover/skynet-apps/index.html).
+>Discover more [Skynet Apps](/discover/skynet-apps.html).
 
 ## Moving forward
 Skynet is still under heavy development by Skynet Labs and a breadth of features are in the pipeline. For example, upcoming features include:
@@ -71,6 +71,6 @@ Skynet is still under heavy development by Skynet Labs and a breadth of features
 - Node scalability improvements
 - And much more
 
-This article is pretty much done, to learn more read about [building on skynet](/skynet/building-on-skynet/index.html).
+This article is pretty much done, to learn more read about [building on skynet](/discover/build-with-skynet.html).
 
 *Written by: Covalent, Last Edit: April 14, 2021*

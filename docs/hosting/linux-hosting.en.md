@@ -4,7 +4,7 @@ This is a technical guide to setting up a new host from scratch on Ubuntu server
 ## Getting Sia
 Install the latest version of siad by going to the official website and downloading the latest zip file of Sia Daemon for your operating system from https://sia.tech/get-started. This guide has been written for v1.5.6.
 
-![Sia Website](../../static/assets/hosting/hosting-with-siad/sia-tech-website.png)
+![Sia Website](../static/assets/hosting/hosting-with-siad/sia-tech-website.png)
 
 You can download the files and extract them using `wget` and `unzip`
 ```sh
@@ -77,7 +77,7 @@ sneeze toyed nerves soothe imbalance bite maps inquest obnoxious sovereign hydro
 Wallet encrypted with given password
 ```
 
-A new 29 word wallet seed will be generated. Save this seed somewhere secure, if something happens to your server you will need it to recover your Siacoin. [Secure Seed Management](/sia/seed-management/index.html)
+A new 29 word wallet seed will be generated. Save this seed somewhere secure, if something happens to your server you will need it to recover your Siacoin. [Secure Seed Management](/sia/seed-management.html)
 
 You should now unlock your wallet with. In the future, when starting Sia your wallet will automatically unlock.
 ```

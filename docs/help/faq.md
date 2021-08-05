@@ -1,5 +1,5 @@
 # FAQs
-If you know about any other questions that should be here, check out the [Contributors page](/help/contributors/index.html) and contact us.
+If you know about any other questions that should be here, check out the [Contributors page](/help/contributors.html) and contact us.
 
 Last update: March 31, 2021 | Sia 1.5.5
 
@@ -196,7 +196,7 @@ Make sure you have your 29-word seed before you start.
   Lastly, after all chunks are created and encrypted as previously described, each chunk is then distributed to a host on the Sia network by way of a contract agreed on between both the host and the renter. The host is required to lock up collateral during the contract period and if the host is unable to submit proof of storing the file, or becomes unavailable for too long, the collateral is burnt.
   <br><br>
   The Sia client periodically monitors the health of each file and the number of chunks currently available across it's contracted hosts. If the number of chunks drops, the client will automatically download any necessary chunks and recreate the missing pieces and form new contracts as-needed. For Skynet portals, as they are a sort of "always-on" service, this happens continuously.
-  <i>For more info, see <a href="/sia/renting/index.html">here</a></i>
+  <i>For more info, see <a href="/sia/renting.html">here</a></i>
 </details>
 
 <!-- What is the registry? -->
@@ -204,7 +204,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     What is the registry?
   </summary>
-  It is explained in detail [here](/skynet/introduction/index.html#what-about-the-registry).
+  It is explained in detail <a href="/skynet/introduction.html#what-about-the-registry">here</a>.
 </details>
 
 <!-- What is SkyDB? -->
@@ -212,7 +212,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     What is the SkyDB?
   </summary>
-  SkyDB is shorthand for a registry entry that contains a [Skylink](/skynet/introduction/index.html#how-does-skynet-work-in-theory). This means that the link itself is mutable(can be changed at any time by anyone with they keys).  
+  SkyDB is shorthand for a registry entry that contains a <a href="/skynet/introduction.html#how-does-skynet-work-in-theory">Skylink</a>. This means that the link itself is mutable(can be changed at any time by anyone with they keys).  
 </details>
 
 <!-- sia whitepaper -->
@@ -241,7 +241,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     What's better? Sia, Filecoin or Storj?
   </summary>
-  Don't ask others. Don't trust, verify. While it's impossible for anyone involved to take the bias away completely, <a href="/discover/storage-chains-compared/index.html">this</a> is as roughly objective and (deeply) technical comparison and it shouldn't be an issue for you to verify these claims yourself.
+  Don't ask others. Don't trust, verify. While it's impossible for anyone involved to take the bias away completely, <a href="/discover/storage-chains-compared.html">this</a> is as roughly objective and (deeply) technical comparison and it shouldn't be an issue for you to verify these claims yourself.
   <br><br>
   </summary>
 </details>
@@ -390,8 +390,8 @@ Make sure you have your 29-word seed before you start.
   </summary>
   Official Wallet: <a href="https://support.sia.tech/your-sia-wallet/wallet-overview">Sia-UI</a>
   <br>
-  Community Resources: Our <a href="/sia/wallet/index.html">Wallet</a> and
-  <a href="/sia/seed-management/index.html">Secure seed management</a> guides.
+  Community Resources: Our <a href="/sia/wallet.html">Wallet</a> and
+  <a href="/sia/seed-management.html">Secure seed management</a> guides.
 </details>
 
 ## Trading
