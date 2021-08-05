@@ -15,7 +15,7 @@ Developed by creators of Sia, SiaStream lets you enjoy super-cheap storage for y
 
 SiaStream allows you to store up to 35 TB of media files, mount as a FUSE drive and stream directly to your Plex or other media software. It supports Linux and MacOS.
 
-> Windows is not supported officially since it does not support FUSE, but some users reported having success running it in Windows through with [WSL](https://docs.microsoft.com/en-us/linux/wsl/install-on-server) that supports FUSE.
+> Windows is not supported officially since it does not support FUSE, but some users reported having success running it in Windows through with [WSL](https://docs.microsoft.com/en-us/windows/wsl/about) that supports FUSE.
 
 ### SiaShare | demo available at: [https://demo.siashare.com/](https://demo.siashare.com/)
 SiaShare is a virtual desktop that allows company employees to share a singular hub of files and folders from which they can collaborate. The UI can be tailored to the company-specific branding. A few companies have already been using the Beta, and the SiaFuse team is working on adding additional features (such as folder downloads and document preview).

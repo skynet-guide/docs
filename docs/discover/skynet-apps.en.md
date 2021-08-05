@@ -35,9 +35,9 @@ The collection of known Skynet Apps (Skapps) is quickly growing. Luckily, we don
 
 [SkyLearn](https://skylearn.hns.siasky.net/) – Online Python coding app [[source]](https://github.com/mike76-dev/skylearn)
 
-[https://webgames-ide.hns.siasky.net/](WebGames IDE) - Tool to build games without leaving the browser. [[source]](https://github.com/ericflo/webgames-ide)
+[WebGames IDE](https://webgames-ide.hns.siasky.net/) - Tool to build games without leaving the browser. [[source]](https://github.com/ericflo/webgames-ide)
 
-[https://github.com/figurestudios/SkyGameSDK](SkyGameSDK) - A plugin for Unity to allow networking & other Skynet functionalities. [[Source]](https://github.com/figurestudios/SkyGameSDK)
+[SkyGameSDK](https://github.com/figurestudios/SkyGameSDK) - A plugin for Unity to allow networking & other Skynet functionalities. [[Source]](https://github.com/figurestudios/SkyGameSDK)
 
 >Developer: *“I want to explore other languages as well as develop sharing of CPU capacities (although this would be quite a challenge). Feel free to contact me on discord (mike76#7812).”*
 

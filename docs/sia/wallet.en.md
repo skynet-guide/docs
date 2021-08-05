@@ -57,7 +57,7 @@ Find `Wallet` or `Deposit` section and select coin you want to receive (`deposit
 ### Receiving with Sia-UI or Sia Central
 When your wallet is unlocked, just find the `Receive` button (in Sia-UI it is under Wallet section) and see the wallet address generated. Then provide this `wallet address` to person or wallet you want to receive coins from.
 
->This wallet address was generated with your seed (private key) and any transaction sent to it will belong to it. It means that if you recover your wallet on other computer from seed, you will see your coins again. You don’t need anything but your seed. Losing your seed means loss of access to your coins and no one can help you so make sure to store it securely. Feel free to check our guide about [Secure Seed Management](/sia/seed-managemt.html).
+>This wallet address was generated with your seed (private key) and any transaction sent to it will belong to it. It means that if you recover your wallet on other computer from seed, you will see your coins again. You don’t need anything but your seed. Losing your seed means loss of access to your coins and no one can help you so make sure to store it securely. Feel free to check our guide about [Secure Seed Management](/sia/seed-management.html).
 
 >If you use Sia-UI, you won’t see the incoming transaction until 100% synced. This process can take a lot of time, even up to a week if you don’t have SSD drive. If it’s your case, check our [FAQ](/help/faq.html) for **How can I get synced faster**?
 
