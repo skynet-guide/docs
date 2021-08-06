@@ -6,7 +6,7 @@ New discord server with Sia core tech-oriented channels. best place to come if y
 ### Discord | <a href="https://discord.gg/skynetlabs" target="_blank" rel="noopener noreferrer">Skynet Labs</a>
 Place where the majority of the community is active since it is the original Sia discord server. It's now focused primarily on Skynet, Sia's layer 2 (decentralized internet) and the development of apps working with Skynet.
 
-### Reddit | <a href="https://reddit.com/r/siacoin" target="_blank" rel="noopener noreferrer">/r/siacoin</a>
+### Reddit | <a href="https://reddit.com/r/siacoin" target="_blank" rel="noopener noreferrer">r/siacoin</a>
 While most of the discussions moved to the discord, many users are still coming to reddit for its easy-to-follow feed format.
 
 ### Twitter | <a href="https://twitter.com/SkynetLabs" target="_blank" rel="noopener noreferrer">SkynetLabs</a>
