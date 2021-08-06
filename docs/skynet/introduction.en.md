@@ -71,6 +71,6 @@ Skynet is still under heavy development by Skynet Labs and a breadth of features
 - Node scalability improvements
 - And much more
 
-This article is pretty much done, to learn more read about [building on skynet](/discover/build-with-skynet.html).
+This article is pretty much done, to learn more read about [building on skynet](/skynet/build-with-skynet.html).
 
 *Written by: Covalent, Last Edit: April 14, 2021*
