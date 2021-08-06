@@ -2,9 +2,9 @@
 
 The collection of known Skynet Apps (Skapps) is quickly growing. Luckily, we don’t have to wait till the ecosystem gives birth to some full-featured Skapp Store. We are introducing you to some of the existing (and actively developed) Skapps here. In case you think your Skapp deserves more visibility and to be added to this list, feel free to get on our discord (link in [contributors](/help/contributors.html)) and tell us.
 
-## Skapp Collections
-* <a href="https://skyapps.hns.siasky.net/#/apps/all" target="_blank" rel="noopener noreferrer">Sky Apps</a>
-* <a href="https://siasky.net/nAAkTFlVpsgX1-zyEPGy4bNycQW4Jjf2YztegtXHvNIRVw/" target="_blank" rel="noopener noreferrer">SkyLaunch</a>
+## SKApps listing other SKApps Collections
+* <a href="https://skyapps.hns.siasky.net" target="_blank" rel="noopener noreferrer">Skynet Appstore</a>
+* <a href="https://jg060cc7gd046vjhamf3mrep38p2mn57ut7k2rauc1mqhukhmpffafg.siasky.net" target="_blank" rel="noopener noreferrer">SkyLaunch</a> <a href="https://github.com/darrylyeo/SkyStore" target="_blank" rel="noopener noreferrer">[source]</a>
 
 ## Featured Skapps
 ### Authentication
