@@ -19,9 +19,9 @@ Last update: March 31, 2021 | Sia 1.5.5
   </summary>
   Since there is no centralized server you can ask for current balance in the decentralized network like Sia, each user has their own copy of the blockchain that they must sync with and verify. This means your wallet can show and work only with results based on the data you already have and synced.
   <br><br>
-  <b>If you cannot see incoming transaction</b> but it is visible in blockchain explorer like <a href="https://siastats.info">siastats</a>, it means the transaction is already yours, you are just not synced to the Sia blockchain and need to wait for 100% sync (if a new user) or you are synced to wrong blockchain, which is common issue for returning users who missed the 2018 and/or 2021 fork and launched legacy version before checking for update. That got you to a situation where you synced past the point of automatic resolution and are trying to sync blocks from incompatible blockchain, which new versions of Sia won’t accept. You will see correct balance once you re-sync to Sia blockchain. See <a href="">instructions</a> how to re-sync.
+  <b>If you cannot see incoming transaction</b> but it is visible in blockchain explorer like <a target="_blank" rel="noopener noreferrer" href="https://siastats.info">siastats</a>, it means the transaction is already yours, you are just not synced to the Sia blockchain and need to wait for 100% sync (if a new user) or you are synced to wrong blockchain, which is common issue for returning users who missed the 2018 and/or 2021 fork and launched legacy version before checking for update. That got you to a situation where you synced past the point of automatic resolution and are trying to sync blocks from incompatible blockchain, which new versions of Sia won’t accept. You will see correct balance once you re-sync to Sia blockchain. See <a href="">instructions</a> how to re-sync.
   <br><br>
-  <b>If you sent transaction but it never arrived in the other wallet</b>, you also most likely cannot see it in the blockchain explorer like <a href="https://siastats.info">siastats</a>. If this is the case, you didn’t send Siacoin (SC). You are synced to wrong blockchain for same reason as explained above. Instead of SC you sent the coins on the legacy blockchain and that’s why other Sia users and exchanges cannot detect it. This transaction never happened on Sia network which means that once you re-sync, you will still find the coins in your wallet. You can follow these <a href="">instructions</a> to re-sync.
+  <b>If you sent transaction but it never arrived in the other wallet</b>, you also most likely cannot see it in the blockchain explorer like <a target="_blank" rel="noopener noreferrer" href="https://siastats.info">siastats</a>. If this is the case, you didn’t send Siacoin (SC). You are synced to wrong blockchain for same reason as explained above. Instead of SC you sent the coins on the legacy blockchain and that’s why other Sia users and exchanges cannot detect it. This transaction never happened on Sia network which means that once you re-sync, you will still find the coins in your wallet. You can follow these <a href="">instructions</a> to re-sync.
   <br><br>
   <b>If you cannot send a transaction</b> and it shows nothing after clicking the “Send” button, you are maybe trying to send full balance. Try it again but send 0.5 SC less. This is needed since the wallet is not counting transaction fees in the transaction. The fees are paid from the remaining SC inn your wallet so it is good idea to always leave some tiny amount (1 SC or less) instead of sending it all. If this doesn’t help, try <a href="">cleaning up your transaction pool</a>.
 
@@ -125,7 +125,7 @@ Make sure you have your 29-word seed before you start.
 
   `Ledger Nano S` users have two options. First is the official integration you can find on the Sia support site, but but we do not recommend to use it since it is for advanced users only.
   <br><br>
-  Instead, we recommend you to check out the <a href="https://wallet.siacentral.com">Sia Central Lite wallet</a>. Works with any browser and allows you to use your `Ledger Nano S`. We see it as currently best possible experience for anyone looking to hold SC.
+  Instead, we recommend you to check out the <a target="_blank" rel="noopener noreferrer" href="https://wallet.siacentral.com">Sia Central Lite wallet</a>. Works with any browser and allows you to use your `Ledger Nano S`. We see it as currently best possible experience for anyone looking to hold SC.
   <blockquote>
   If you are worried to use a wallet link from third party site, you can access it by visiting the `official Sia site`, clicking `download` and scrolling down to the `list of recommended apps` where Sia Central Lite Wallet is mentioned by the Sia developers. You might also want to know that Nate, its author, officially joined Sia Foundation as a developer in Q2 2021.
   </blockquote>
@@ -220,7 +220,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     Where can I find Sia whitepaper?
   </summary>
-  You can find it right <a href="https://sia.tech/sia.pdf">here</a>. However, keep in mind that Sia did a lot of progress since invention and if you want to better understand how it works, check out our up to date guides like <a href="">Introduction to Sia</a>.
+  You can find it right <a target="_blank" rel="noopener noreferrer" href="https://sia.tech/sia.pdf">here</a>. However, keep in mind that Sia did a lot of progress since invention and if you want to better understand how it works, check out our up to date guides like <a href="">Introduction to Sia</a>.
 </details>
 
 <!-- where is the roadmap -->
@@ -228,12 +228,12 @@ Make sure you have your 29-word seed before you start.
   <summary>
     Where is the Sia roadmap?
   </summary>
-  After the establishment of Sia Foundation in January 2021, the place to go to view, discuss and propose new and planned features is the <a href="https://forum.sia.tech">Sia Forum</a>.
+  After the establishment of Sia Foundation in January 2021, the place to go to view, discuss and propose new and planned features is the <a target="_blank" rel="noopener noreferrer" href="https://forum.sia.tech">Sia Forum</a>.
 
-  If you are interested in what’s planned for Skynet. Best places to watch are <a href="https://discord.com/invite/sia">Sia discord</a>, <a href="https://siasky.net">SiaSky.net</a> and of course our **Sky Guide**. We are going to work hard to always bring you the latest news and apps from Skynet.
+  If you are interested in what’s planned for Skynet. Best places to watch are <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/sia">Sia discord</a>, <a target="_blank" rel="noopener noreferrer" href="https://siasky.net">SiaSky.net</a> and of course our **Sky Guide**. We are going to work hard to always bring you the latest news and apps from Skynet.
   <br>
   <br>
-  If you are interested in what’s planned for Skynet. Best places to watch are <a href="https://discord.com/invite/sia">Sia discord</a>, <a href="https://siasky.net>siasky</a> and of course our <a href="https://sky-guide.hns.siasky.net>Skynet Guide</a>. We are going to work hard to always bring you the latest news and apps from Skynet.
+  If you are interested in what’s planned for Skynet. Best places to watch are <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/sia">Sia discord</a>, <a target="_blank" rel="noopener noreferrer" href="https://siasky.net">siasky</a> and of course our <a target="_blank" rel="noopener noreferrer" href="https://sky-guide.hns.siasky.net">Skynet Guide</a>. We are going to work hard to always bring you the latest news and apps from Skynet.
 </details>
 
 <!-- storage comparisons  -->
@@ -251,8 +251,8 @@ Make sure you have your 29-word seed before you start.
   <summary>
     What is Utreexo?
   </summary>
-  Original Proposal on <a href="https://forum.sia.tech/t/core-development-utreexo/54">Sia Forum</a>.<br>
-  Last update (<a href="https://sia.tech/transparency/2021-q1.pdf">Q1 2021 Report</a>)
+  Original Proposal on <a target="_blank" rel="noopener noreferrer" href="https://forum.sia.tech/t/core-development-utreexo/54">Sia Forum</a>.<br>
+  Last update (<a target="_blank" rel="noopener noreferrer" href="https://sia.tech/transparency/2021-q1.pdf">Q1 2021 Report</a>)
 </details>
 
 
@@ -262,7 +262,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     The renter is misbehaving?
   </summary>
-  If not maintained, the renter module can be quite a pain to deal with, and the most common issue is the allowance running out. So, when you create a renter node, you set an “allowance” that basically says, “renter, you can do whatever you want besides go over this allotted amount of money(in SC). Small issue with that though, the user generally doesn’t know the best number to put in here. Put the allowance too high, the renter node will frivolously spend and waste money on big contracts. Too low? The node will run out of funds and lock up. A good ballpark can to put in 3x the monthly price that is listed on <a href="https://siastats.info">Siastats</a>, but even that is a estimate and can become inaccurate within weeks due to the “marketplace” nature of Sia. So what are the side-effects of a mismanaged allowance?
+  If not maintained, the renter module can be quite a pain to deal with, and the most common issue is the allowance running out. So, when you create a renter node, you set an “allowance” that basically says, “renter, you can do whatever you want besides go over this allotted amount of money(in SC). Small issue with that though, the user generally doesn’t know the best number to put in here. Put the allowance too high, the renter node will frivolously spend and waste money on big contracts. Too low? The node will run out of funds and lock up. A good ballpark can to put in 3x the monthly price that is listed on <a target="_blank" rel="noopener noreferrer" href="https://siastats.info">Siastats</a>, but even that is a estimate and can become inaccurate within weeks due to the “marketplace” nature of Sia. So what are the side-effects of a mismanaged allowance?
   <br><br>
 
   <li>Downloads will cease to work properly
@@ -290,7 +290,7 @@ Make sure you have your 29-word seed before you start.
 
 
   <h3>Spent funds</h3>
-  Spent funds are funds that have already been signed off in the payment channel with the host(see <a href="">renting</a>). These are funds that have been spent and the host now effectively has, assuming they can provide a storage proof in the proof window.
+  Spent funds are funds that have already been signed off in the payment channel with the host(see <a href="/sia/renting.html">renting</a>). These are funds that have been spent and the host now effectively has, assuming they can provide a storage proof in the proof window.
 
   <h3>Unspent funds-Allocated</h3>
   These funds are funds that have been locked into a contract and have been not been spent yet. These are put here because you needs funds to use on the fly when adding more storage or paying for download bandwidth. But if these aren’t ever spent, they will get returned at the end of the contract period.
@@ -298,7 +298,7 @@ Make sure you have your 29-word seed before you start.
   <h3>Unspent funds-Unallocated</h3>
   This is where the issues mostly arise. If this section goes unfunded, new contracts cannot be formed and heavily used contracts cannot be refilled. This causes a myriad of issues with the renter so make sure to keep the unallocated category topped off by routinely checking it and upping the allowance as need be.
 
-  One more thing to keep in mind is that it may say that you have “700 H” or whatever, but H means hasting which is actually 1e-24 SC. To learn more about how the token works and the different denominations, look <a href="">here</a>.
+  One more thing to keep in mind is that it may say that you have “700 H” or whatever, but H means hasting which is actually 1e-24 SC. To learn more about how the token works and the different denominations, look <a href="/sia/tokenomics.html#siacoin-sc">here</a>.
 </details>
 
 <!-- balance is 0 -->
@@ -306,9 +306,9 @@ Make sure you have your 29-word seed before you start.
   <summary>
     I can't see any transactions and my balance is 0. Where are my coins?
   </summary>
-  If you are using latest <a href="https://sia.tech/get-started">version</a> and are 100% synced, don't worry if you see no transactions at all. It sometimes takes few minutes, especially for older wallets, to finish scanning your transactions before they appear.
+  If you are using latest <a target="_blank" rel="noopener noreferrer" href="ps://sia.tech/get-started">version</a> and are 100% synced, don't worry if you see no transactions at all. It sometimes takes few minutes, especially for older wallets, to finish scanning your transactions before they appear.
   <br><br>
-  Unfortunately there is no indicator for it as it wasn't much issue in the past, but the blockchain is growing. This is expected to change with Utreexo which is something the team is working on (more details in <a href="https://sia.tech/transparency/2021-q1.pdf">Q1 2021 report</a>).
+  Unfortunately there is no indicator for it as it wasn't much issue in the past, but the blockchain is growing. This is expected to change with Utreexo which is something the team is working on (more details in <a target="_blank" rel="noopener noreferrer" href="ps://sia.tech/transparency/2021-q1.pdf">Q1 2021 report</a>).
 </details>
 
 <!-- daemon unreachable  -->
@@ -318,9 +318,9 @@ Make sure you have your 29-word seed before you start.
   </summary>
   Try to check the running processes for Sia-UI and siad and terminate them all. If you don't know how to do it, just restart your computer, it will have same effect. Then try to launch it again.
   <br><br>
-  - If the error is not going away, you most likely recently updated. If you check logs in the Sia Data Folder, you will probably notice errors like "incompatible version" or issues with consensus. In such case you will need to re-sync your consensus and make sure you are running latest version and delete all old versions and shortcuts. More details and instructions <a href="https://support.sia.tech/forks/so-you-didnt-update-in-time">here</a>.
+  - If the error is not going away, you most likely recently updated. If you check logs in the Sia Data Folder, you will probably notice errors like "incompatible version" or issues with consensus. In such case you will need to re-sync your consensus and make sure you are running latest version and delete all old versions and shortcuts. More details and instructions <a target="_blank" rel="noopener noreferrer" href="ps://support.sia.tech/forks/so-you-didnt-update-in-time">here</a>.
   <br><br>
-  - (Windows only) If nothing helps and you remember that you tried to uninstall Sia-UI previously, it's also possible you messed up your registry. Based on community feedback, CCleaner is often recommended as an app to use in order to clean up Sia stuff. Once you do, download and install <a href="https://sia.tech/get-started">latest version</a> again.
+  - (Windows only) If nothing helps and you remember that you tried to uninstall Sia-UI previously, it's also possible you messed up your registry. Based on community feedback, CCleaner is often recommended as an app to use in order to clean up Sia stuff. Once you do, download and install <a target="_blank" rel="noopener noreferrer" href="ps://sia.tech/get-started">latest version</a> again.
 </details>
 
 <!-- my seed doesn't work -->
@@ -337,10 +337,10 @@ Make sure you have your 29-word seed before you start.
   <b>Missing or Extra Spaces</b>: Make sure there are no leading or trailing spaces and there is exactly one space between the words. Like this: "word1 word2 word3 ... word27 word28 word29"
   </li>
   <li>
-  <b>Wrong words</b>: Seed is composed only from english words. Check them carefully. If you are unable to spot the mistake, <a href="https://wallet.siacentral.com/">Sia Central Lite Wallet</a> is not just a good alternative to Sia-UI, but it can also quickly help you fix such wrong words because it tells you exactly which one is invalid.
+  <b>Wrong words</b>: Seed is composed only from english words. Check them carefully. If you are unable to spot the mistake, <a target="_blank" rel="noopener noreferrer" href="ps://wallet.siacentral.com/">Sia Central Lite Wallet</a> is not just a good alternative to Sia-UI, but it can also quickly help you fix such wrong words because it tells you exactly which one is invalid.
   </li>
   <li>
-  <b>Missing words</b>: If you are missing 1 word (didn't test it with more), there is around 50 000 of combinations it needs to check and you can use these instructions to brute force it using <a href="https://support.sia.tech/your-sia-wallet/wallet-troubleshooting/find-or-fix-your-seed">siac</a>.
+  <b>Missing words</b>: If you are missing 1 word (didn't test it with more), there is around 50 000 of combinations it needs to check and you can use these instructions to brute force it using <a target="_blank" rel="noopener noreferrer" href="ps://support.sia.tech/your-sia-wallet/wallet-troubleshooting/find-or-fix-your-seed">siac</a>.
   </li>
 </details>
 
@@ -359,7 +359,7 @@ Make sure you have your 29-word seed before you start.
   <br>
   One way to sync faster is to get external SSD drive and change the Sia Data Folder location in Sia-UI Settings (it's available once you get to your dashboard). When you change it, expect Sia-UI to restart and start completely over. If you want it to continue with the previous data and your wallet, you will need to manually move it to new location and re-launch.
   <br><br>
-  Other way is less secure as you are relying on someone else's consensus. It can decrease your sync time by about 90%. In case of HDD, you will probably still end up waiting for maybe a half of day or longer. If you want to proceed, check this <a href="https://siastats.info/consensus">community site</a> for more details.
+  Other way is less secure as you are relying on someone else's consensus. It can decrease your sync time by about 90%. In case of HDD, you will probably still end up waiting for maybe a half of day or longer. If you want to proceed, check this <a target="_blank" rel="noopener noreferrer" href="ps://siastats.info/consensus">community site</a> for more details.
 </details>
 
 <!-- I am stuck at Block Height 0 -->
@@ -388,7 +388,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     How can I store Siacoin (SC) securely? What wallets are available?
   </summary>
-  Official Wallet: <a href="https://support.sia.tech/your-sia-wallet/wallet-overview">Sia-UI</a>
+  Official Wallet: <a target="_blank" rel="noopener noreferrer" href="ps://support.sia.tech/your-sia-wallet/wallet-overview">Sia-UI</a>
   <br>
   Community Resources: Our <a href="/sia/wallet.html">Wallet</a> and
   <a href="/sia/seed-management.html">Secure seed management</a> guides.
@@ -401,7 +401,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     Does Sia have unlimited supply?
   </summary>
-  There is no hard limit on the supply, but we are limited by the time. Since we know the block reward, we can say how many SC there will be at any point in the future. And while the supply is maybe "theoretically infinite", our lifespan is not. In the time that matters to us, inflation is quite low and with exception of 2021 (Sia Foundation established) it's going <a href="https://siastats.info/macroeconomics">steadily down</a>.
+  There is no hard limit on the supply, but we are limited by the time. Since we know the block reward, we can say how many SC there will be at any point in the future. And while the supply is maybe "theoretically infinite", our lifespan is not. In the time that matters to us, inflation is quite low and with exception of 2021 (Sia Foundation established) it's going <a target="_blank" rel="noopener noreferrer" href="ps://siastats.info/macroeconomics">steadily down</a>.
   <br><br>
   Also there is a very good reason for no hard limit. Over time, it could happen that majority of circulating supply ends up locked in storage contracts and/or held by people. It could also be literally scooped by some entity, presenting a serious attack vector. This could make it very difficult for those who are using SC to pay for their storage. That’s why Sia is always going to have a block reward to guarantee new coins entering the ecosystem.
 </details>
@@ -437,9 +437,9 @@ Make sure you have your 29-word seed before you start.
       Goldshell HS3/HS3-SE/HS5
     </code>
   </pre>
-  You can check their estimated earnings <a href="https://www.blakemining.com/">here</a>.
+  You can check their estimated earnings <a target="_blank" rel="noopener noreferrer" href="ps://www.blakemining.com/">here</a>.
   <br><br>
-  The original GPU mining software "Marlin", coincidentally, was updated to be compatible with the Blake2B-Sia variant and can be downloaded from the <a href="https://github.com/SiaMining/marlin/releases/tag/v1.1.0">Github source</a>. However, please keep in mind that even an RTX 2080Ti will only generate less than 2SC per-day at the current difficulty level and is continuing to drop lower.
+  The original GPU mining software "Marlin", coincidentally, was updated to be compatible with the Blake2B-Sia variant and can be downloaded from the <a target="_blank" rel="noopener noreferrer" href="ps://github.com/SiaMining/marlin/releases/tag/v1.1.0">Github source</a>. However, please keep in mind that even an RTX 2080Ti will only generate less than 2SC per-day at the current difficulty level and is continuing to drop lower.
   <br><br>
   If you would like to earn Siacoin by mining with your GPU, we recommend mining another coin or using a service like NiceHash and converting from a more profitable coin to Siacoin
 </details>

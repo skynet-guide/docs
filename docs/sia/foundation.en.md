@@ -4,7 +4,7 @@ The Sia network hardforked at beginning of 2021 to implement the Sia Foundation:
 ## Common points of interest
 ---
 <!-- Section speaking about where to converse about the foudation -->
-Official way to communicate with The Sia Foundation is through the [Sia Forum](https://forum.sia.tech/). Not discord, reddit or twitter. The Sia Forum is the right place to post your suggestions and be sure that they will be considered and receive an official response. You can also find Luke’s launch post [here](https://blog.sia.tech/launching-the-sia-foundation-ee47dfab4d2c).
+Official way to communicate with The Sia Foundation is through the <a href="https://forum.sia.tech/" target="_blank" rel="noopener noreferrer">Sia Forum</a>. Not discord, reddit or twitter. The Sia Forum is the right place to post your suggestions and be sure that they will be considered and receive an official response. You can also find Luke’s launch post <a href="https://blog.sia.tech/launching-the-sia-foundation-ee47dfab4d2c" target="_blank" rel="noopener noreferrer">here</a>.
 
 <!-- Section that links to the proposal -->
 <details>

@@ -19,7 +19,7 @@ Skynet is presenting a new kind of internet, a decentralized one. Built with ope
 
 All you need is an account on a portal of your choice. All these guides will be using siasky.net as the official Skynet portal operated by the developers of Skynet. But it’s open source, so anyone can start a business and become a player in the decentralized cloud storage market or run an own portal just for the own needs, family or friends. You can always migrate to any other portal if you’re not happy, simply telling another portal to start pinning all your data. But we will leave that for a separate guide later.
 
-There are resources that explain it much better. If you want to learn more about Skynet’s vision which is close to a roadmap, check this “A [Deep Dive into Skynet”](https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea) article on the official Sia blog.
+There are resources that explain it much better. If you want to learn more about Skynet’s vision which is close to a roadmap, check this  <a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">“ADeep Dive into Skynet”</a> article on the official Sia blog.
 
 Let’s look at a bit condensed version.
 

@@ -2,13 +2,13 @@
 Before following this article in order to set up your own renter with Sia-UI on Windows 10, it would be best if you read the [Before you start](/renting/before-you-start.html) page. Also if you want to learn the technical details to how renting works, make sure to check out the [renting article](/sia/renting.html) that I also wrote.
 
 Renting on Windows 10 with Sia-UI
-So first off you’re gonna want to head to the official [Sia website](https://sia.tech/). And head to the download page.
+So first off you’re gonna want to head to the official <a href="https://sia.tech/" target="_blank" rel="noopener noreferrer">Sia website</a>. And head to the download page.
 ![](/static/assets/renting-on-sia/image-4.png)
 
 Then from there download the windows binary.
 ![](/static/assets/renting-on-sia/image-5.png)
 
->Note, if you would like to compile it from the source, you can find the daemon code [here](https://gitlab.com/NebulousLabs/Sia), and the UI code [here](https://gitlab.com/NebulousLabs/Sia-UI). But in all likely-hood if you can do that, you don’t need this article ;p
+>Note, if you would like to compile it from the source, you can find the daemon code <a href="https://gitlab.com/NebulousLabs/Sia" target="_blank" rel="noopener noreferrer">here</a>, and the UI code <a href="https://gitlab.com/NebulousLabs/Sia-UI" target="_blank" rel="noopener noreferrer">here</a>. But in all likely-hood if you can do that, you don’t need this article ;p
 
 Now click on the .exe file that has been downloaded. Now windows doesn’t like cryto apps at all. So windows will automatically block the file when you try to open it. Thankfully, it’s easy to get around. Just click “more info”
 ![](/static/assets/renting-on-sia/image-6.png)
@@ -48,7 +48,7 @@ Your new address will now show up under the “Latest Address” tab:
 ![](/static/assets/renting-on-sia/image-16.png)
 
 
-Now you are going to want to acquire some Siacoin and send them to this newly generated address. For more info on how, check out the [here](/sia/trading.html). Also now is a good time to figure out how much Siacoin (I will further refer to it as SC from now on) you actually need. The best metric to go off is the storage pricing on [Siastats](https://siastats.info/storage_pricing), just take that pricing per TB in SC and multiply it by how many TB you need. Also keep in mind that since it costs money to form contracts with hosts (read more [here](/sia/renting.html)), prices will be very high until about 1TB where it levels off to average pricing.
+Now you are going to want to acquire some Siacoin and send them to this newly generated address. For more info on how, check out the [here](/sia/trading.html). Also now is a good time to figure out how much Siacoin (I will further refer to it as SC from now on) you actually need. The best metric to go off is the storage pricing on <a href="https://siastats.info/storage_pricing" target="_blank" rel="noopener noreferrer">SiaStats</a>, just take that pricing per TB in SC and multiply it by how many TB you need. Also keep in mind that since it costs money to form contracts with hosts (read more [here](/sia/renting.html)), prices will be very high until about 1TB where it levels off to average pricing.
 
 Once you send coin to your wallet you have two choices, bootstrapping and letting it sync naturally.
 
@@ -59,7 +59,7 @@ This tutorial will be using the bootstrap method to sync because I don’t want 
 In order to bootstrap, force close Sia-UI like this:
 ![](/static/assets/renting-on-sia/image-17.png)
 
-Now download the consensus file from a trusted community website(for the we’ll be using [Siastats](https://siastats.info)). So head to Siastats and scroll to the bottom of the homepage. Then click “Consensus Download”
+Now download the consensus file from a trusted community website(for the we’ll be using <a href="https://siastats.info" target="_blank" rel="noopener noreferrer">SiaStats</a>). So head to Siastats and scroll to the bottom of the homepage. Then click “Consensus Download”
 ![](/static/assets/renting-on-sia/image-18.png)
 
 Now, click on the “bootrap.zip”
@@ -87,7 +87,7 @@ Now that it has loaded, you have to put your seed back in and click “unlock”
 To begin renting go to the “Rent” tab
 ![](/static/assets/renting-on-sia/image-25.png)
 
-Then, based on the [Siastats](https://siastats.info/storage_pricing) pricing(I’d generally recommend taking the storage pricing on Siastats and multiplying it by 1.5), you’re gonna want to set your allowance to that.
+Then, based on the <a href="https://siastats.info/storage_pricing" target="_blank" rel="noopener noreferrer">SiaStats</a> pricing(I’d generally recommend taking the storage pricing on Siastats and multiplying it by 1.5), you’re gonna want to set your allowance to that.
 ![](/static/assets/renting-on-sia/image-26.png)
 
 Click on “Setup Allowance”
@@ -103,7 +103,7 @@ Now that you’re in the tab, you can edit the “Allowance Funds” in accordan
 Make sure to keep hosts set to 50, the contract period to three months, and the renew period to one month. To learn more about the technical side of how renting functions and why they must be set to this, see [here](/sia/renting.html).
 ![](/static/assets/renting-on-sia/image-29.png)
 
-Now that the allowance has been set, the final waiting game will commence. Only 10 contracts can be formed per block(each block takes 10 minuets to occur on average, too see the latest blocks see [Siastats](https://siastats.info/)). So to form the 50 contracts required to rent, it generally will take about an hour. You can begin to upload data at the 30 contract mark, but it will be very slow until it reaches 50 contracts.
+Now that the allowance has been set, the final waiting game will commence. Only 10 contracts can be formed per block(each block takes 10 minuets to occur on average, too see the latest blocks see <a href="https://siastats.info/" target="_blank" rel="noopener noreferrer">SiaStats</a>). So to form the 50 contracts required to rent, it generally will take about an hour. You can begin to upload data at the 30 contract mark, but it will be very slow until it reaches 50 contracts.
 ![](/static/assets/renting-on-sia/image-30.png)
 
 Now that you have formed 50 contracts, you can begin to upload files by dragging creating a folder by right clicking and hitting “Create Folder”
@@ -122,6 +122,6 @@ Give that a bit of time to upload
 
 And your file has now been uploaded to the decentralized web!
 
-For more info read around the site or check out the [Sia Discord](https://discord.com/invite/sia), we’re always here to help!
+For more info read around the site or check out the <a href="https://discord.com/invite/sia" target="_blank" rel="noopener noreferrer">Sia Discord</a>, we’re always here to help!
 
 *Written by: Covalent, Last Edit: April 14, 2021*

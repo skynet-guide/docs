@@ -44,6 +44,6 @@ In November 2020, Sia **1.5.1** introduced `the Skynet Registry`, a database lay
 
 In early 2021 **1.5.3** with various improvements and fixes to recently added features. **1.5.4** is currently in testing with more fixes on the way as well as new features. This is also leading up to **1.5.5** where the Foundation fork will occur; Sia development will be directed by changes in two directions: Sia Foundation will continue improving Sia core tech in directions most requested by the Sia community as host stability, small file support or reduction of blockchain requirements with Utreexo. Skynet Labs will focus on Skynet and getting more developers and users.
 
-Currently **1.5.6** is looming in the horizon with the promise of bringing recursive monitization to Skynet as well as splitting the Foundation `siad` codebase away from the Skynet `skyd` codebase. Learn more about the future(or present if you're reading this in the future) [here](https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea?source=collection_home---4------1-----------------------).
+Currently **1.5.6** is looming in the horizon with the promise of bringing recursive monitization to Skynet as well as splitting the Foundation `siad` codebase away from the Skynet `skyd` codebase. Learn more about the future(or present if you're reading this in the future) <a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">here</a>.
 
 *Written by: Danger & Covalent, Last Edit: April 14, 2021*

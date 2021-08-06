@@ -73,9 +73,9 @@ Most renters rank hosts based on criteria they find important. There is no centr
 The original Sia renter ranks hosts based on age, pricing, collateral ratio, available storage, and estimated uptime. When picking new hosts to store data with the renter does not necessarily pick in order of rank. As such, **Sia rank** should not be considered an important metric for hosts. To break the top 50 a host would need to sacrifice most of their revenue potential. Custom scoring systems that take into account transfer speed, availability and latency over pricing are also being used.
 
 ## Useful Tools For Hosts
-- [SiaStats](https://siastats.info) / hosts | monitors and benchmarks all hosts on the network.
-- [Sia Central](https://troubleshoot.siacentral.com) | easily troubleshoot port forwarding, dns resolution, and connection issues.
-- [Sia Host Manager](https://siacentral.com) | alternative to Sia-UI with better financial tracking and fiat price pinning.
+- <a href="https://siastats.info" target="_blank" rel="noopener noreferrer">SiaStats</a> / hosts | monitors and benchmarks all hosts on the network.
+- <a href="https://troubleshoot.siacentral.com" target="_blank" rel="noopener noreferrer">Sia Central</a> | easily troubleshoot port forwarding, dns resolution, and connection issues.
+- <a href="https://siacentral.com" target="_blank" rel="noopener noreferrer">Sia Host Manager</a> | alternative to Sia-UI with better financial tracking and fiat price pinning.
 
 ## Where to go next?
 If you want to start hosting, it is also good to know more about the renters. [Our guide](/renting/renting-on-sia.html) will lead you through everything you should know before you start.

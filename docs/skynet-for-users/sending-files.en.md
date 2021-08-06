@@ -8,7 +8,7 @@ In this tutorial, we will guide you through using Skynet as an alternative, the 
 We also cover Skynet accounts, with which you can store and share your files forever. At the end, you find a little comparison of the basic features and what to consider, when using any of the mentioned services in this article.
 
 ## Option #1: How to send up to 8 GB for free without registration
-Skynet offers different ways to easily send large files without registration. We focus on [SiaSky](https://siasky.net) and [SkySend](https://skysend.hns.siasky.net), since they are the first available services for filesharing on Skynet. These are simple solutions to upload your data and share them with anyone you like. For files smaller than 1GB, you can just use siasky.net. But if you need something more, in order to get around the size limitation, you need to use some app that achieves the same result, but differently. Such an app is [SkySend](https://skysend.hns.siasky.net) developed by [redsolver](https://github.com/redsolver) and you can send up to 8GB with it.
+Skynet offers different ways to easily send large files without registration. We focus on []()<a href="https://siasky.net" target="_blank" rel="noopener noreferrer">SiaSky</a> and []()<a href="https://skysend.hns.siasky.net" target="_blank" rel="noopener noreferrer">SkySend</a>, since they are the first available services for filesharing on Skynet. These are simple solutions to upload your data and share them with anyone you like. For files smaller than 1GB, you can just use siasky.net. But if you need something more, in order to get around the size limitation, you need to use some app that achieves the same result, but differently. Such an app is []()<a href="https://skysend.hns.siasky.net" target="_blank" rel="noopener noreferrer">SkySend</a> developed by []()<a href="https://github.com/redsolver" target="_blank" rel="noopener noreferrer">redsolver</a> and you can send up to 8GB with it.
 
 But keep in mind: Both SiaSky and SkySend are not final at the time of writing. SiaSky is meant for quick filesharing purposes and doesn’t offer end-2-end encryption at the moment. For SkySend, the encryption still needs to be audited. So consider not to using these services for sensitive data for the time being.
 
@@ -26,7 +26,7 @@ Once your upload is complete, siasky.net will give you a Skylink. With this link
 ### How to upload and share files up to 8GB without registration (up to 90 days)
 If you are in need of sending single files or archives up to 8GB, we recommend SkySend. Here’s how to use it for free and without any registration process:
 
-* Visit [SkySend](https://skysend.hns.siasky.net/), you find a minimalistic interface which offers everything you need.
+* Visit []()<a href="https://skysend.hns.siasky.net/" target="_blank" rel="noopener noreferrer">SkySend</a>, you find a minimalistic interface which offers everything you need.
 * Click on “Browse” and choose your file for upload. Depending on the file-size and your internet connection, it can take a while.
 
 <img src="/static/assets/sending-files-over-skynet/image-3.jpg">
@@ -52,7 +52,7 @@ You can sign-up for free on siasky.net, get 100 GB free cloud storage for lifeti
 
 > **Notice:** At the time being, SkySend-links are not visible on the SiaSky dashboard. **Skynet Labs are working on DAC** (Data Access Controller) and details will be revealed soon, which will allow Skapp developers to make it way cooler and easy to use. What does it mean for you right now? **If you use SkySend, make sure to save your SkySend-links separately, until DAC is integrated. Only SiaSky links can be obtained from the dashboard right now.**
 
-Your files are hosted for lifetime without any limit and can be shared for as long as you wish. If you ask how it is possible to get this all for free and for a lifetime, you should learn more about the Skynet monetization model. Best resource available right now is from the developers themselves: [A Deep Dive into Skynet](https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea).
+Your files are hosted for lifetime without any limit and can be shared for as long as you wish. If you ask how it is possible to get this all for free and for a lifetime, you should learn more about the Skynet monetization model. Best resource available right now is from the developers themselves: []()<a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">A Deep Dive into Skynet</a>.
 
 > **Did you know?** As a free SiaSky user, you can use 7-Zip or any other similar program to split your own archives bigger than 8GB into pieces, each not bigger than 1GB (or 8GB in the future, after DAC has been deployed). If you want to avoid splitting files, consider to sign-up for one of the paid plans. They will give you even more freedom. Being logged in, you can check the **tiers and Skynet prices** on the appropriate site.
 >

@@ -13,7 +13,7 @@ Don’t hesitate, don’t be afraid of getting it under your own control. We are
 
 >If you are looking for CLI (Command Line Interface) instead, check our Mastering Sia with CLI guide.
 
-1. First thing to do is to visit the [website](https://sia.tech) and **download latest version of Sia-UI** for your `OS (Operating System)`. This guide is written for 1.4.0 or higher at the time of 1.5.3 being the latest version available.
+1. First thing to do is to visit the <a href="https://sia.tech" target="_blank" rel="noopener noreferrer">website</a> and **download latest version of Sia-UI** for your `OS (Operating System)`. This guide is written for 1.4.0 or higher at the time of 1.5.3 being the latest version available.
 2. **Launch Sia-UI** and once you see the options to create wallet or recover it from a seed, select the option to **Create Wallet**. It will present you with 29-word seed and force you to write it down. This 29-word seed is the only information you will ever need to regain access to your wallet.
 3. **Save your 29-word seed** in a `password manager` of your choice to make sure it's secure and available after a possible system faliure (see [Secure Seed Management guide](/sia/seed-management.html)). You can also include any notes like where to download it or copy/paste content or link of this article.
 4. **Backup your `password manager‘s` database**. Once you save this new item in your database under name like “Sia Wallet [Seed]”, what I usually do is to duplicate that item and name it “Sia Wallet [Seed Backup]”. Just in case you ever accidentally deleted any of these two. Then save the database, update it’s timestamp like “KeePass_01_05_19” and save it to all the places and devices you decided to. Two are absolute minimum, 3–4 work best.
@@ -39,7 +39,7 @@ It lets you use it straight away from your browser without syncing anything. You
 
 Fortunately, it has a feature that lets every user enjoy top tier security. It supports Ledger Nano S so your seed never leaves you hardware wallet and you can use it securely even if you’re not friendly with technologies.
 
-You can find detailed guide including pictures here: [Sending Siacoins with Ledger Nano S](https://medium.com/sia-central-blog/sending-siacoins-with-the-ledger-nano-s-ea6d87711a3e).
+You can find detailed guide including pictures here: <a href="https://medium.com/sia-central-blog/sending-siacoins-with-the-ledger-nano-s-ea6d87711a3e" target="_blank" rel="noopener noreferrer">Sending Siacoins with Ledger Nano S</a>.
 
 ### Other Wallets
 If you found a Sia wallet not mentioned in this list, you should pay increased attention. While there were some working wallets in the past (there was/is one for Android that even allowed you to sync blockchain), there were also some scams. Even if it’s not so comfortable as getting such third party wallet on platform of your preference, it is recommended to use one of the options above.

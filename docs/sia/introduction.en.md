@@ -52,7 +52,7 @@ It’s important because** you care about your data and privacy**. You don’t w
 
 With Sia this won’t happen and if 3x redundancy is not letting you sleep at night because of your super important data, set it higher and even whitelist specific hosts in specific regions *(so you can always access your data even if entire countries turn dark)*. Even then it’s **way cheaper than traditional solutions**, but more secure than any and all of them.
 
->**Important**: There is issue with backup snapshots in version 1.5.3. It is planned to be fixed in 1.5.4. If you are not sure, feel free to ask on [Sia Discord](https://discord.gg/invite/sia) server.
+>**Important**: There is issue with backup snapshots in version 1.5.3. It is planned to be fixed in 1.5.4. If you are not sure, feel free to ask on <a href="https://discord.gg/invite/sia" target="_blank" rel="noopener noreferrer">Sia Discord</a> server.
 
 **You might also have unused space** on your home server running nonstop. Now you can start hosting and reduce your running costs or even profit from it. If it sounds interesting for you, we recommend to start small and get familiar with it. You can always plug in additional storage capacity when you’re getting near your limit. Check out our [Hosting Guide](/hosting/index.html) to learn more.
 
@@ -73,13 +73,13 @@ You can be sure **Sia will work because it doesn’t depend on the devs**. The n
 
 > Covalent here: I do want to comment that "doesn't depend on the devs" is a tad misleading. Sure, if the devs up and left, the network itself wouldn't blow up. But like every other ecosystem of software, the system **needs** dedicated developers for both the front and back end or it will fizzle out.
 
-**Sia Foundation** is be funded (fork happened in February 2021) by addition of 30,000 SC (that is thirty thousand for those europeans out there) to block reward (you can find more details in the [Proposal](https://www.reddit.com/r/siacoin/comments/iox6ly/proposal_the_sia_foundation/) that was very warmly accepted by the community). While the inflation increased slightly (especially compared to majority of other projects), it allows Sia Foundation to focus on parts of the Sia core tech that were previously difficult to justify for a VC funded company.
+**Sia Foundation** is be funded (fork happened in February 2021) by addition of 30,000 SC (that is thirty thousand for those europeans out there) to block reward (you can find more details in the <a href="https://www.reddit.com/r/siacoin/comments/iox6ly/proposal_the_sia_foundation/" target="_blank" rel="noopener noreferrer">Proposal</a> that was very warmly accepted by the community). While the inflation increased slightly (especially compared to majority of other projects), it allows Sia Foundation to focus on parts of the Sia core tech that were previously difficult to justify for a VC funded company.
 
 People often forget that this all was done by a team with very small funding and they have never seen anything for it. And still won’t. Sia Foundation is non-profit organization and needs to report spendings in transparent way. It is led by Sia co-founder **Luke Champine** who is expected to be joined by more representatives over time.
 
 Foundation will use the funds to help the Sia core tech to be more stable, efficient and user friendly. Most requested features are **host stability** fixes and improvements, **small file support** and **Utreexo** which is feature dramatically reducing blockchain requirements so lite nodes become a reality. That will open entire new world of possibilities on all kinds of devices. Foundation also plans to provide **legal support** to nodes participating on Sia network and burn any coins that it is unable to use for **overall good and growth of the ecosystem**.
 
-Official place to come and communicate with Sia Foundation is its [forum](https://forum.sia.tech).
+Official place to come and communicate with Sia Foundation is its <a href="https://forum.sia.tech" target="_blank" rel="noopener noreferrer">forum</a>.
 
 **Skynet Labs** is re-branded** Nebulous, Inc.**, the company that created Sia with its founder and CEO, **David Vorick**. Since it is just re-branding of company, the entire team is the same with exception of Luke who continues to focus on Sia core.
 

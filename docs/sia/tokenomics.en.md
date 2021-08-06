@@ -1,12 +1,12 @@
 # Tokenomics (SC & SF)
 There is a lot of misunderstanding around when it comes to tokens flowing through the Sia network. Most common concern is about its so called “unlimited” supply and inflation. So let’s take a deeper look at it.
 
->Quick Links: [Siacoin (SC)](#siacoin-(sc)), [Siafund (SF)](#siafund-(sf)), Where to buy?
+>Quick Links: [Siacoin (SC)](#siacoin-sc), [Siafund (SF)](#siafund-sf), [Where to buy?](#where-to-buy)
 
 ## Siacoin (SC)
 The first and most common mistake we see all the time is people calling the currency **SIA**, the same name as the network. It seems to make sense to them if they only hold it, but is very confusing to anyone actually using it. The network is called **Sia** and the currency enabling us to use it is **Siacoin** with **SC** as the ticker symbol commonly used on exchanges.
 
-Siacoin is a cryptocurrency that was never pre-mined, there was no ICO and it is not a trusted setup. Siacoins are not even securities. In [2019 SEC was looking into Sia](https://sia.tech/settlement2019) and didn’t initiate any action against SC. Only issues they had were with the first and very small $120,000 Sianotes (later converted to Siafunds) offering from 2014, few years before SEC even started providing guidance to projects in 2017.
+Siacoin is a cryptocurrency that was never pre-mined, there was no ICO and it is not a trusted setup. Siacoins are not even securities. In <a href="https://sia.tech/settlement2019" target="_blank" rel="noopener noreferrer">2019 SEC was looking into Sia</a> and didn’t initiate any action against SC. Only issues they had were with the first and very small $120,000 Sianotes (later converted to Siafunds) offering from 2014, few years before SEC even started providing guidance to projects in 2017.
 
 Siacoin can be divided up tp 10^24 units called **hastings** and is only entering circulation as a result of mining. You can find more details about it in our [Mining Guide](/sia/mining-guide.html).
 
@@ -80,7 +80,7 @@ Simply said, Sia developers are not in control of the network, markets or price 
 ## Siafund (SF)
 Siafund is a supplementary token of the Sia network with only 10,000 SF that will ever be in existence. Unlike Siacoins, which can be divided up, a single SF cannot be split. They are only transferred or held in whole units.
 
-You can hold it in the same wallet, but will never see it mentioned (at least in Sia-UI) unless you have one. These tokens are securities, and you can read more about the landmark [2019 SEC settlement that declared them so](https://sia.tech/settlement2019).
+You can hold it in the same wallet, but will never see it mentioned (at least in Sia-UI) unless you have one. These tokens are securities, and you can read more about the landmark <a href="https://sia.tech/settlement2019" target="_blank" rel="noopener noreferrer">2019 SEC settlement that declared them so</a>.
 
 They are used for **revenue sharing** on the Sia network; a **3.9% fee from every storage-related transaction on Sia** is distributed to the holders of Siafunds. The developers (Skynet Labs) currently hold approximately 85% of all Siafunds while the remaining approx. 1,500 SF were distributed to the community in a total of three offerings since 2014.
 

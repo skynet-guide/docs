@@ -144,7 +144,7 @@ $ siac host announce your.ip.or.netaddress:9982
 ```
 
 Announcements can take between 20 minutes to an hour to be confirmed. Once your announcement is confirmed you can check your host using 
-[Sia Central's Host Troubleshooter](https://troubleshoot.siacentral.com) or [SiaStat's Host Monitor](https://siastats.info/hosts)
+<a href="https://troubleshoot.siacentral.com" target="_blank" rel="noopener noreferrer">Sia Central's Host Troubleshooter</a> or <a href="https://siastats.info/hosts" target="_blank" rel="noopener noreferrer">SiaStat's Host Monitor</a>
 
 ## Using siac
 `siac` is the utility used to interact with a running Sia node you can list commands available or get usage information by adding `--help` to the end of any command:

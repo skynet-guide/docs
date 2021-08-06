@@ -80,9 +80,9 @@ Renter filtern Hosts nach eigenen Vorlieben. Es gibt kein zentrales Ranking-Syst
 Das ursprüngliche Ranking basierte auf Alter, Preisen, Collateral-Ratio, verfügbarem Speicherplatz und geschätzter Uptime. Wählen Renter einen Host aus, geschieht dies nicht unbedingt nur nach dem Rang. Deswegen sollte der Rang für Hoster keine wichtige Maßgabe sein. Um in die Top 50 zu kommen, müssten Hosts den Großteil ihres Einnahmepotenzials opfern. Es gibt auch Ranking-Systeme, die Transfergeschwindgkeit, Verfügbarkeit und Latenz über den Preis stellen.
 
 ## Nützliche Tools für Hoster
-- **[SiaStats](https://siastats.info/hosts) / host** | Monitoring und Benchmarks aller Hosts im Netzwerk.
-- **[Sia Central](https://troubleshoot.siacentral.com/)** | Problemlösungsübersicht für  Portweiterleitungen, DNS-Auflösung und Verbindungsprobleme.
-- **[Sia Host Manager](https://siacentral.com/host-manager)** | Alternative zu Sia-UI mit einem besseren Finanz-Tracking und Fiat-Preisbindung.
+- **<a href="https://siastats.info/hosts" target="_blank" rel="noopener noreferrer">SiaStats</a> / host** | Monitoring und Benchmarks aller Hosts im Netzwerk.
+- **<a href="https://troubleshoot.siacentral.com/" target="_blank" rel="noopener noreferrer">Sia Central</a>** | Problemlösungsübersicht für  Portweiterleitungen, DNS-Auflösung und Verbindungsprobleme.
+- **<a href="https://siacentral.com/host-manager" target="_blank" rel="noopener noreferrer">Sia Host Manager</a>** | Alternative zu Sia-UI mit einem besseren Finanz-Tracking und Fiat-Preisbindung.
 
 ## Was nun?
 Wenn du als Host starten möchtest, ist es sinnvoll mehr über Renter zu erfahren. Unser Guide führt Dich durch alle Punkte, die du [vor dem Start wissen](/rent/before-you-start.html) solltest.

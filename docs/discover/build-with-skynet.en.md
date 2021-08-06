@@ -6,15 +6,15 @@ Developing a Skapp (Skynet App), is probably easier than you think. The possibil
 
 It may sound hard setting up web-app on Skynet, and it can be; it's going to force you to use completely new systems. But fear not - it's not that much to learn as it's built to be as user-friendly as possible. Here are some resources that will help you out:
 
-[Introduction to Skynet SDKs](https://blog.sia.tech/the-skynet-sdks-751b35578b20)
+<a href="https://blog.sia.tech/the-skynet-sdks-751b35578b20" target="_blank" rel="noopener noreferrer">Introduction to Skynet SDKs</a>
 
-[Skynet Docs](https://siasky.net/docs/)
+<a href="https://siasky.net/docs/" target="_blank" rel="noopener noreferrer">Skynet Docs</a>
 
-[Creating your first web-app on Skynet](https://blog.sia.tech/creating-your-first-web-app-on-skynet-ec6f4fff405f)
+<a href="https://blog.sia.tech/creating-your-first-web-app-on-skynet-ec6f4fff405f" target="_blank" rel="noopener noreferrer">Creating your first web-app on Skynet</a>
 
-[Workshops](https://www.youtube.com/watch?v=-7i4ZVdTZFs&list=PLPv00ttW4uXMR0NAGqoc5PDTMeTODW3pS)
+<a href="https://www.youtube.com/watch?v=-7i4ZVdTZFs&list=PLPv00ttW4uXMR0NAGqoc5PDTMeTODW3pS" target="_blank" rel="noopener noreferrer">Workshops</a>
 
-[SkyDB web-app Example](https://blog.sia.tech/skydb-example-a-note-to-self-app-ccd4e7ba31ba)
+<a href="https://blog.sia.tech/skydb-example-a-note-to-self-app-ccd4e7ba31ba" target="_blank" rel="noopener noreferrer">SkyDB web-app Example</a>
 
 
 # Building a Game
@@ -23,15 +23,15 @@ Games on Skynet? That sounds hard - how do I even make that work? Luckily, the c
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/QqZqeWKEqoo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-On GitHub: [https://github.com/figurestudios/SkyGameSDK](https://github.com/figurestudios/SkyGameSDK)
+On GitHub: <a href="https://github.com/figurestudios/SkyGameSDK" target="_blank" rel="noopener noreferrer">https://github.com/figurestudios/SkyGameSDK</a>
 
 ### WebGames IDE
 Are you willing to sacrifice online-functionality, or do you just prefer an all-browser experience? Look no further - WebGames IDE is for you!
 
 <iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/TBdgtPZMoKk?start=4188" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-On Skynet: [webgames-ide.hns](https://webgames-ide.hns.siasky.net/)
+On Skynet: <a href="https://webgames-ide.hns.siasky.net/" target="_blank" rel="noopener noreferrer">webgames-ide.hns</a>
 
-On GitHub: [https://github.com/ericflo/webgames-ide](https://github.com/ericflo/webgames-ide)
+On GitHub: <a href="https://github.com/ericflo/webgames-ide" target="_blank" rel="noopener noreferrer">https://github.com/ericflo/webgames-ide</a>
 
 *Written by: figurestudios, Last Edit: May 20, 2021*

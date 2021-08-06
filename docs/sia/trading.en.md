@@ -8,11 +8,11 @@ You can buy Siacoin on many exchanges. There are three options:
 - Buy SC with ETH or other altcoins that your exchange offers in pair with SC
 - Buy SC with fiat (USD, EUR, etc.)
 
-Not all of these options are available on all exchanges, but many exchanges offer them. **You can find list of exchanges** [here](https://airtable.com/shrq4MSLNxinvnaR7/tblBYpPz8NRekRYGx). You can also check [CoinMarketCap](https://coinmarketcap.com/currencies/siacoin/markets/).
+Not all of these options are available on all exchanges, but many exchanges offer them. **You can find list of exchanges** <a href="https://airtable.com/shrq4MSLNxinvnaR7/tblBYpPz8NRekRYGx" target="_blank" rel="noopener noreferrer">here</a>. You can also check [](/)<a href="https://coinmarketcap.com/currencies/siacoin/markets" target="_blank" rel="noopener noreferrer">CoinMarketCap</a>.
 
 *You can also visit the Sia discord and ask in #trading channel for help to get assistance from other users with up to date information. This might be especially useful for NY residents who have more complicated access to crypto due to their regulation.*
 
-Most of the recommended exchanges allow users to directly buy crypto for fiat currency. Some let you buy SC directly (for example [Transak](https://transak.com/), but it is not an traditional exchange, it is fiat/crypto gateway), with others you need to buy BTC or ETH first and then trade it for SC.
+Most of the recommended exchanges allow users to directly buy crypto for fiat currency. Some let you buy SC directly (for example <a href="https://transak.com/" target="_blank" rel="noopener noreferrer">Transak</a>, but it is not an traditional exchange, it is fiat/crypto gateway), with others you need to buy BTC or ETH first and then trade it for SC.
 
 >Most often used exchanges by our english speaking community are Binance, Bittrex and Kraken and quite popular among Koreans seems to be Upbit.
 
