@@ -12,15 +12,15 @@ Cualquiera puede venir y empezar a alquilar o proporcionar almacenamiento de dat
 
 Este sitio es un gran ejemplo de estos principios.
 Ha sido creado por varios miembros de la Comunidad Sia para ayudar a los recién llegados, pero también a los usuarios experimentados a encontrar respuestas a cualquier pregunta que puedan tener.
-Cada artículo pasa por revisiones de nuestros [Colaboradores](/help/contributors/index.html) y representa nuestras opiniones y conocimientos compartidos.
+Cada artículo pasa por revisiones de nuestros [Colaboradores](/help/contributors.html) y representa nuestras opiniones y conocimientos compartidos.
 Nuestro objetivo es proporcionar todos los recursos posibles para que pueda tomar decisiones informadas cuando se trata de usar Sia y Skynet.
 
 Además, las nuevas versiones de este sitio estarán disponibles a través de copias de seguridad de Skynet. Esto garantizará que pase lo que pase, el conocimiento aquí presente siempre será accesible a cualquier persona.
 
 ¿A dónde ir después?
-La mejor guía para empezar es [Introducción a Sia](/sia/introduction/index.html). El sitio tiene muchas secciones, así que siéntete libre de explorarlas.
-Si estás buscando ayuda, consulte nuestro  [FAQ](/help/faq/index.html) y asegúrese de utilizar la función de Búsqueda con las palabras clave de su interés.
+La mejor guía para empezar es [Introducción a Sia](/sia/introduction.html). El sitio tiene muchas secciones, así que siéntete libre de explorarlas.
+Si estás buscando ayuda, consulte nuestro  [FAQ](/help/faq.html) y asegúrese de utilizar la función de Búsqueda con las palabras clave de su interés.
 
-Si tiene curiosidad por saber que cosas geniales se construyeron con **Sia** y **Skynet** hasta ahora, continúe y comience a [descubrir](/discover/built-with-sia/index.html)…
+Si tiene curiosidad por saber que cosas geniales se construyeron con **Sia** y **Skynet** hasta ahora, continúe y comience a [descubrir](/discover/built-with-sia.html)…
 
 Colaboradores: gumil89
