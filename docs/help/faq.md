@@ -9,7 +9,7 @@ Last update: March 31, 2021 | Sia 1.5.5
   <summary>
     Where can I store SC?
   </summary>
-  We have a dedicated guide for that <a href="">here</a>.
+  We have a dedicated guide for that <a href="/sia/wallet.html">here</a>.
 </details>
 
 <!-- issues sending and recieving -->
@@ -218,9 +218,9 @@ Make sure you have your 29-word seed before you start.
 <!-- sia whitepaper -->
 <details>
   <summary>
-    Where can I find Sia whitepaper?
+    Where can I find Sia's whitepaper?
   </summary>
-  You can find it right <a target="_blank" rel="noopener noreferrer" href="https://sia.tech/sia.pdf">here</a>. However, keep in mind that Sia did a lot of progress since invention and if you want to better understand how it works, check out our up to date guides like <a href="">Introduction to Sia</a>.
+  You can find it right <a target="_blank" rel="noopener noreferrer" href="https://sia.tech/sia.pdf">here</a>. However, keep in mind that Sia did a lot of progress since invention and if you want to better understand how it works, check out our up to date guides like <a href="/sia/introduction.html">Introduction to Sia</a>.
 </details>
 
 <!-- where is the roadmap -->
