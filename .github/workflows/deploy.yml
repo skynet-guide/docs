@@ -22,7 +22,7 @@ jobs:
       - name: Build site
         run: mkdocs build
       - name: Deploy to Skynet
-        uses: SkynetLabs/deploy-to-skynet-action@v2
+        uses: kwypchlo/deploy-to-skynet-action@main
         with:
           upload-dir: site
           github-token: ${{ secrets.GITHUB_TOKEN }}
