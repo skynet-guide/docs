@@ -120,7 +120,7 @@ Make sure you have your 29-word seed before you start.
 <!-- hardware wallet integration -->
 <details>
   <summary>
-    Is there any HW Wallet integration?
+    Does Sia support hardware wallets?
   </summary>
 
  Sia supports the `Ledger Nano S` and `Ledger Nano X` hardware wallets. You can install the Sia app from Ledger Live by enabling "Development Mode" under "Settings". 
