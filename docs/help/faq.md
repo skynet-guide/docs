@@ -1,7 +1,7 @@
 # FAQs
 If you know about any other questions that should be here, check out the [Contributors page](/help/contributors.html) and contact us.
 
-Last update: March 31, 2021 | Sia 1.5.5
+Last update: Aug 27, 2021 | Sia 1.5.6
 
 ## Wallet
 <!-- storing sc -->
@@ -120,19 +120,15 @@ Make sure you have your 29-word seed before you start.
 <!-- hardware wallet integration -->
 <details>
   <summary>
-    Is there any HW Wallet integration?
+    Does Sia support hardware wallets?
   </summary>
 
-  `Ledger Nano S` users have two options. First is the official integration you can find on the Sia support site, but but we do not recommend to use it since it is for advanced users only.
-  <br><br>
-  Instead, we recommend you to check out the <a target="_blank" rel="noopener noreferrer" href="https://wallet.siacentral.com">Sia Central Lite wallet</a>. Works with any browser and allows you to use your `Ledger Nano S`. We see it as currently best possible experience for anyone looking to hold SC.
+ Sia supports the `Ledger Nano S` and `Ledger Nano X` hardware wallets. You can install the Sia app from Ledger Live by enabling "Development Mode" under "Settings". 
+  <br/><br/>
+ There are currently two methods to access Siacoin stored on a Ledger device. The official command line client or Sia Central's lite wallet. We do not recommend the command line client since it is for advanced users only; instead we recommend you use the <a target="_blank" rel="noopener noreferrer" href="https://wallet.siacentral.com">Sia Central Lite wallet</a>. Ledger USB support works on desktop Chrome, Brave, Edge, and Opera. Ledger Bluetooth is only supported on Chrome desktop. We see it as currently best possible experience for anyone looking to hold SC.
   <blockquote>
   If you are worried to use a wallet link from third party site, you can access it by visiting the `official Sia site`, clicking `download` and scrolling down to the `list of recommended apps` where Sia Central Lite Wallet is mentioned by the Sia developers. You might also want to know that Nate, its author, officially joined Sia Foundation as a developer in Q2 2021.
-  </blockquote>
-  <br>
-
-  If you have `Ledger Nano X`, there is currently no way to use it with Sia but watch out for the `official Ledger App` updates. In Q2 2021 Sia Foundation announced they resumed communication with Ledger and a new integration is done and waiting to be reviewed.
-  
+  </blockquote>  
   <blockquote>
   If you want to do more, rent or host, you will need to run full node and download Sia-UI.<br>
   Unfortunately, there is no support that developers could use to integrate it with other options as Trezor and other HW Wallets.
