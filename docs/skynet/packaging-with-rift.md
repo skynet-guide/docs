@@ -1,16 +1,16 @@
-# Packaging a web app for Homescreen using Rift and the Siasky.net portal 
+# Packaging a Skapp with Rift
 
 This tutorial will show you how to package your web application for Homescreen.
-We will set up a Resolver Skylink with your MySky account, package your web app, and upload it to Skynet.
+We will set up a resolver skylink with your MySky account, package your web app, and upload it to Skynet.
 
-### 1. Creating a temporary Resolver Skylink
+### 1. Creating a temporary resolver skylink
 
-* Visit https://siasky.net
+* Visit [https://siasky.net](https://siasky.net)
 Make sure you have an account on Siasky.net and that you are logged in. This will ensure your web app will stay pinned in the future.
 
 <img src="/static/assets/packaging-with-rift/3.png">
 
-* Visit https://riftapp.hns.siasky.net/#/dns
+* Visit [https://riftapp.hns.siasky.net/#/dns](https://riftapp.hns.siasky.net/#/dns)
 Make sure you are logged in (top right button).
 
 <img src="/static/assets/packaging-with-rift/1.png">
@@ -27,15 +27,14 @@ Hit Save.
 ### 2. Packaging your app for Homescreen and Skynet
 
 * Follow the instruction here to configure your Manifest file:
-https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#3-configure-your-manifest-file
+[https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#3-configure-your-manifest-file](https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#3-configure-your-manifest-file)
 
 Your skylink here is the **resolver skylink** you created in the previous step.
 Once your Manifest file is configured, your web app is ready to be deployed.
 
 ### 3. Upload your app to Skynet
 
-* Visit https://siasky.net
-Click "Do you want to upload a web app or directory?"
+* Visit [https://siasky.net](https://siasky.net) and click "Do you want to upload a web app or directory?"
 
 <img src="/static/assets/packaging-with-rift/4.png">
 
@@ -54,8 +53,7 @@ The UI will output a link for you. Great! However, this link is not in the right
 
 ### 4. Update your resolver skylink
 
-* Go to https://riftapp.hns.siasky.net/#/dns
-Click on the entry you created in the first step
+* Go to [https://riftapp.hns.siasky.net/#/dns](https://riftapp.hns.siasky.net/#/dns) and click on the entry you created in the first step
 
 * Update the target skylink to the skylink you obtained at the end of the previous step.
 Save.
@@ -75,7 +73,7 @@ Make sure everything works and looks nice in Homescreen, so try visiting the lin
 Ta-da! You can now share this link with users.
 
 You can also follow these instructions to make an `Add to Homescreen` button for your website or github page:
-https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#4-add-the-homescreen-button-on-your-projects-readme
+[https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#4-add-the-homescreen-button-on-your-projects-readme](https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#4-add-the-homescreen-button-on-your-projects-readme)
 
 You have now packaged your web app for Homescreen and deployed it to Skynet. 
 If you update your web app, simply update the target skylink in Rift.
