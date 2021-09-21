@@ -47,7 +47,7 @@ Once your Manifest file is configured, your web app is ready to be deployed.
 
 <img src="/static/assets/packaging-with-rift/6.png">
 
-* Visit [https://riftapp.hns.siasky.net/#/files](https://riftapp.hns.siasky.net/#/files) and select the `directory` option.
+* Visit [https://riftapp.hns.siasky.net/#/uploads](https://riftapp.hns.siasky.net/#/uploads) and select the `directory` option.
 
 * Click on the box or drag and drop to upload the folder containing your web app. 
 
@@ -84,6 +84,8 @@ Now, let's make clickable media for users to easily add your app to Homescreen.
 * You can also follow these instructions to make an `Add to Homescreen` button for your website or github page:
 
 [https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#4-add-the-homescreen-button-on-your-projects-readme](https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#4-add-the-homescreen-button-on-your-projects-readme)
+
+### 6. You're done!
 
 You have now packaged your web app for Homescreen and deployed it to Skynet. 
 
