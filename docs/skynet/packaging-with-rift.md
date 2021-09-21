@@ -1,5 +1,7 @@
 # Packaging a Skapp with Rift and deploying it to Skynet
 
+## Let's turn your App into a Skapp!
+
 This tutorial will show you how to use Rift to set up a resolver skylink, package your web app for Homescreen, and deploy it to Skynet.
 
 ### 1. Creating a resolver skylink
@@ -23,7 +25,9 @@ We will be using the `siasky.net` Portal for the rest of the tutorial, but pleas
 
 * Enter a name for your app and a skylink. This is temporary.
 
-You can use the following skylink as a placeholder: `AAD9bKd2-oATRBKP7f4q8xs93fMbNcPgvxwOqOezcTqB4Q`
+You can use the following skylink as a placeholder:
+
+`RAAsjQh2n1AMdesCr9wLYa73VqmzqmgVJ75ookOGyHDiDA`
 
 * Save.
 
@@ -41,9 +45,9 @@ Once your Manifest file is configured, your web app is ready to be deployed.
 
 ### 3. Deploying your app to Skynet
 
-* Visit [https://riftapp.hns.siasky.net/#/files](https://riftapp.hns.siasky.net/#/files) and select the `directory` option.
-
 <img src="/static/assets/packaging-with-rift/6.png">
+
+* Visit [https://riftapp.hns.siasky.net/#/files](https://riftapp.hns.siasky.net/#/files) and select the `directory` option.
 
 * Click on the box or drag and drop to upload the folder containing your web app. 
 
@@ -63,7 +67,7 @@ We will now point the **resolver skylink** you created in step 1 to this **targe
 
 * Voilà! Your web app is now packaged and ready for Homescreen.
 
-Now, let's make clickable media for users to easily add your app on Homescreen.
+Now, let's make clickable media for users to easily add your app to Homescreen.
 
 ### 5. Creating clickable links and buttons
 
@@ -89,4 +93,4 @@ If you update your web app, simply update the target skylink in Rift.
 
 Have fun deploying your apps to Skynet!
 
-*Written by: Napster, Last Edit: September 19, 2021*
+*Written by: Napster, Last Edit: September 21, 2021*
