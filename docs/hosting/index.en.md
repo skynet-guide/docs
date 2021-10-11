@@ -26,20 +26,16 @@ Hosts earn revenue by providing storage and bandwidth to renters. Renters pay fo
 
 >There are currently two bugs which make tracking revenue very difficult: host revenue does not show up in Sia’s transaction list and Sia’s built in revenue totals are inaccurate. Combined, this makes tracking earned revenue extremely difficult since host’s often lock up more collateral than they earn in revenue.
 
-## Risking Collateral
+## Collateral
 To incentivize hosts to remain online long term, hosts are expected to risk collateral for the data they are storing. If a host cannot prove they have stored the data they have agreed to their collateral and payment is burned. This keeps hosts accountable and incentivized.
 
 Most hosts have found that between 1 and 2 times storage price is a good balance of collateral for earning the most revenue.
 
-## Storage Proofs
-At the end of a contract the host has the option to submit a storage proof. This is proof that the host stored the data they were expected to for the contract’s duration. After the expiration of a contract, the host has 24 hours (144 blocks) to submit a storage proof during the `proof window`. If the host does not submit a storage proof the host’s risked collateral and the renter’s spent allowance is burned.
-
->In most instances it is in the host’s best interest to submit a storage proof, but there are some cases where submitting a proof would not make sense. If the cost of submitting a storage proof is greater than the host’s potential loss the host will not submit a proof.
-
 ## Contracts
 Contracts create an instant payment channel between a host and renter that allows the renter to quickly pay for storage and bandwidth usage. Contracts are blockchain enforced agreements between a host and renter that automatically resolve at the end of the contracting period. This keeps the entire ecosystem working transparently and honestly.
 
-The host and renter both lock Siacoin into a contract for the entire duration. When a contract is created the renter and host agree on how much allowance the renter should lock in, how much collateral the host should lock in, and how long the contract is for. Revenue, unspent allowance, and collateral is automatically returned to its owner at the end of the contracting period.
+### Formation
+The host and renter both lock Siacoin into a contract for the entire duration. When a contract is created the renter and host agree on how much allowance the renter should lock in, how much collateral the host should lock in, and how long the contract is for. Revenue, unspent allowance, and collateral is automatically returned to its owner at the end of the contracting period. A contract cannot be ended early.
 
 The host has some controls to block unfavorable contracts. Renters decide the duration of the contract and how much collateral the host should lock for the data they want to store, but the host can limit how much collateral they are willing to lock into a single contract and the maximum duration of the contract.
 
@@ -48,6 +44,28 @@ The host has some controls to block unfavorable contracts. Renters decide the du
 **Max Collateral** is the maximum amount of collateral a host is willing to lock into a single contract. Large contracts can cause performance issues on hosts and locking too much collateral into a single contract may limit the number of contracts a host can form with other renters.
 
 **Collateral Budget** the total amount of Siacoin to use for forming contracts. This is currently bugged so the budget can fill up without actually having collateral locked. Setting this to a very high number regardless of wallet balance can help to reduce unnecessary restarts.
+
+### Revisions
+The contract is revised when a renter wants to interact with the host. In order to be fast revisions are agreed upon off-chain and do not need to wait on block confirmations. 
+
+When a renter uploads data a new revision is created which increases the file size, updates the merkle root, moves a portion of the renter's locked allowance to the host's payout, and risks a porportionate amount of the host's locked collateral. When a renter downloads data they move some of their locked allowance to the host's payout. A revision cannot change the contract's expiration, proof window, or add additional funds.
+
+### Renewal
+Before the contract expires the renter has the option to renew it and continue storing data with the host. During renewal a final revision of the existing contract is created which locks the contract for further revisions, meaning it can no longer be used for uploading or downloading, and removes the burn payout. A new contract is created with the existing data, additional host collateral, renter allowance, and a new expiration height. 
+
+If a contract is renewed the host will receive all of their locked collateral and revenue when the contract expires and do not need to submit a storage proof.
+
+### Final Revision
+The host will try to submit the final revision of a contract to the blockchain before it expires. This revision finalizes the payouts the renter and host will receive when the contract expires. The storage proof is also based on this revision. This way only the initial contract and the last revision of the contract are stored on the blockchain, saving space.
+
+### Storage Proof
+If a contract is not renewed, the host will need to submit a storage proof. A small amount of Siacoin is necessary to submit the storage proof, usually around **0.01 SC**.
+
+A storage proof is a merkle proof for a randomly selected segment of the contract. The segment of data is deterministicaly chosen based on the ID of the block before the start of the proof window. 
+
+The host has 144 blocks, or approximately 24 hours, after the contract expires to submit a storage proof. If the host submits a storage proof they receive all of their locked collateral and revenue. If the host does not submit a proof before the proof window ends the host's risked collateral and revenue is burned. The locked portion of the host's collateral and the unspent portion of the renter's allowance is returned.
+
+> `siad` automatically determines if the host needs to submit a proof.
 
 ## Pricing
 Hosts get to set their own prices, the storage marketplace is meant to be a free and open competition between hosts to provide the best value to renters. Historically, there has been much more supply than demand so profits are low. This isn’t to say that hosts can’t earn a small profit. Hosts with good reputations or better connections are often chosen even if the cost would be higher.
