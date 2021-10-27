@@ -10,3 +10,6 @@ Sia Host Manager combines information from your Sia node as well as information 
 * Change host configuration
 * Pin configuration prices to fiat or cryptocurrencies
 * Display financials in different fiat or cryptocurrencies
+
+---
+*Last Edit: April 14, 2021*

@@ -4,7 +4,7 @@ This is a technical guide to setting up a new host from scratch on Ubuntu server
 ## Getting Sia
 Install the latest version of siad by going to the official website and downloading the latest zip file of Sia Daemon for your operating system from https://sia.tech/get-started. This guide has been written for v1.5.6.
 
-![Sia Website](../static/assets/hosting/hosting-with-siad/sia-tech-website.png)
+![Sia Website](../../static/assets/hosting/hosting-with-siad/sia-tech-website.png)
 
 You can download the files and extract them using `wget` and `unzip`
 ```sh

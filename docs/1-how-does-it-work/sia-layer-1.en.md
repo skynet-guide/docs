@@ -18,6 +18,8 @@ This forms a chain of blocks that is chronologically sorted and cryptographicall
 
 The platform is using a **consensus mechanism** *(way of reaching an agreement on a state of the blockchain)* based on **Proof of Work (PoW)**. This protocol was first introduced by Bitcoin in 2009 and brought us a process known as mining.
 
+> If you are worried about PoW, you might want to read [Fundamentals of Proof of Work by David Vorick](https://blog.sia.tech/fundamentals-of-proof-of-work-beaa68093d2b), a very detailed article about this topic.
+
 **Proof of Work means** that miners need to spend significant resources on electricity and specialized *(often single-purpose)* hardware equipment in order to participate in search for a solution to a mathematical problem. This search involves a lot of *“luck”* as miners compete with each other who finds the answer first. Once they do, it is used to sign the new block which is then broadcasted to the network. If the network accepts it, the finder receives a **block reward** in form of **Siacoin (SC)**, the cryptocurrency used on the Sia network. This is how new coins are introduced to the network and further distributed by the miners, usually through the numerous exchanges.
 
 >As many miners don’t want to depend heavily on luck, they are often working together by being connected to a **pool**. When a solution is found by a member of the pool, the reward is fairly shared between all who participated in finding that answer based on amount of work done by each of them.

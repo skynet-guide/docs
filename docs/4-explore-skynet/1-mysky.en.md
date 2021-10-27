@@ -20,9 +20,20 @@ Purpose of this article is a bit different - to let you make and use one for you
 
 You can create a seed through any MySky supported app. I personally recommend to start with Homescreen which is a Skapp (Skynet App) that we will use in the next article.
 
-1. Open https://homescreen.hns.siasky.net/
-2. Click Authenticate with MySky and follow the steps to get authenticated. During the process, you will see a seed (sequence of many words). Make sure to store this seed in a safe place. It is recommended to use some password manager with multiple database backups but you can use any method you feel comfortable with. Keep in mind that if you lose your seed, you lose access to that identity.
-3. Now you are logged in and can see list of some default decentralized apps so it's not empty. You can click some of them and see how you get logged into them automatically (if not, just click the button). And if you for example setup your profile using this popular profile Skapp (https://skyprofile.hns.siasky.net/) that many Skapps support, your public profile data will load automatically. It's as if you used Facebook for years, then switched for some new app and all your data automatically followed you.
+1. Open [homescreen](https://homescreen.hns.siasky.net/).hns.siasky.net.
+2. Click Authenticate with MySky.
+
+![Authenticate with MySky - Step 1](../static/assets/mysky/mysky-auth-1.png)
+
+3. I will assume you don't have MySky seed yet, so continue by clicking the `sign up` button.
+
+![Authenticate with MySky - Step 2](../static/assets/mysky/mysky-auth-2.png)
+
+4. Your 15 word seed will appear (this is different format than Sia which uses 29 words). Make sure to store this seed in a safe place. It is recommended to use some password manager with multiple database backups but you can use any method you feel comfortable with. Keep in mind that if you lose your seed, you lose access to that identity.
+
+![Authenticate with MySky - Step 3](../static/assets/mysky/mysky-auth-3.png)
+
+5. Check the box and click `Sign Up`. Now you are logged in and can see list of some default decentralized apps so it's not empty. You can click some of them and see how you get logged into them automatically (if not, just click the button). And if you for example setup your profile using this popular profile Skapp (https://skyprofile.hns.siasky.net/) that many Skapps support, your public profile data will load automatically. It's as if you used Facebook for years, then switched for some new app and all your data automatically followed you.
 
 But before we dig deeper into Homescreen in next article, there is one more thing to keep in mind.
 
@@ -47,4 +58,8 @@ When you register the account and log into siasky.net, all apps that you will ac
 As mentioned, right now siasky.net is what we are using. There are other public portals operated by enthusiasts but we are not mentioning them because they did it for the community in the past and over time ran out of resources. If you want, you can run one for yourself and family/friends if you want, but expect something like $20/month just for the contract forming. That said, it's probably worth it if you want absolute freedom/self-control and plan to store at least few TB of data. For majority of users, public portals like siasky.net will be the way to go because of the convenient use. In future, we can expect more for-profit portals appearing with various business models. Since it is open-source, nothing stops someone from running new public portal that servers ads to the users and lets them use it completely for free. Or closed community making portal with whitelisted IPs just for their members paying some membership fee. Options are many.
 
 And now that we know what siasky.net account is for and have our MySky identity ready, we can continue to the next part, Homescreen.
+
+---
+*Written by: Danger, Last Edit: October 27, 2021*
+
 

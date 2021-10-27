@@ -10,3 +10,6 @@ A tool for Sia renters that allows:
 > Ready-to-use binaries for Windows, MacOS and Linux can be downloaded here: https://github.com/hakkane84/Decentralizer-GUI/releases
 
 > Users of headless servers or preferring command-line interfaces can use Decentralizer-CLI instead, which brings the same features: https://github.com/hakkane84/Decentralizer-CLI
+
+---
+*Last Edit: April 14, 2021*

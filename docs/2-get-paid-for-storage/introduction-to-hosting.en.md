@@ -1,4 +1,4 @@
-# Hosting?
+# Introduction to Hosting
 Hosts are the backbone of the Sia network, they are a critical part of the Sia ecosystem. Hosts sell their storage space and bandwidth in exchange for Siacoin. Without hosts, renters would not be able to store data and Skynet would not be able to function.
 
 Hosting requires a basic level of technical knowledge. Hosts need to be familiar with basic port forwarding, firewall rules, disk management, along with some concepts unique to Sia’s decentralized storage model.

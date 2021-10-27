@@ -48,7 +48,12 @@ The registry works by effectively generating a private-public key pair and publi
 To learn more about the registry, see [here](/skynet/concepts/index.html).
 
 ## What can I do with Skynet?
-As listed above, currently, Skynet has two real features; those being `Skyfiles`, which are accessible from any portal, and the registry(which when accessed through the SDK is referred to as `SkyDB`), which are mutable pointers that can be accessed or updated from any portal.
+
+> **Important - Update by Danger (October 26, 2021):**  This section is a bit outdated since it describes state before more than 6 months. A lot changed since then and if you want to know what Skynet lets you do today, check out our new dedicated section `Explore Skynet`. This section is kept around only to show how much progress has been done just in last few months and how many more apps were made since then.
+
+---
+
+*(Outdated)* As listed above, currently, Skynet has two real features; those being `Skyfiles`, which are accessible from any portal, and the registry(which when accessed through the SDK is referred to as `SkyDB`), which are mutable pointers that can be accessed or updated from any portal.
 
 Currently the biggest things on Skynet are Skyfeed and content distribution by using Skynet as a CDN on sites like <a href="https://d.tube/" target="_blank" rel="noopener noreferrer">DTube</a>.
 
