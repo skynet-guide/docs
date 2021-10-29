@@ -1,11 +1,56 @@
 site_name: Skynet Guide
-site_description: Community driven documentation of sia.
+site_description: Community driven documentation of Sia & Skynet.
 site_author: Skynet Guide Contributors
 
 repo_url: https://github.com/skynet-guide/skynet-guide.github.io
 edit_uri: edit/main/docs/
 
 use_directory_urls: false
+
+nav:
+    - 'Technology':
+        - 'Introduction': 'how-does-it-work/introduction-to-sia-and-skynet.en.md'
+        - 'Sia - Decentralized Storage': 'how-does-it-work/sia-layer-1.en.md'
+        - 'Skynet - Decentralized Internet': 'how-does-it-work/skynet-layer-2.en.md'
+        - 'More about Sia':
+            - 'History': 'how-does-it-work/sia-guides/history.en.md'
+            - 'Sia Foundation': 'how-does-it-work/sia-guides/foundation.en.md'
+            - 'Tokenomics': 'how-does-it-work/sia-guides/tokenomics.en.md'
+            - 'Wallets': 'how-does-it-work/sia-guides/wallet.en.md'
+            - 'Trading': 'how-does-it-work/sia-guides/trading.en.md'
+            - 'Seed Management': 'how-does-it-work/sia-guides/seed-management.en.md'
+            - 'Blockchain Explorers': 'how-does-it-work/sia-guides/explorers.en.md'
+            - 'Network Metrics': 'how-does-it-work/sia-guides/network-metrics.en.md'
+            - 'Mining': 'how-does-it-work/sia-guides/mining-guide.en.md'
+            - 'Storage Chains Compared': 'how-does-it-work/sia-guides/storage-chains-compared.en.md'
+            - 'Resource Sites': 'how-does-it-work/sia-guides/resource-sites.en.md'
+            - 'Tools': 'how-does-it-work/sia-guides/tools.en.md'
+            - 'Support': 'how-does-it-work/sia-guides/support.en.md'
+            - 'FAQ': 'how-does-it-work/sia-guides/faq.en.md'
+        - 'More about Skynet':
+            - 'Skynet Portals': 'how-does-it-work/skynet-guides/portals.en.md'
+    - 'Get paid for storage':
+        - 'Introduction to Hosting': 'get-paid-for-storage/introduction-to-hosting.en.md'
+        - 'Useful Hosting Tools': 'get-paid-for-storage/useful-hosting-tools.en.md'
+        - 'Hosting Guides':
+            - 'Linux Hosting': 'get-paid-for-storage/hosting-guides/linux-hosting.en.md'
+            - 'Official Guide -> sia.tech': 'https://support.sia.tech/hosting/how-to-host-on-sia'
+    - 'Using secure storage':
+        - 'Introduction to Renting': 'private-backups-with-sia/introduction-to-renting.en.md'
+        - 'Useful Renting Tools': 'private-backups-with-sia/useful-renting-tools.en.md'
+        - 'Renting Guides':
+            - 'Renting': 'private-backups-with-sia/renting-guides/renting.en.md'
+            - 'Official Guide -> sia.tech': 'https://support.sia.tech/renting/how-to-rent-storage-on-sia'
+    - 'Guides for Developers':
+        - 'Packaging with Rift': 'develop/packaging-with-rift.en.md'
+    - '--> EXPLORE SKYNET <--':
+        - '1. MySky - Decentralized Identity': 'explore-skynet/1-mysky.en.md'
+        - '2. Homescreen - Own your apps': 'explore-skynet/2-homescreen.en.md'
+        - '3. SkyOS - System in a browser': 'explore-skynet/3-sky-os.en.md'
+        - '4. Skynet Apps - Get some!': 'explore-skynet/4-popular-apps.en.md'
+        - 'More':
+            - 'Why do I need Skynet?': 'explore-skynet/skynet-guides/you-need-skynet.en.md'
+            - 'Sending Files': 'explore-skynet/skynet-guides/sending-files.en.md'
 
 theme:
   name: material
@@ -34,11 +79,6 @@ plugins:
       default_language: en
       languages:
         en: English
-        fr: Français
-        de: Deutsch
-        ru: Русский
-        es: Español
-        lt: Lietuvių
 
 markdown_extensions:
   - toc:
