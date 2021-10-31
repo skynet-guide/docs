@@ -1,5 +1,5 @@
 # Skynet Portals
-As you probably already know, Skynet Portals are the access points to the [Skynet](/how-does-it-work/skynet-layer-2.en.html). You can request any content from them using the `Skylinks` and upload as well.
+As you probably already know, Skynet Portals are the access points to the [Skynet](/how-does-it-work/skynet-layer-2.html). You can request any content from them using the `Skylinks` and upload as well.
 
 >Skynet Portals are special kinds of Sia nodes, ones that have contracts with all hosts on the network and because of that can have access to all `Skyfiles` on the network. Some do it for free, some can have some business models (like subscriptions, or ads – since it is open source, anyone can run one and implement or set own rules).
 

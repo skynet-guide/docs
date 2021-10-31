@@ -1,5 +1,5 @@
 # Skynet, Decentralized Internet (Layer 2)
-Before reading this article, it is recommended to check [Sia, Decentralized Storage (Layer 1)](/how-does-it-work/sia-layer-1.en.html) first in order to have a better bearing of how everything works, and who is behind the project. While the top level ideas can be grasped pretty easily, the design behind Sia can be pretty complex, so keep that in mind.
+Before reading this article, it is recommended to check [Sia, Decentralized Storage (Layer 1)](/how-does-it-work/sia-layer-1.html) first in order to have a better bearing of how everything works, and who is behind the project. While the top level ideas can be grasped pretty easily, the design behind Sia can be pretty complex, so keep that in mind.
 
 >Since the introduction of Skynet a lot of time passes already, but if you want to read the document that introduced us to the full vision of Skynet for first time, don’t miss <a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">A Deep Dive into Skynet</a> on the Sia blog (published in Feb 2021). Also keep in mind that the monetization part described there is outdated and a whitepaper with a better take on monetization is expected by end of 2021.
 
@@ -18,14 +18,14 @@ So the base level for how Skynet works is it that every node that wants to be ab
 Then when you want to query a specific `Skylink` (think if you’re requesting a video on Skyfeed), your Skynet node make a bunch of requests to hosts it has contracted with to see if they have the `Skylink` in question. The first host to respond with the data chunk then sends over the file to the renter node, and gets paid. In practice, fetch latency can be incredibly small, rivaling that of the centralized internet.
 
 ## How does Skynet work in practice?
-Unfortunately, as of today you cannot just run a Skynet portal in your browser. Due to the many limitations of running a Sia full node talked about in [this article](/private-backups-with-sia/introduction-to-renting.en.html), running a renter node is hard on your system. The main hard parts are:
+Unfortunately, as of today you cannot just run a Skynet portal in your browser. Due to the many limitations of running a Sia full node talked about in [this article](/private-backups-with-sia/introduction-to-renting.html), running a renter node is hard on your system. The main hard parts are:
 
 - Consensus is 22GB+
 - It requires high up-time to maintain files
 - Requires a lot of RAM
 - High CPU load (would kill battery life)
 
-But to be fair, this all is known and expected to be resolved by [Sia Foundation](/how-does-it-work/sia-guides/foundation.en.html) with <a href="https://forum.sia.tech/t/core-development-utreexo/54/14" target="_blank" rel="noopener noreferrer">Utreexo</a> support early in 2022. Proof of concept for Utreexo was released mid 2021 and since then the team is integrating it into Sia.
+But to be fair, this all is known and expected to be resolved by [Sia Foundation](/how-does-it-work/sia-guides/foundation.html) with <a href="https://forum.sia.tech/t/core-development-utreexo/54/14" target="_blank" rel="noopener noreferrer">Utreexo</a> support early in 2022. Proof of concept for Utreexo was released mid 2021 and since then the team is integrating it into Sia.
 
 So how did the team work around this? Well the idea is to use something called a **Skynet Portal**.
 
@@ -61,7 +61,7 @@ Skyfeed is a first Facebook-esque social media built on top of Skynet by communi
 #### CDN Capabilities
 The first thing that Skynet was advertised as was a CDN with decentralized frills, and it is still pretty good at that. Though, because of the traditional web architecture that web portals are built on, they completely rely on horizontal load balancing to scale. Also due to the nature of Sia, speeds cap at about 1GBPS per node, so a huge amount of nodes and load balancing is required to accomplish something like a large live event. For example, if you wanted to have a streaming platform with 100k concurrent viewers, you would need 1k-2k nodes at a minimum (depending on quality of the stream). This will be fixed once Utreexo is implemented(or host→user websockets), but for the time being, it’s a lot of work just like any other CDN. Though, unlike traditional web architectures, the actual pool of data itself can be massive per portal node because they have access to every `Skyfile` and `SkyDB` entry.
 
->Discover more [Skynet Apps](/explore-skynet/4-popular-apps.en.html).
+>Discover more [Skynet Apps](/explore-skynet/4-popular-apps.html).
 
 ## Moving forward
 Skynet is still under heavy development by Skynet Labs and a breadth of features are in the pipeline. For example, upcoming features include:

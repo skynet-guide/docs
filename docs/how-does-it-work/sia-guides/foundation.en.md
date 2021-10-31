@@ -4,7 +4,7 @@ The Sia network hardforked at beginning of 2021 to implement the Sia Foundation:
 
 >This fork activated at a block height 298,000 which happened on **February 3rd 2021**.
 
-If you want to know more about Sia Foundation, check out [Introduction to Sia and Skynet](/how-does-it-work/introduction-to-sia-and-skynet.en.html).
+If you want to know more about Sia Foundation, check out [Introduction to Sia and Skynet](/how-does-it-work/introduction-to-sia-and-skynet.html).
 
 ## Communication
 ---

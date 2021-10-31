@@ -5,10 +5,10 @@ It met with positive response on BitcoinTalk, and so David decided to work on Si
 
 They didn’t have to wait for their chance much longer. After one BitcoinTalk user abused David’s hand-drawn diagrams in order to fraudulently raise money, it was clear that there is enough interest to raise money via crowdfunding.
 
-Not only was the crowdfunding successful, it also helped them with raising contacts and getting introduced to **Jim Pallota** and their first traditional investment funding. They formally incorporated `Nebulous, Inc.`, and soon after sold `Sianotes`, later convertible to `Siafunds` (*a supplementary token of the Sia network, see more in [Tokenomics guide](/how-does-it-work/sia-guides/tokenomics.en.html)*).
+Not only was the crowdfunding successful, it also helped them with raising contacts and getting introduced to **Jim Pallota** and their first traditional investment funding. They formally incorporated `Nebulous, Inc.`, and soon after sold `Sianotes`, later convertible to `Siafunds` (*a supplementary token of the Sia network, see more in [Tokenomics guide](/how-does-it-work/sia-guides/tokenomics.html)*).
 
 
-But Sia was a very different project back then. It used Proof of Storage consensus instead of the current Proof of Work (*explained in [Introduction to Sia](/how-does-it-work/introduction-to-sia-and-skynet.en.html)*), hosts were grouped into “*quorum*” that were responsible for storing users’ files, and the wallet was also fully scriptable.
+But Sia was a very different project back then. It used Proof of Storage consensus instead of the current Proof of Work (*explained in [Introduction to Sia](/how-does-it-work/introduction-to-sia-and-skynet.html)*), hosts were grouped into “*quorum*” that were responsible for storing users’ files, and the wallet was also fully scriptable.
 
 Ultimately, David discovered issues in the Proof of Storage algorithm that forced them to start over, but thanks to David’s participation in the Bitcoin core developer community around that time, he became able to understand the unique challenges of cryptocurrencies and use this knowledge to lay a path towards the efficient and well-designed Sia platform as we know it today.
 

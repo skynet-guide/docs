@@ -1,5 +1,5 @@
 # FAQs
-If you know about any other questions that should be here, check out the [Contributors page](/help/contributors.html) and contact us.
+If you know about any other questions that should be here, check out the [Contributors page](/about/contributors.html) and contact us.
 
 Last update: October 26, 2021 | Sia 1.5.7
 
@@ -9,7 +9,7 @@ Last update: October 26, 2021 | Sia 1.5.7
   <summary>
     Where can I store SC?
   </summary>
-  We have a dedicated guide for that <a href="/sia/wallet.html">here</a>.
+  We have a dedicated guide for that <a href="/how-does-it-work/sia-guides/wallet.html">here</a>.
 </details>
 
 <!-- issues sending and recieving -->
@@ -192,7 +192,7 @@ Make sure you have your 29-word seed before you start.
   Lastly, after all chunks are created and encrypted as previously described, each chunk is then distributed to a host on the Sia network by way of a contract agreed on between both the host and the renter. The host is required to lock up collateral during the contract period and if the host is unable to submit proof of storing the file, or becomes unavailable for too long, the collateral is burnt.
   <br><br>
   The Sia client periodically monitors the health of each file and the number of chunks currently available across it's contracted hosts. If the number of chunks drops, the client will automatically download any necessary chunks and recreate the missing pieces and form new contracts as-needed. For Skynet portals, as they are a sort of "always-on" service, this happens continuously.
-  <i>For more info, see <a href="/private-backups-with-sia/introduction-to-renting.en.html">here</a></i>
+  <i>For more info, see <a href="/private-backups-with-sia/introduction-to-renting.html">here</a></i>
 </details>
 
 <!-- What is the registry? -->
@@ -200,7 +200,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     What is the registry?
   </summary>
-  It is explained in detail <a href="/how-does-it-work/skynet-layer-2.en.html#what-about-the-registry">here</a>.
+  It is explained in detail <a href="/how-does-it-work/skynet-layer-2.html#what-about-the-registry">here</a>.
 </details>
 
 <!-- What is SkyDB? -->
@@ -208,7 +208,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     What is the SkyDB?
   </summary>
-  SkyDB is shorthand for a registry entry that contains a <a href="/how-does-it-work/skynet-layer-2.en.html#how-does-skynet-work-in-theory">Skylink</a>. This means that the link itself is mutable(can be changed at any time by anyone with they keys).  
+  SkyDB is shorthand for a registry entry that contains a <a href="/how-does-it-work/skynet-layer-2.html#how-does-skynet-work-in-theory">Skylink</a>. This means that the link itself is mutable(can be changed at any time by anyone with they keys).  
 </details>
 
 <!-- sia whitepaper -->
@@ -216,7 +216,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     Where can I find Sia's whitepaper?
   </summary>
-  You can find it right <a target="_blank" rel="noopener noreferrer" href="htthttps://sia.tech/sia.pdf">here</a>. However, keep in mind that Sia did a lot of progress since invention and if you want to better understand how it works, check out our up to date guides like <a href="/how-does-it-work/sia-layer-1.en.html">Introduction to Sia</a>.
+  You can find it right <a target="_blank" rel="noopener noreferrer" href="htthttps://sia.tech/sia.pdf">here</a>. However, keep in mind that Sia did a lot of progress since invention and if you want to better understand how it works, check out our up to date guides like <a href="/how-does-it-work/sia-layer-1.html">Introduction to Sia</a>.
 </details>
 
 <!-- where is the roadmap -->
@@ -237,7 +237,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     What's better? Sia, Filecoin or Storj?
   </summary>
-  Don't ask others. Don't trust, verify. While it's impossible for anyone involved to take the bias away completely, <a href="/how-does-it-work/sia-guides/storage-chains-compared.en.html">this</a> is as roughly objective and (deeply) technical comparison and it shouldn't be an issue for you to verify these claims yourself.
+  Don't ask others. Don't trust, verify. While it's impossible for anyone involved to take the bias away completely, <a href="/how-does-it-work/sia-guides/storage-chains-compared.html">this</a> is as roughly objective and (deeply) technical comparison and it shouldn't be an issue for you to verify these claims yourself.
   <br><br>
   </summary>
 </details>
@@ -286,7 +286,7 @@ Make sure you have your 29-word seed before you start.
 
 
   <h3>Spent funds</h3>
-  Spent funds are funds that have already been signed off in the payment channel with the host(see <a href="/private-backups-with-sia/introduction-to-renting.en.html">renting</a>). These are funds that have been spent and the host now effectively has, assuming they can provide a storage proof in the proof window.
+  Spent funds are funds that have already been signed off in the payment channel with the host(see <a href="/private-backups-with-sia/introduction-to-renting.html">renting</a>). These are funds that have been spent and the host now effectively has, assuming they can provide a storage proof in the proof window.
 
   <h3>Unspent funds-Allocated</h3>
   These funds are funds that have been locked into a contract and have been not been spent yet. These are put here because you needs funds to use on the fly when adding more storage or paying for download bandwidth. But if these aren’t ever spent, they will get returned at the end of the contract period.
@@ -294,7 +294,7 @@ Make sure you have your 29-word seed before you start.
   <h3>Unspent funds-Unallocated</h3>
   This is where the issues mostly arise. If this section goes unfunded, new contracts cannot be formed and heavily used contracts cannot be refilled. This causes a myriad of issues with the renter so make sure to keep the unallocated category topped off by routinely checking it and upping the allowance as need be.
 
-  One more thing to keep in mind is that it may say that you have “700 H” or whatever, but H means hasting which is actually 1e-24 SC. To learn more about how the token works and the different denominations, look <a href="/how-does-it-work/sia-guides/tokenomics.en.html#siacoin-sc">here</a>.
+  One more thing to keep in mind is that it may say that you have “700 H” or whatever, but H means hasting which is actually 1e-24 SC. To learn more about how the token works and the different denominations, look <a href="/how-does-it-work/sia-guides/tokenomics.html#siacoin-sc">here</a>.
 </details>
 
 <!-- balance is 0 -->
@@ -386,8 +386,8 @@ Make sure you have your 29-word seed before you start.
   </summary>
   Official Wallet: <a target="_blank" rel="noopener noreferrer" href="https://support.sia.tech/your-sia-wallet/wallet-overview">Sia-UI</a>
   <br>
-  Community Resources: Our <a href="/how-does-it-work/sia-guides/wallet.en.html">Wallet</a> and
-  <a href="/how-does-it-work/sia-guides/seed-management.en.html">Secure seed management</a> guides.
+  Community Resources: Our <a href="/how-does-it-work/sia-guides/wallet.html">Wallet</a> and
+  <a href="/how-does-it-work/sia-guides/seed-management.html">Secure seed management</a> guides.
 </details>
 
 ## Trading
