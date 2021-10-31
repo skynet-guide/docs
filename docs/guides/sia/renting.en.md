@@ -1,5 +1,5 @@
 # Renting on Sia
-Before following this article in order to set up your own renter with Sia-UI on Windows 10, we recommend to learn the technical details to how renting works by visiting the [Introduction to Renting](/private-backups-with-sia/introduction-to-renting.html) that I also wrote.
+Before following this article in order to set up your own renter with Sia-UI on Windows 10, we recommend to learn the technical details to how renting works by visiting the [Introduction to Renting](/guides/sia/renting/introduction.html) that I also wrote.
 
 Renting on Windows 10 with Sia-UI
 So first off you’re gonna want to head to the official <a href="https://sia.tech/" target="_blank" rel="noopener noreferrer">Sia website</a>. And head to the download page.
@@ -20,11 +20,11 @@ And then “Run Anyway”
 
 Now let it run with administrator privileges. Once that is open you’ll either want to put in your own seed, or generate a new one. For this article we will be creating a new seed.
 
-> Also, side note say what a seed is. A seed is effectively your “password.” Though unlike normal passwords it’s a cryptographic private key that all your data is encrypted with and cannot be changed. For a more detailed breakdown of how seeds work and how to keep yours secure, read [here](/how-does-it-work/sia-guides/seed-management.html).
+> Also, side note say what a seed is. A seed is effectively your “password.” Though unlike normal passwords it’s a cryptographic private key that all your data is encrypted with and cannot be changed. For a more detailed breakdown of how seeds work and how to keep yours secure, read [here](/guides/seed-management.html).
 
 ![](/static/assets/renting-on-sia/image-8.png)
 
-Now you will be given a seed that is your unique identifier. DO NOT share this with anyone. If they have this seed, they have all of your SC and your data isn’t safe. For more info read [here](/how-does-it-work/sia-guides/seed-management.html). So now save this seed to a safe place and click “next”
+Now you will be given a seed that is your unique identifier. DO NOT share this with anyone. If they have this seed, they have all of your SC and your data isn’t safe. For more info read [here](/guides/seed-management.html). So now save this seed to a safe place and click “next”
 ![](/static/assets/renting-on-sia/image-9.png)
 
 Now fill in the missing words and click “Done”
@@ -50,7 +50,7 @@ Your new address will now show up under the “Latest Address” tab:
 ![](/static/assets/renting-on-sia/image-16.png)
 
 
-Now you are going to want to acquire some Siacoin and send them to this newly generated address. For more info on how, check out the [here](/how-does-it-work/sia-guides/trading.html). Also now is a good time to figure out how much Siacoin (I will further refer to it as SC from now on) you actually need. The best metric to go off is the storage pricing on <a href="https://siastats.info/storage_pricing" target="_blank" rel="noopener noreferrer">SiaStats</a>, just take that pricing per TB in SC and multiply it by how many TB you need. Also keep in mind that since it costs money to form contracts with hosts (read more [here](/private-backups-with-sia/introduction-to-renting.html)), prices will be very high until about 1TB where it levels off to average pricing.
+Now you are going to want to acquire some Siacoin and send them to this newly generated address. For more info on how, check out the [here](/siacoin/trading.html). Also now is a good time to figure out how much Siacoin (I will further refer to it as SC from now on) you actually need. The best metric to go off is the storage pricing on <a href="https://siastats.info/storage_pricing" target="_blank" rel="noopener noreferrer">SiaStats</a>, just take that pricing per TB in SC and multiply it by how many TB you need. Also keep in mind that since it costs money to form contracts with hosts (read more [here](/guides/sia/renting/introduction.html)), prices will be very high until about 1TB where it levels off to average pricing.
 
 Once you send coin to your wallet you have two choices, bootstrapping and letting it sync naturally.
 
@@ -100,9 +100,9 @@ So go to the “Advanced” tab for a tad more control.
 
 Now that you’re in the tab, you can edit the “Allowance Funds” in accordance to as described earlier, “Expected Storage” in accordance to how much you want to store, “Expected Download” to however much you presume you will download, and “Expected Upload” to roughly the same as expected storage(because you have to upload the data you store of course).
 
-> Keep in mind that the allowance is kinda fluid so you can always increase it later with no issues. Also, if you don’t put in enough funds, you will run out and not be able to download files anymore once uploaded(to troubleshoot common issues, see [here](/how-does-it-work/sia-guides/faq.html#troubleshooting)).
+> Keep in mind that the allowance is kinda fluid so you can always increase it later with no issues. Also, if you don’t put in enough funds, you will run out and not be able to download files anymore once uploaded(to troubleshoot common issues, see [here](/about/faq.html#troubleshooting)).
 
-Make sure to keep hosts set to 50, the contract period to three months, and the renew period to one month. To learn more about the technical side of how renting functions and why they must be set to this, see [here](/private-backups-with-sia/introduction-to-renting.html).
+Make sure to keep hosts set to 50, the contract period to three months, and the renew period to one month. To learn more about the technical side of how renting functions and why they must be set to this, see [here](/guides/sia/renting/introduction.html).
 ![](/static/assets/renting-on-sia/image-29.png)
 
 Now that the allowance has been set, the final waiting game will commence. Only 10 contracts can be formed per block(each block takes 10 minuets to occur on average, too see the latest blocks see <a href="https://siastats.info/" target="_blank" rel="noopener noreferrer">SiaStats</a>). So to form the 50 contracts required to rent, it generally will take about an hour. You can begin to upload data at the 30 contract mark, but it will be very slow until it reaches 50 contracts.
@@ -119,7 +119,7 @@ Now once in the folder, click on the up arrow and select a file with the file pi
 
 Give that a bit of time to upload
 ![](/static/assets/renting-on-sia/image-37.png)
-> Side note, the minimum file size on Sia is 40MB and the redundancy of `siac`(the underlying code that Sia-UI uses) is 3x, so no matter how small the file is, it takes up 40MB of paid space and 120MB of paid upload bandwidth to send it to three hosts. To understand why it’s like this, read [here](/private-backups-with-sia/introduction-to-renting.html).
+> Side note, the minimum file size on Sia is 40MB and the redundancy of `siac`(the underlying code that Sia-UI uses) is 3x, so no matter how small the file is, it takes up 40MB of paid space and 120MB of paid upload bandwidth to send it to three hosts. To understand why it’s like this, read [here](/guides/sia/renting/introduction.html).
 
 
 And your file has now been uploaded to the decentralized web!

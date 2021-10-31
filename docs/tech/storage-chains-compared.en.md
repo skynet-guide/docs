@@ -136,7 +136,7 @@ To address this issue, the Filecoin devs introduced a method to store cached and
 So something like a Google Photo’s equivalent on Filecoin really just isn’t practical because the data is infrequent enough where it doesn’t make sense to cache, while also being something that needs to be low latency (which is impossible if the data has to be sealed/unsealed often). Read more <a href="https://docs.filecoin.io/about-filecoin/network-performance/#data-retrieval" target="_blank" rel="noopener noreferrer">here</a>.
 
 ### Sia
-The Sia network has had a dedicated content distribution platform for about a year now called Skynet. I delve into more detail about it [here](/how-does-it-work/sia-layer-1.html).
+The Sia network has had a dedicated content distribution platform for about a year now called Skynet. I delve into more detail about it [here](/tech/sia-layer-one.html).
 
 The gist of it though is that there is a “global file space” of things called Skylinks (Skylinks are 46 character long unique identifiers based on the “Merkle Tree Root” of the file). Any node (Skynet nodes are called portals) can access any Skylink by pinging hosts that it is contracted with until it finds the file and can send it off to the user. There is also another layer to this called “SkyDB” which allows for mutable file pointers as well.
 
@@ -159,7 +159,7 @@ The sector size is often something that is ignored or not considered by someone 
 Filecoin actually has a fixed 32GiB sector size which is quite unwieldy. Also, for each 256B, 2B are reserved for proofs. Read more <a href="https://docs.filecoin.io/store/lotus/very-large-files/#maximizing-storage-per-sector" target="_blank" rel="noopener noreferrer">here</a>. So what would normally be a 32GiB sector(34,359,738,368B) would actually store 34,091,302,912B. This isn’t a huge cost, but it does mean ~1% of storage paid for is just proofs. Also, another thing to keep in mind is that everything to be sent to a Filecoin miner must be in a <a href="https://github.com/ipld/specs/blob/master/block-layer/content-addressable-archives.md" target="_blank" rel="noopener noreferrer">car</a> file which can be somewhat compute-heavy on the client-side. This is in contrast to other networks where you just send the host a binary blob and you’re all good.
 
 ### Sia
-I have talked about Sia’s minimum sector size at length [here](/private-backups-with-sia/introduction-to-renting.html#redundancy), but the gist is this: at a protocol level, the minimum file size is 4MiB. This is done so the metadata doesn’t take up too much space on the renter (for 64B sectors, there would be a 1:2 metadata to data stored ratio). This is planned to be addressed at some point by adding a 64KiB option to sector size, but that has no planned release date. Due to the 4MiB sector size, it is not price efficient to store small files without compressing them first, but it’s fine for anything else (raw photos, videos, archives).
+I have talked about Sia’s minimum sector size at length [here](/guides/sia/renting/introduction.html#redundancy), but the gist is this: at a protocol level, the minimum file size is 4MiB. This is done so the metadata doesn’t take up too much space on the renter (for 64B sectors, there would be a 1:2 metadata to data stored ratio). This is planned to be addressed at some point by adding a 64KiB option to sector size, but that has no planned release date. Due to the 4MiB sector size, it is not price efficient to store small files without compressing them first, but it’s fine for anything else (raw photos, videos, archives).
 
 In addition to that, Skynet (Sia’s layer two) allows different handling. While nothing changes for individual files (they take the size of a full chunk if they are smaller), a lot changes for folder uploads. Folders uploaded to Sia hosts through Skynet have their contents automatically packed into the 4 MiB chunks to allow you to store even large collections of tiny files efficiently.
 
@@ -216,11 +216,11 @@ Filecoins issues are:
 
 Then who wins between Sia and 0Chain? Well, right out of the gate one we have to keep in mind that **0Chain just flat out doesn’t exist yet**. It’s currently rapidly evolving in the beta-net stage and is slated to release in Q1 of 2021. The code is all public of course, but it’s not like you could begin to develop on it right now, it needs more time to mature. The promise of the chain handling contract maintenance sounds super awesome, as well as the idea of having “sharders” handle consensus so full nodes can run on literally any hardware. But my gripes as listed above in the “Decentralization” section are just too great; **anything in crypto that requires KYC to get a priority spot in staking in the network makes me incredibly uncomfortable.**
 
-Now **Sia isn’t perfect in the slightest**, I list a lot of problems with it [here](/private-backups-with-sia/introduction-to-renting.html). But in the current decentralized storage space, it is the best option in my eyes.
+Now **Sia isn’t perfect in the slightest**, I list a lot of problems with it [here](/guides/sia/renting/introduction.html). But in the current decentralized storage space, it is the best option in my eyes.
 
-Also with developments like [Skynet](/how-does-it-work/skynet-layer-2.html), the creation of the [Sia Foundation](/how-does-it-work/sia-guides/foundation.html), and the possibility of implementing features like Utreexo, the future looks bright for Sia.
+Also with developments like [Skynet](/tech/skynet-layer-two.html), the creation of the [Sia Foundation](/sia/foundation.html), and the possibility of implementing features like Utreexo, the future looks bright for Sia.
 
-To learn more about the insides of it, read an article Danger wrote [here](/how-does-it-work/sia-layer-1.html).
+To learn more about the insides of it, read an article Danger wrote [here](/tech/sia-layer-one.html).
 
 ## Honorable mentions
 While the only actual usable/promising chains are broken down above, it’s not like they’re the only ones in the space. Some other honorable mentions are as follows.

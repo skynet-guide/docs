@@ -32,7 +32,7 @@ You will be asked to provide documents proving your identity like scans of ID an
 
 Once verified, it is also great idea to enable `2-Factor-Authentication` on the Exchange. You can usually select between `SMS` and `Google Authenticator`. And since there were many victims of attackers that called to user’s operator and got control of user’s phone number due to poor security of said operators, it is recommended to go with the Google Authenticator option.
 
->It is also a good practice to securely store the seed used for the Google Authenticator’s code generator so you can get to it when needed in case you lost your device. To learn more about storing such values scurely check our [Secure Seed Management guide](/how-does-it-work/sia-guides/seed-management.html).
+>It is also a good practice to securely store the seed used for the Google Authenticator’s code generator so you can get to it when needed in case you lost your device. To learn more about storing such values scurely check our [Secure Seed Management guide](/guides/seed-management.html).
 
 ## Market Orders
 Markets are tools for discovery of the price. Market is a place where supply and demand meets and affects price of an asset. This is done by using so called orders. Many of these are made by people and even more by bots that balance the prices between different exchanges and markets. Whenever there is price move, there is an opportunity and this process is called arbitraging.
@@ -45,7 +45,7 @@ Let’s focus on the most common orders. **Limit orders** let you specify condit
 
 If you are not sure, easiest way is to just use **Market Buy Order** or **Market Sell Order**. You just specify the amount you want and you will instantly buy or sell at best prices according to already existing orders.
 
-Your coins will then appear in the Wallet section. If you want to know how to store, send and receive them, check our [Siacoin Wallets guide](/how-does-it-work/sia-guides/wallet.html).
+Your coins will then appear in the Wallet section. If you want to know how to store, send and receive them, check our [Siacoin Wallets guide](/siacoin/wallet.html).
 
 ## Mistakes to avoid
 - **Don’t access exchange links from third party sources.** Be aware that fake exchange links can appear even on google search as paid advertisement. Bookmark your exchange and use that. You can avoid this issue getting used to official mobile apps.

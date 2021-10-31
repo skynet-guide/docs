@@ -8,7 +8,7 @@ The first and most common mistake we see all the time is people calling the curr
 
 Siacoin is a cryptocurrency that was never pre-mined, there was no ICO and it is not a trusted setup. Siacoins are not even securities. In <a href="https://sia.tech/settlement2019" target="_blank" rel="noopener noreferrer">2019 SEC was looking into Sia</a> and didn’t initiate any action against SC. Only issues they had were with the first and very small $120,000 Sianotes (later converted to Siafunds) offering from 2014, few years before SEC even started providing guidance to projects in 2017.
 
-Siacoin can be divided up tp 10^24 units called **hastings** and is only entering circulation as a result of mining. You can find more details about it in our [Mining Guide](/how-does-it-work/sia-guides/mining-guide.html).
+Siacoin can be divided up tp 10^24 units called **hastings** and is only entering circulation as a result of mining. You can find more details about it in our [Mining Guide](/siacoin/mining-guide.html).
 
 Symbol	| Prefix	    | Full amount	                    | Scientific notation
 --------| --------------| ------------------------------| -------------------
@@ -37,7 +37,7 @@ There is always going to be some block reward to ensure that there are new coins
 
 However, **“unlimited” supply doesn’t mean you can “print” endless amount of coins right now**. It means that there is no limit and coins will keep entering circulation at known rate. As you know the block reward, you can tell how many coins there will be in the existence at any point in time. And you can achieve really infinite supply only if you have infinite time. But the human kind doesn’t have such life expectation. In our lifetimes, the total supply of Siacoin won’t increase much. And that is correct even if Sia Foundation adds extra coins to the block rewards.
 
->In 2015, **Sia’s block reward started with genesis block at 300,000 SC** and was decreasing by 1 with each new block. The bottom by design was set to 30 000 SC per block and this limit was reached in 2020. Since then the block reward is fixed. In Q1 of 2021 this is changing with Sia Foundation, (you can find more about it in [Introduction to Sia](/how-does-it-work/sia-layer-1.html)) but even with block reward doubled to 60 000 SC per block the **inflation will be much lower than for other projects** and actually lower than it wasthen it was a couple years ago. Not just that though, half of these coins will be used for good of the network and if it cannot be reasonably and transparently spent in its support, it will be burnt. Ask yourself, if you knew year ago that 50% of block rewards are going into support of the Sia ecosystem instead of profit taking (where money leave the ecosystem), wouldn’t it be **great news**?
+>In 2015, **Sia’s block reward started with genesis block at 300,000 SC** and was decreasing by 1 with each new block. The bottom by design was set to 30 000 SC per block and this limit was reached in 2020. Since then the block reward is fixed. In Q1 of 2021 this is changing with Sia Foundation, (you can find more about it in [Introduction to Sia](/tech/sia-layer-one.html)) but even with block reward doubled to 60 000 SC per block the **inflation will be much lower than for other projects** and actually lower than it wasthen it was a couple years ago. Not just that though, half of these coins will be used for good of the network and if it cannot be reasonably and transparently spent in its support, it will be burnt. Ask yourself, if you knew year ago that 50% of block rewards are going into support of the Sia ecosystem instead of profit taking (where money leave the ecosystem), wouldn’t it be **great news**?
 
 The existence of the block reward guarantees that the network can continue performing smoothly and users always have the option of either buying it on exchange, using some middleman (storage services built on top of Sia and providing fiat payment gates), or mining it themselves. This helps to keep everything working and self-balancing. Another self-balancing technique that the network uses is coin destruction. Some coins are burnt by host announcements and lost in collateral from bad-actor hosts.
 
@@ -61,7 +61,7 @@ Thanks to this you only pay for what you really use. We believe this is beginnin
 
 However, this doesn’t mean you won’t have that option. In this new world, it is up to users to decide. Services built with this tech can offer such experience for those who want to use the decentralized internet without worrying about crypto wallet management and just pay with fiat currency. And the recent development with Skynet makes this future look like coming true.
 
->If you want to know more about Skynet, see our [Introduction to Skynet](/how-does-it-work/skynet-layer-2.html).
+>If you want to know more about Skynet, see our [Introduction to Skynet](/tech/skynet-layer-two.html).
 
 ### What makes hosts to keep and protect my data instead of deleting them?
 Hosts also use Siacoin. For them it is not just a reward. Before they get chance to store any of your data, they must provide a collateral. If you met a stranger on the street that would tell you that he will keep and protect your phone if you give it to him, would you trust him without giving you something of at least same value? And would you trust a stranger with your most precious data? We don’t think so. While there are many good people, you would most likely lose your phone and never see your data again as well.
@@ -83,7 +83,7 @@ You can hold it in the same wallet, but will never see it mentioned (at least in
 They are used for **revenue sharing** on the Sia network; a **3.9% fee from every storage-related transaction on Sia** is distributed to the holders of Siafunds. The developers (Skynet Labs) currently hold approximately 85% of all Siafunds while the remaining approx. 1,500 SF were distributed to the community in a total of three offerings since 2014.
 
 ## Where to buy?
-If you are interested in buying Siacoin or Siafund, check our [Trading guide](/how-does-it-work/sia-guides/trading.html). It will lead you through everything you need to to know in order to securely and responsibly manage your assets and execute trade orders.
+If you are interested in buying Siacoin or Siafund, check our [Trading guide](/siacoin/trading.html). It will lead you through everything you need to to know in order to securely and responsibly manage your assets and execute trade orders.
 
 ---
 *Written by: Danger & Covalent, Last Edit: April 14, 2021*

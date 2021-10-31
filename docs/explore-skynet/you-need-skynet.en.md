@@ -19,7 +19,7 @@ Skynet is presenting a new kind of internet, a decentralized one. Built with ope
 
 All you need is an account on a portal of your choice. All these guides will be using siasky.net as the official Skynet portal operated by the developers of Skynet. But it’s open source, so anyone can start a business and become a player in the decentralized cloud storage market or run an own portal just for the own needs, family or friends. You can always migrate to any other portal if you’re not happy, simply telling another portal to start pinning all your data. But we will leave that for a separate guide later.
 
-There are resources that explain it much better. If you want to learn more about Skynet’s vision which is close to a roadmap, check this  <a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">“ADeep Dive into Skynet”</a> article on the official Sia blog.
+There are resources that explain it much better. If you want to learn more about Skynet’s vision which is close to a roadmap, check this <a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">“ADeep Dive into Skynet”</a> article on the official Sia blog.
 
 Let’s look at a bit condensed version.
 
@@ -34,12 +34,12 @@ For these reasons, siasky.net uploads should only be used if you’re fine that 
 All files up to the base sector size are stored with 10x redundancy. This applies to all smaller files (let’s say up to the size of an mp3 song). Bigger files are stored with 3x redundancy. This means your files or fragments of files exist multiple times on the network and are automatically re-uploaded to another host in order to maintain good health of your files in case of some host holding pieces of your data disappears.
 
 ### Anyone can run a Skynet portal with own rules and integrate new features. It’s open-source.
-Let’s say your favorite portal has a limit for a maximum upload of 1GB. If you need more, you have two options. To use some Skynet app that works around that limit, for example as SkySend ([see our guide here](/explore-skynet/skynet-guides/sending-files.html)).
+Let’s say your favorite portal has a limit for a maximum upload of 1GB. If you need more, you have two options. To use some Skynet app that works around that limit, for example as SkySend ([see our guide here](/guides/skynet/sending-files.html)).
 
 Or, if you’re not happy with some portal, you can always move to another one or run your own. This is what makes the difference from the centralized internet. When some site goes offline, you lose all your data. But on Skynet, the data is stored on the underlaying Sia network that is deeply integrated with Skynet. All you have to do is to tell your portal (or just a Sia renter node in “portal mode”) to start pinning the list of all your Skylinks.
 
 ### You can use any Skynet portal to access any Skylink.
-Just change the domain name in the skylink to something else. Find a list (may be incomplete) [here](/how-does-it-work/skynet-guides/portals.html).
+Just change the domain name in the skylink to something else. Find a list (may be incomplete) [here](/tech/portals.html).
 
 ### Skynet is decentralized internet.
 It’s not a single app, it is a way to access and utilize the decentralized storage network in a way that lets you upload anything you want and host it without need of a server. It can be a document, song, video, or entire complex application, like SkyFeed (decentralized twitter), Marstorage (decentralized dropbox) and others. All Skynet portals let you access the same files at the same hosts on Sia network through Skylinks (way of addressing specific content on decentralized network) so you’re not depending on single point of access.
@@ -55,7 +55,7 @@ You can read more about this in other linked resources but shortly said, you don
 ## Where to go from here?
 I know, you want to use it already. We are currently working on more guides that will lead you through account creation and various Skynet apps (shortly Skapps) to use. Expect this section to grow fast.
 
-> [How To: Sending Large Files over Skynet](/explore-skynet/skynet-guides/sending-files.html)
+> [How To: Sending Large Files over Skynet](/guides/skynet/sending-files.html)
 
 ---
 *Written by: Danger & Covalent, Last Edit: April 14, 2021*
