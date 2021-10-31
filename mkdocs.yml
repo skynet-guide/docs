@@ -23,10 +23,7 @@ nav:
             - 'Network Metrics': 'tech/network-metrics.en.md'
             - 'Mining': 'siacoin/mining-guide.en.md'
             - 'Storage Chains Compared': 'tech/storage-chains-compared.en.md'
-            - 'Resource Sites': 'about/resource-sites.en.md'
             - 'Tools': 'sia/tools.en.md'
-            - 'Support': 'about/support.en.md'
-            - 'FAQ': 'about/faq.en.md'
         - 'More about Skynet':
             - 'Skynet Portals': 'tech/portals.en.md'
     - 'Get paid for storage':
@@ -51,6 +48,11 @@ nav:
         - 'More':
             - 'Why do I need Skynet?': 'explore-skynet/you-need-skynet.en.md'
             - 'Sending Files': 'guides/skynet/sending-files.en.md'
+    - 'About':
+        - 'FAQ': 'about/faq.en.md'
+        - 'Contributors': 'about/contributors.en.md'
+        - 'Resource Sites': 'about/resource-sites.en.md'
+        - 'Support': 'about/support.en.md'
 
 theme:
   name: material

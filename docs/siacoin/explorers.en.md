@@ -4,7 +4,7 @@ Building a blockchain explorer is no easy task and due to lack of resources, Neb
 ### <a href="https://siastats.info/" target="_blank" rel="noopener noreferrer">SiaStats</a>
 
 <a href="https://siastats.info/" target="_blank" rel="noopener noreferrer">
-  ![Siastats Website](../../static/assets/discover/siastats.png)
+  ![Siastats Website](../static/assets/discover/siastats.png)
 </a>
 
 ---
