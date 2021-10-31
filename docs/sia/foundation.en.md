@@ -1,11 +1,24 @@
 <!-- Intro section -->
 # Sia Foundation
 The Sia network hardforked at beginning of 2021 to implement the Sia Foundation: a new non-profit entity led by Luke Champine that builds and supports distributed cloud storage infrastructure, with a specific focus on the Sia storage platform.
-## Common points of interest
+
+>This fork activated at a block height 298,000 which happened on **February 3rd 2021**.
+
+If you want to know more about Sia Foundation, check out [Introduction to Sia and Skynet](/tech/introduction.html).
+
+## Communication
 ---
 <!-- Section speaking about where to converse about the foudation -->
 Official way to communicate with The Sia Foundation is through the <a href="https://forum.sia.tech/" target="_blank" rel="noopener noreferrer">Sia Forum</a>. Not discord, reddit or twitter. The Sia Forum is the right place to post your suggestions and be sure that they will be considered and receive an official response. You can also find Luke’s launch post <a href="https://blog.sia.tech/launching-the-sia-foundation-ee47dfab4d2c" target="_blank" rel="noopener noreferrer">here</a>.
 
+## Sia Foundation Tracker
+The <a href="https://foundation-tracker.siacentral.com/" target="_blank" rel="noopener noreferrer">Sia Foundation Tracker</a> is a 3rd-party web app that tracks incoming and outgoing transactions to the Sia Foundation’s block subsidy addresses. Built and maintained by <a href="https://siacentral.com" target="_blank" rel="noopener noreferrer">Sia Central</a>.
+
+> “The Sia Foundation is a non-profit corporation that maintains, improves, and promotes the Sia distributed storage network. It was founded in 2020 and is funded by a perpetual subsidy built into the Sia protocol. All code, research, educational materials, and other products of the Foundation’s work will be made available to the public free of charge and under open-source licenses.” – <a href="https://sia.tech/siafoundation" target="_blank" rel="noopener noreferrer">Sia Foundation</a>
+
+
+## Fork that introduced Sia Foundation
+---
 <!-- Section that links to the proposal -->
 <details>
 <summary>
@@ -13,34 +26,6 @@ Official way to communicate with The Sia Foundation is through the <a href="http
 </summary>
 <blockquote class="reddit-card" data-card-created="1615816216"><a href="https://www.reddit.com/r/siacoin/comments/iox6ly/proposal_the_sia_foundation/">Proposal: The Sia Foundation</a> from <a href="http://www.reddit.com/r/siacoin">r/siacoin</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
-</details>
-<br>
-
-<!-- Second dropdown about the circulating supply -->
-<details>
-<summary>
-<b>How did this fork affect the Siacoins in circulation?</b>
-</summary>
-You can see it on this <a href="https://siastats.info/macroeconomics">SiaStats</a> chart. The inflation increased in 2021 by roughly 10%, but that's only because of 1.57 GS that the Sia Foundation directly received as you can see <a href="https://foundation-tracker.siacentral.com">here</a> and because of the 30KS per block that are being paid out monthly. This means it will be around 5% in the following years and slowly decrease.
-
-Sia Foundation is non-profit, so it must follow laws and as you can see in the tracker above, we can transparently see its fund management.
-
-Due to legal reasons and requirements, Sia Foundation also paid 800M SC to the Skynet Labs for the Sia IP ownership (at the time this was decided and approved by community, it was worth of $1,000,000 - for comparison, about 15% of total development cost of Sia). That said, both teams are closely co-operating with the same goals as ever, making Sia the backbone of future internet. Sia Foundation focuses on the core tech and Skynet Labs work on the Skynet, bringing mainstream adoption to Sia.
-
-We are putting effort to explain it because it's very common in crypto world that whenever any dev team receives a lot of coins, it's seen as exit scam. Also, splits are usually seen as bad thing.
-
-But not for Sia and Skynet, both projects helping each other. And not when it comes to these devs. They are the same peoples who worked for years with different model than anyone else. Where other projects went with ICO, pre-mines, airdrops, trusted setups and no risk since they were paid ahead, Sia developers did this all with zero SC contribution from the community, no ICO or pre-mine. Until now.
-
-It's quite ironic that only thanks to birth of Sia Foundation receiving SC from the blockchain, all the previous "investments" from people who bought SC can be finally seen as investments into the network and the non-profit entity working developing it.
-
-<h2>
-What about Sia’s own unlimited supply?
-</h2>
-In the end it’s all about supply and demand. Over time, it could happen that majority of circulating supply ends up locked in storage contracts and/or held by people. This could make it very difficult for people using to pay for their storage. That’s why Sia is always going to have a block reward so there is always a way to get SC. You can read more about it in our Introduction to Sia.
-
-Since we know the block reward, we can tell how many SC there will be at any point in future. And we can tell that while supply is maybe theoretically infinite, it is truly infinite only if our lifes were infinite. The fact is that in our lifetimes, the supply will double maybe in next 8 years. But for Filecoin, it will double in next few weeks.
-
-So what should you do? Zoom out. Also don’t trust, verify – make your own research. And if you still doubt Sia and Skynet, go and try all of the alternatives. Then go to Siasky.net, upload picture, video or an entire website. And send a link to your friend:)
 </details>
 <br>
 
@@ -63,29 +48,4 @@ Since this fork was well accepted by vast majority of the community<i>there is n
 <br>
 
 ---
-<!--Final section about the forks implications -->
-## What does it mean for me? Help me!
-This fork will activate at a block height 298,000 which is expected to be on **February 3rd**.
-
-Update to version **1.5.4 is necessary to spend coins, receive coins, rent, or host after the fork**. If you don’t upgrade in time (or at least before next time you run Sia), you will get your `consensus.db` file stuck to the legacy blockchain.
-
->`consensus.db` is the file that syncs the blockchain to your computer, and if you don’t update now, you will have to eventually re-sync it which is very time consuming operation.
-
-### If you rent or host on Sia
-Renters and hosts need to **upgrade to 1.5.4 by February 3rd**. Doing so ensures that renters will continue to upload data to hosts also on the new fork. Hosts who fail to upgrade in time will no longer form contracts with renters who upgrade. Long story short, you need to be on the same version as everyone else or you aren’t part of the same network.
-
-### If you hold Siacoins in own wallet (Sia-UI)
-If you have Siacoins stored in official Sia-UI wallet, all you need to do is to **update to 1.5.4**. You control the seed (private key) and you will have instant access to your SC on the new Sia chain.
-
-### If you hold Siacoins in own wallet (Sia Central)
-**Ledger Nano S users will have to update their apps**. Those not using Ledger don’t have to do anything, the site will update the node it connects to so you won’t have to. You control the seed (private key) and you will have instant access to your SC on the new Sia chain.
-
-### If you hold Siacoins on exchange
-You don’t have to do anything, the exchange will update the node it connects to so you won’t have to. Also, the exchange controls the seed (private key) so it’s not your issue at all. Your Siacoin balance is the balance you have in their exchange’s internal database and it will be the same after the fork as it was before.
-
->It is good idea to **never keep your coins on Exchange** unless you are trading actively and you know what you are doing. It is rather rare today but many exchanges in the past ended up with users losing their assets. When you have coins on Exchange, they are not really yours since you don’t have the seed (private key). It is very similar to your bank account, the money are not yours. It is the bank that keeps them and allows you access it through its system. If that system goes down, what will you do? You can prevent this scenario by keeping coins in your [own wallet](/sia/wallet.html) out of exchanges.
-
-### If you mine Siacoin
-Nothing changes. Only ones who need to update are the **mining pools**. We already updated our list of Mining Pools, so all that you find there confirmed the update.
-
-*Written by: Danger & Covalent, Last Edit: April 14, 2021*
+*Written by: Danger & Covalent, Last Edit: October 26, 2021*

@@ -5,10 +5,10 @@ It met with positive response on BitcoinTalk, and so David decided to work on Si
 
 They didn’t have to wait for their chance much longer. After one BitcoinTalk user abused David’s hand-drawn diagrams in order to fraudulently raise money, it was clear that there is enough interest to raise money via crowdfunding.
 
-Not only was the crowdfunding successful, it also helped them with raising contacts and getting introduced to **Jim Pallota** and their first traditional investment funding. They formally incorporated `Nebulous, Inc.`, and soon after sold `Sianotes`, later convertible to `Siafunds` (*a supplementary token of the Sia network, see more in [Tokenomics guide](/sia/tokenomics.html)*).
+Not only was the crowdfunding successful, it also helped them with raising contacts and getting introduced to **Jim Pallota** and their first traditional investment funding. They formally incorporated `Nebulous, Inc.`, and soon after sold `Sianotes`, later convertible to `Siafunds` (*a supplementary token of the Sia network, see more in [Tokenomics guide](/siacoin/tokenomics.html)*).
 
 
-But Sia was a very different project back then. It used Proof of Storage consensus instead of the current Proof of Work (*explained in [Introduction to Sia](/sia/introduction.html)*), hosts were grouped into “*quorum*” that were responsible for storing users’ files, and the wallet was also fully scriptable.
+But Sia was a very different project back then. It used Proof of Storage consensus instead of the current Proof of Work (*explained in [Introduction to Sia](/tech/introduction.html)*), hosts were grouped into “*quorum*” that were responsible for storing users’ files, and the wallet was also fully scriptable.
 
 Ultimately, David discovered issues in the Proof of Storage algorithm that forced them to start over, but thanks to David’s participation in the Bitcoin core developer community around that time, he became able to understand the unique challenges of cryptocurrencies and use this knowledge to lay a path towards the efficient and well-designed Sia platform as we know it today.
 
@@ -44,6 +44,9 @@ In November 2020, Sia **1.5.1** introduced `the Skynet Registry`, a database lay
 
 In early 2021 **1.5.3** with various improvements and fixes to recently added features. **1.5.4** is currently in testing with more fixes on the way as well as new features. This is also leading up to **1.5.5** where the Foundation fork will occur; Sia development will be directed by changes in two directions: Sia Foundation will continue improving Sia core tech in directions most requested by the Sia community as host stability, small file support or reduction of blockchain requirements with Utreexo. Skynet Labs will focus on Skynet and getting more developers and users.
 
-Currently **1.5.6** is looming in the horizon with the promise of bringing recursive monitization to Skynet as well as splitting the Foundation `siad` codebase away from the Skynet `skyd` codebase. Learn more about the future(or present if you're reading this in the future) <a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">here</a>.
+In middle of 2021 **1.5.6** was released splitting the Foundation `siad` codebase away from the Skynet `skyd` codebase, followed by **1.5.7** in September that brought some important host fixes and updated list of bootstrap peers.
 
-*Written by: Danger & Covalent, Last Edit: April 14, 2021*
+The team is currently focusing on two major things. Integration of **Utreexo** and **Hosting** experience improvements (hosting should eventually become easy enough that you don't need to study technical details deeply in order to avoid mistakes). These two are expected to render Sia-UI obsolete so part of it should also be a **new user interface**. It's for sure that next major update (1.7.0?) will be one of the biggest since 1.4.0, if not the biggest update ever.
+
+---
+*Written by: Danger & Covalent, Last Edit: October 26, 2021*
