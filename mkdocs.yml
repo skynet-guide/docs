@@ -40,7 +40,7 @@ nav:
             - 'Official Guide -> sia.tech': 'https://support.sia.tech/renting/how-to-rent-storage-on-sia'
     - 'Guides for Developers':
         - 'Packaging with Rift': 'guides/skynet/packaging-with-rift.en.md'
-    - '--> EXPLORE SKYNET <--':
+    - 'Explore Skynet':
         - '1. MySky - Decentralized Identity': 'explore-skynet/mysky.en.md'
         - '2. Homescreen - Own your apps': 'explore-skynet/homescreen.en.md'
         - '3. SkyOS - System in a browser': 'explore-skynet/sky-os.en.md'
