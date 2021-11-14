@@ -94,7 +94,7 @@ SkyTransfer supports uploading entire directories.
 
 Last but not least, using MySky you can access buckets, SkyTransfer's most advanced feature. Buckets are like folders in which files are stored. Before a collection of files can be uploaded, a bucket must first be created.
 
-SkyTransfer is still in development. Please report any bug or new idea by opening an issue on github and keep in mind that the encryption process has not yet been audited.
+SkyTransfer is still in development. Please report any bug or new idea by opening an issue on GitHub and keep in mind that the encryption process has not yet been audited.
 
 ---
 

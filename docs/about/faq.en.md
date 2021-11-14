@@ -60,7 +60,7 @@ Last update: October 26, 2021 | Sia 1.5.7
   Mac: ~/Library/Application Support/Sia-UI/sia/<br>
   </blockquote>
 
-  1. Open Sia Data Folder (either manually using location above or from the `About` section accessed by `i` button.
+  1. Open Sia Data Folder (either manually using location above or from the `About` section accessed by `i` button).
   2. Make sure Sia is not running and then delete `transactionpool` folder.
   3. Re-launch Sia and give it some time to rebuild it. It can take few minutes or a bit longer depending on if you whave SSD or HDD.
   </details>
@@ -80,7 +80,7 @@ Last update: October 26, 2021 | Sia 1.5.7
 Make sure you have your 29-word seed before you start.
 <br><br>
 
-  1. Open Sia Data Folder (either manually using location above or from the About section accessed by i button.
+  1. Open Sia Data Folder (either manually using location above or from the About section accessed by i button).
   2. Make sure Sia is not running and then rename entire the sia folder to sia_backup for example.
   3. Make sure you are running latest version. If not, update first.
   4. Re-launch Sia and wait until you are 100% synced before trying anything.
@@ -238,8 +238,6 @@ Make sure you have your 29-word seed before you start.
     What's better? Sia, Filecoin or Storj?
   </summary>
   Don't ask others. Don't trust, verify. While it's impossible for anyone involved to take the bias away completely, <a href="/tech/storage-chains-compared.html">this</a> is as roughly objective and (deeply) technical comparison and it shouldn't be an issue for you to verify these claims yourself.
-  <br><br>
-  </summary>
 </details>
 
 <!-- utreexo  -->
@@ -289,7 +287,7 @@ Make sure you have your 29-word seed before you start.
   Spent funds are funds that have already been signed off in the payment channel with the host(see <a href="/guides/sia/renting/introduction.html">renting</a>). These are funds that have been spent and the host now effectively has, assuming they can provide a storage proof in the proof window.
 
   <h3>Unspent funds-Allocated</h3>
-  These funds are funds that have been locked into a contract and have been not been spent yet. These are put here because you needs funds to use on the fly when adding more storage or paying for download bandwidth. But if these aren’t ever spent, they will get returned at the end of the contract period.
+  These funds are funds that have been locked into a contract and have been not been spent yet. These are put here because you need funds to use on the fly when adding more storage or paying for download bandwidth. But if these aren’t ever spent, they will get returned at the end of the contract period.
 
   <h3>Unspent funds-Unallocated</h3>
   This is where the issues mostly arise. If this section goes unfunded, new contracts cannot be formed and heavily used contracts cannot be refilled. This causes a myriad of issues with the renter so make sure to keep the unallocated category topped off by routinely checking it and upping the allowance as need be.

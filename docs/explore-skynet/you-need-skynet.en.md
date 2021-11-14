@@ -34,7 +34,7 @@ For these reasons, siasky.net uploads should only be used if you’re fine that 
 All files up to the base sector size are stored with 10x redundancy. This applies to all smaller files (let’s say up to the size of an mp3 song). Bigger files are stored with 3x redundancy. This means your files or fragments of files exist multiple times on the network and are automatically re-uploaded to another host in order to maintain good health of your files in case of some host holding pieces of your data disappears.
 
 ### Anyone can run a Skynet portal with own rules and integrate new features. It’s open-source.
-Let’s say your favorite portal has a limit for a maximum upload of 1GB. If you need more, you have two options. To use some Skynet app that works around that limit, for example as SkySend ([see our guide here](/guides/skynet/sending-files.html)).
+Let’s say your favorite portal has a limit for a maximum upload of 1&nbsp;GB. If you need more, you have two options. To use some Skynet app that works around that limit, for example as SkySend ([see our guide here](/guides/skynet/sending-files.html)).
 
 Or, if you’re not happy with some portal, you can always move to another one or run your own. This is what makes the difference from the centralized internet. When some site goes offline, you lose all your data. But on Skynet, the data is stored on the underlaying Sia network that is deeply integrated with Skynet. All you have to do is to tell your portal (or just a Sia renter node in “portal mode”) to start pinning the list of all your Skylinks.
 

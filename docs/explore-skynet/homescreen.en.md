@@ -20,7 +20,7 @@ This problem was addressed by Skynet Labs with their **Homescreen** app. It won'
 # Setting up Homescreen
 
 1. Start by opening [homescreen](https://homescreen.hns.siasky.net/).hns.siasky.net and authenticate with MySky identity you created in previous guide. 
->It should log you in automatically. It is also good to check if you're logged in with your siasky.net account on the portal's page to make sure the data you create are pinned by your account. At the time of writing (Octobe 27, 2021) it is known the devs are working on solutions so this all will be absolutely effortless for users and they won't have to worry about it.
+>It should log you in automatically. It is also good to check if you're logged in with your siasky.net account on the portal's page to make sure the data you create are pinned by your account. At the time of writing (October 27, 2021) it is known the devs are working on solutions so this all will be absolutely effortless for users and they won't have to worry about it.
 
 2. This is what you see when you log in for the first time. A set of few popular apps installed by default. Clicking the app's icon will open the app in a new tab.
 
