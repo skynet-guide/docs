@@ -81,7 +81,7 @@ Now, let's make clickable media for users to easily add your app to Homescreen.
 
 * Ta-da! You can now share this link with users.
 
-* You can also follow these instructions to make an `Add to Homescreen` button for your website or github page:
+* You can also follow these instructions to make an `Add to Homescreen` button for your website or GitHub page:
 
 [https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#4-add-the-homescreen-button-on-your-projects-readme](https://docs.siasky.net/integrations/homescreen/adding-homescreen-support-to-an-app#4-add-the-homescreen-button-on-your-projects-readme)
 

@@ -19,9 +19,9 @@ Last update: October 26, 2021 | Sia 1.5.7
   </summary>
   Since there is no centralized server you can ask for current balance in the decentralized network like Sia, each user has their own copy of the blockchain that they must sync with and verify. This means your wallet can show and work only with results based on the data you already have and synced.
   <br><br>
-  <b>If you cannot see incoming transaction</b> but it is visible in blockchain explorer like <a target="_blank" rel="noopener noreferrer" href="htthttps://siastats.info">siastats</a>, it means the transaction is already yours, you are just not synced to the Sia blockchain and need to wait for 100% sync (if a new user) or you are synced to wrong blockchain, which is common issue for returning users who missed the 2018 and/or 2021 fork and launched legacy version before checking for update. That got you to a situation where you synced past the point of automatic resolution and are trying to sync blocks from incompatible blockchain, which new versions of Sia won’t accept. You will see correct balance once you re-sync to Sia blockchain. See <a href="">instructions</a> how to re-sync.
+  <b>If you cannot see incoming transaction</b> but it is visible in blockchain explorer like <a target="_blank" rel="noopener noreferrer" href="https://siastats.info">siastats</a>, it means the transaction is already yours, you are just not synced to the Sia blockchain and need to wait for 100% sync (if a new user) or you are synced to wrong blockchain, which is common issue for returning users who missed the 2018 and/or 2021 fork and launched legacy version before checking for update. That got you to a situation where you synced past the point of automatic resolution and are trying to sync blocks from incompatible blockchain, which new versions of Sia won’t accept. You will see correct balance once you re-sync to Sia blockchain. See <a href="">instructions</a> how to re-sync.
   <br><br>
-  <b>If you sent transaction but it never arrived in the other wallet</b>, you also most likely cannot see it in the blockchain explorer like <a target="_blank" rel="noopener noreferrer" href="htthttps://siastats.info">siastats</a>. If this is the case, you didn’t send Siacoin (SC). You are synced to wrong blockchain for same reason as explained above. Instead of SC you sent the coins on the legacy blockchain and that’s why other Sia users and exchanges cannot detect it. This transaction never happened on Sia network which means that once you re-sync, you will still find the coins in your wallet. You can follow these <a href="">instructions</a> to re-sync.
+  <b>If you sent transaction but it never arrived in the other wallet</b>, you also most likely cannot see it in the blockchain explorer like <a target="_blank" rel="noopener noreferrer" href="https://siastats.info">siastats</a>. If this is the case, you didn’t send Siacoin (SC). You are synced to wrong blockchain for same reason as explained above. Instead of SC you sent the coins on the legacy blockchain and that’s why other Sia users and exchanges cannot detect it. This transaction never happened on Sia network which means that once you re-sync, you will still find the coins in your wallet. You can follow these <a href="">instructions</a> to re-sync.
   <br><br>
   <b>If you cannot send a transaction</b> and it shows nothing after clicking the “Send” button, you are maybe trying to send full balance. Try it again but send 0.5 SC less. This is needed since the wallet is not counting transaction fees in the transaction. The fees are paid from the remaining SC inn your wallet so it is good idea to always leave some tiny amount (1 SC or less) instead of sending it all. If this doesn’t help, try <a href="">cleaning up your transaction pool</a>.
 
@@ -60,7 +60,7 @@ Last update: October 26, 2021 | Sia 1.5.7
   Mac: ~/Library/Application Support/Sia-UI/sia/<br>
   </blockquote>
 
-  1. Open Sia Data Folder (either manually using location above or from the `About` section accessed by `i` button.
+  1. Open Sia Data Folder (either manually using location above or from the `About` section accessed by `i` button).
   2. Make sure Sia is not running and then delete `transactionpool` folder.
   3. Re-launch Sia and give it some time to rebuild it. It can take few minutes or a bit longer depending on if you whave SSD or HDD.
   </details>
@@ -80,7 +80,7 @@ Last update: October 26, 2021 | Sia 1.5.7
 Make sure you have your 29-word seed before you start.
 <br><br>
 
-  1. Open Sia Data Folder (either manually using location above or from the About section accessed by i button.
+  1. Open Sia Data Folder (either manually using location above or from the About section accessed by i button).
   2. Make sure Sia is not running and then rename entire the sia folder to sia_backup for example.
   3. Make sure you are running latest version. If not, update first.
   4. Re-launch Sia and wait until you are 100% synced before trying anything.
@@ -125,7 +125,7 @@ Make sure you have your 29-word seed before you start.
 
  Sia supports the `Ledger Nano S` and `Ledger Nano X` hardware wallets. You can install the Sia app from Ledger Live by enabling "Development Mode" under "Settings". 
   <br/><br/>
- There are currently two methods to access Siacoin stored on a Ledger device. The official command line client or Sia Central's lite wallet. We do not recommend the command line client since it is for advanced users only; instead we recommend you use the <a target="_blank" rel="noopener noreferrer" href="htthttps://wallet.siacentral.com">Sia Central Lite wallet</a>. Ledger USB support works on desktop Chrome, Brave, Edge, and Opera. Ledger Bluetooth is only supported on Chrome desktop. We see it as currently best possible experience for anyone looking to hold SC.
+ There are currently two methods to access Siacoin stored on a Ledger device. The official command line client or Sia Central's lite wallet. We do not recommend the command line client since it is for advanced users only; instead we recommend you use the <a target="_blank" rel="noopener noreferrer" href="https://wallet.siacentral.com">Sia Central Lite wallet</a>. Ledger USB support works on desktop Chrome, Brave, Edge, and Opera. Ledger Bluetooth is only supported on Chrome desktop. We see it as currently best possible experience for anyone looking to hold SC.
   <blockquote>
   If you are worried to use a wallet link from third party site, you can access it by visiting the `official Sia site`, clicking `download` and scrolling down to the `list of recommended apps` where Sia Central Lite Wallet is mentioned by the Sia developers. You might also want to know that Nate, its author, officially joined Sia Foundation as a developer in Q2 2021.
   </blockquote>  
@@ -216,7 +216,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     Where can I find Sia's whitepaper?
   </summary>
-  You can find it right <a target="_blank" rel="noopener noreferrer" href="htthttps://sia.tech/sia.pdf">here</a>. However, keep in mind that Sia did a lot of progress since invention and if you want to better understand how it works, check out our up to date guides like <a href="/tech/sia-layer-one.html">Introduction to Sia</a>.
+  You can find it right <a target="_blank" rel="noopener noreferrer" href="https://sia.tech/sia.pdf">here</a>. However, keep in mind that Sia did a lot of progress since invention and if you want to better understand how it works, check out our up to date guides like <a href="/tech/sia-layer-one.html">Introduction to Sia</a>.
 </details>
 
 <!-- where is the roadmap -->
@@ -224,7 +224,7 @@ Make sure you have your 29-word seed before you start.
   <summary>
     Where is the Sia roadmap?
   </summary>
-  After the establishment of Sia Foundation in January 2021, the place to go to view, discuss and propose new and planned features is the <a target="_blank" rel="noopener noreferrer" href="htthttps://forum.sia.tech">Sia Forum</a>.
+  After the establishment of Sia Foundation in January 2021, the place to go to view, discuss and propose new and planned features is the <a target="_blank" rel="noopener noreferrer" href="https://forum.sia.tech">Sia Forum</a>.
 
   If you are interested in what’s planned for Skynet. Best places to watch are <a target="_blank" rel="noopener noreferrer" href="https://discord.com/invite/sia">Sia discord</a>, <a target="_blank" rel="noopener noreferrer" href="https://siasky.net">SiaSky.net</a> and of course our **Sky Guide**. We are going to work hard to always bring you the latest news and apps from Skynet.
   <br>
@@ -238,8 +238,6 @@ Make sure you have your 29-word seed before you start.
     What's better? Sia, Filecoin or Storj?
   </summary>
   Don't ask others. Don't trust, verify. While it's impossible for anyone involved to take the bias away completely, <a href="/tech/storage-chains-compared.html">this</a> is as roughly objective and (deeply) technical comparison and it shouldn't be an issue for you to verify these claims yourself.
-  <br><br>
-  </summary>
 </details>
 
 <!-- utreexo  -->
@@ -289,7 +287,7 @@ Make sure you have your 29-word seed before you start.
   Spent funds are funds that have already been signed off in the payment channel with the host(see <a href="/guides/sia/renting/introduction.html">renting</a>). These are funds that have been spent and the host now effectively has, assuming they can provide a storage proof in the proof window.
 
   <h3>Unspent funds-Allocated</h3>
-  These funds are funds that have been locked into a contract and have been not been spent yet. These are put here because you needs funds to use on the fly when adding more storage or paying for download bandwidth. But if these aren’t ever spent, they will get returned at the end of the contract period.
+  These funds are funds that have been locked into a contract and have been not been spent yet. These are put here because you need funds to use on the fly when adding more storage or paying for download bandwidth. But if these aren’t ever spent, they will get returned at the end of the contract period.
 
   <h3>Unspent funds-Unallocated</h3>
   This is where the issues mostly arise. If this section goes unfunded, new contracts cannot be formed and heavily used contracts cannot be refilled. This causes a myriad of issues with the renter so make sure to keep the unallocated category topped off by routinely checking it and upping the allowance as need be.
