@@ -34,6 +34,7 @@ Restart=always
 RestartSec=15
 User=ubuntu 
 Environment="SIA_WALLET_PASSWORD=asecurewalletpassword"
+LimitNOFILE=900000
 
 [Install]
 WantedBy=multi-user.target
