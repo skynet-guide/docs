@@ -120,7 +120,7 @@ SkySend is another great tool developed by `redsolver`. It basically works like 
 
 ![Skapps - Inception](../static/assets/skapps/skapps-inception.png)
 
-> [Webception](https://webception.hns.siasky.net).hns.siasky.net
+> [Webception](https://inception-browser.hns.siasky.net).hns.siasky.net
 
 Inception Browser is developed by `Skunk_Ink` and everything you see on the picture runs inside a single browser tab running SkyOS (if you missed it, check previous article). Ever had issue with all your open tabs and want to use your screen space more effectively? Are you making market chart analysis and don't know how to show your streamers 30 charts at once? Then this is app for you.
 
