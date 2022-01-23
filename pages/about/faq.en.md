@@ -438,7 +438,23 @@ Make sure you have your 29-word seed before you start.
   If you would like to earn Siacoin by mining with your GPU, we recommend mining another coin or using a service like NiceHash and converting from a more profitable coin to Siacoin
 </details>
 
+## Hosting
+<details>
+  <summary>
+    What is the difference between <i>risked</i> and <i>locked</i> collateral?
+  </summary>
+  Locked collateral is the total amount of collateral locked in the storage contracts. Risked collateral is a part of the locked collateral, which corresponds to the data actually uploaded to your host by renters. This is what you will lose as a host if you fail to submit valid storage proofs. The rest of the locked collateral will be returned to you when the contracts expire.
+  <blockquote>
+  <b>Example:</b>
+  Your storage price is 100SC/TB/month and your collateral is 200SC/TB/month.
+  A renter forms a contract with your host to store 2TB of data for 3 months. You lock 200*2*3 = 1200SC as collateral.
+  Your locked collateral is now 1200SC. But your risked collateral is zero, because there is no data uploaded yet.
+  Then the renter uploads 500GB of data to your host. Your locked collateral stays the same, 1200SC. But now you are risking 200*0.5*3 = 300SC.
+  If your host manages to submit a valid storage proof after 3 months, you receive back your locked collateral of 1200SC plus revenue (100*0.5*3 = 150SC plus revenue coming from eventual bandwidth usage minus miner fees).
+  If your host fails to submit a valid storage proof, then you only receive back the amount of locked collateral, which is not risked (900SC). All the rest is burned.
+  </blockquote>
+
+</details>
 <br>
 
----
-*Written by: Danger & Covalent, Last Edit: October 29, 2021*
+<i>Written by: Danger & Covalent, Last Edit: October 29, 2021<i>
