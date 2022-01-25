@@ -30,10 +30,10 @@ nav:
     - 'Get paid for storage':
         - 'Introduction to Hosting': 'guides/sia/hosting/introduction.en.md'
         - 'Useful Hosting Tools': 'guides/sia/hosting/useful-tools.en.md'
-            - 'Host Manager: Remote Connection': 'guides/sia/hosting/host-manager-remote-connection.en.md'
         - 'Hosting Guides':
             - 'Linux Hosting': 'guides/sia/linux-hosting.en.md'
             - 'Official Guide -> sia.tech': 'https://support.sia.tech/hosting/how-to-host-on-sia'
+            - 'Host Manager: Remote Connection': 'guides/sia/hosting/host-manager-remote-connection.en.md'
     - 'Using secure storage':
         - 'Introduction to Renting': 'guides/sia/renting/introduction.en.md'
         - 'Useful Renting Tools': 'guides/sia/renting/useful-tools.en.md'
