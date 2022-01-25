@@ -1,4 +1,4 @@
-# Setting up Host Manager on a remote host
+# Connecting Host Manager to a remote host
 
 ## Step 1: Installing Host Manager
 To install the latest version of Host Manager visit the [official website](https://siacentral.com/host-manager/) and click the "Download Now" button.
