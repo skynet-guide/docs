@@ -33,6 +33,7 @@ nav:
         - 'Hosting Guides':
             - 'Linux Hosting': 'guides/sia/linux-hosting.en.md'
             - 'Official Guide -> sia.tech': 'https://support.sia.tech/hosting/how-to-host-on-sia'
+            - 'Host Manager: Remote Connection': 'guides/sia/hosting/host-manager-remote-connection.en.md'
     - 'Using secure storage':
         - 'Introduction to Renting': 'guides/sia/renting/introduction.en.md'
         - 'Useful Renting Tools': 'guides/sia/renting/useful-tools.en.md'
