@@ -9,6 +9,7 @@ docs_dir: pages
 use_directory_urls: false
 
 nav:
+    - 'Home': 'index.md'
     - 'Technology':
         - 'Introduction': 'tech/introduction.en.md'
         - 'Sia - Decentralized Storage': 'tech/sia-layer-one.en.md'
@@ -26,6 +27,7 @@ nav:
             - 'Storage Chains Compared': 'tech/storage-chains-compared.en.md'
             - 'Tools': 'sia/tools.en.md'
         - 'More about Skynet':
+            - 'The Registry': 'tech/registry.en.md'
             - 'Skynet Portals': 'tech/portals.en.md'
     - 'Get paid for storage':
         - 'Introduction to Hosting': 'guides/sia/hosting/introduction.en.md'
@@ -42,6 +44,7 @@ nav:
             - 'Official Guide -> sia.tech': 'https://support.sia.tech/renting/how-to-rent-storage-on-sia'
     - 'Guides for Developers':
         - 'Packaging with Rift': 'guides/skynet/packaging-with-rift.en.md'
+        - 'Using the SDK': 'guides/skynet/using-the-sdk.md'
     - 'Explore Skynet':
         - '1. MySky - Decentralized Identity': 'explore-skynet/mysky.en.md'
         - '2. Homescreen - Own your apps': 'explore-skynet/homescreen.en.md'
