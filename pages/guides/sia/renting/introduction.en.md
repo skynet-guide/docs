@@ -94,11 +94,8 @@ Seed based file recovery is currently unreliable. It is quoted as 95% reliable b
 While Sia Foundation is expected to address this, it might take some time. Until then, if you are looking for something more reliable, one such way is to use Skynet which is using the same Sia hosts but manage the renting in a way that not a single file was ever lost. 
 
 ### Development of Sia-UI
-The community understands that developers started this all with good intentions but also for profit. Investors backing up development expect some results which made it difficult to justify development of features that do not directly bring results as for example Skynet can. This is the main reason why the team didn’t have much time for Sia-UI in 2020 and why some things were seen as a priority over things mentioned above.
 
-In order to change this unfortunate state of the community and the devs being at odds, as well as give Sia-UI and other participants of Sia’s ecosystem some love and features they deserve, Sia Foundation was created.
-
-The Skynet Team doesn’t have much time for anything but Skynet, but luckily the head of the Foundation, Luke Champine, is quoted saying that they will be hiring a UI dev within the year to work on applications like Sia-UI, so that's exciting. There are other option to store your data in the meantime though, namely: <a href="https://siasky.net/" target="_blank" rel="noopener noreferrer">Skynet</a>, <a href="https://filebase.com/" target="_blank" rel="noopener noreferrer">Filebase</a>, <a href="https://storewise.tech/" target="_blank" rel="noopener noreferrer">Storewise</a>. Though, you have to keep in mind that they are effectively centralized service providers with a dash of decentralization, not the same fully-permissionless-ness of Sia-UI.
+The Skynet Team doesn’t have much time for anything but Skynet, but the Sia Foundation has hired a UX/UI developer to work on upcoming apps in the Sia ecosystem, one of them being a newly tooled Sia-UI. There are other option to store your data in the meantime though, namely: <a href="https://siasky.net/" target="_blank" rel="noopener noreferrer">Skynet</a>, and <a href="https://filebase.com/" target="_blank" rel="noopener noreferrer">Filebase</a>. Though, you have to keep in mind that they are effectively centralized service providers with a dash of decentralization, not the same fully-permissionless-ness of Sia-UI.
 
 
 ### Storing Less Than 1TB isn’t practical
@@ -107,4 +104,4 @@ Due to the contract formation fees of contracting hosts, if you’re storing les
 Now if you understand all that and still wish to rent on Sia, feel free! Check out the [Renting Guide](/guides/sia/renting.html).
 
 ---
-*Written by: Covalent & Danger, Last Edit: October 26, 2021*
+*Written by: Covalent & Danger, Last Edit: Febuary 26, 2022*
