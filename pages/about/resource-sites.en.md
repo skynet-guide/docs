@@ -27,4 +27,4 @@ Official site of Sia. If you want to download it, you can go directly there.
 Official blog full of technical articles and guides. The must-have resource for any developer and decentralized cloud storage enthusiast.
 
 ---
-*Written by: Danger & Covalent, Figurestudios, Last Edit: May 5, 2021*
+*Written by: Danger & Covalent, Figurestudios, Last Edit: April 19, 2022*
