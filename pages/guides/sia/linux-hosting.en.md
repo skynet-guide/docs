@@ -23,6 +23,7 @@ $ sudo nano /etc/systemd/system/siad.service
 Then, modify the following snippet to fit your host and then paste it into the file. You will want to change `asecurewalletpassword` to a more secure wallet password.
 
 ```
+[Unit]
 Description=siad
 After=network.target
 
