@@ -8,7 +8,7 @@ Install the latest version of siad by going to the official website and download
 
 You can download the files and extract them using `wget` and `unzip`
 ```sh
-$ wget -q https://sia.tech/releases/Sia-v1.5.6-linux-amd64.zip
+$ wget -q https://sia.tech/releases/siad/Sia-v1.5.6-linux-amd64.zip
 $ unzip Sia-v1.5.6-linux-amd64.zip
 $ sudo mv -t /usr/local/bin Sia-v1.5.6-linux-amd64/siad Sia-v1.5.6-linux-amd64/siac
 $ rm -rf Sia-v1.5.6-linux-amd64.zip Sia-v1.5.6-linux-amd64
