@@ -1,0 +1,1364 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Community driven documentation of Sia & Skynet.">
+      
+      
+      
+        <meta name="author" content="Skynet Guide Contributors">
+      
+      
+      <link rel="icon" href="../static/assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Skynet - Decentralized Internet - Skynet Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#skynet-decentralized-internet-layer-2" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Skynet Guide" class="md-header__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../static/assets/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Skynet Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Skynet - Decentralized Internet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_1">
+          <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+          </label>
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_2">
+          <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+          </label>
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <span class="md-header__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </span>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../index.html" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Skynet Guide" class="md-nav__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../static/assets/favicon.png" alt="logo">
+
+    </a>
+    Skynet Guide
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Technology
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Technology" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Technology
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sia-layer-one.html" class="md-nav__link">
+        Sia - Decentralized Storage
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Skynet - Decentralized Internet
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="skynet-layer-two.html" class="md-nav__link md-nav__link--active">
+        Skynet - Decentralized Internet
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-skynet" class="md-nav__link">
+    What is Skynet?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-skynet-work-in-theory" class="md-nav__link">
+    How does Skynet work in theory?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-skynet-work-in-practice" class="md-nav__link">
+    How does Skynet work in practice?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skynet-portals" class="md-nav__link">
+    Skynet Portals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-about-the-registry" class="md-nav__link">
+    What about the registry?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-can-i-do-with-skynet" class="md-nav__link">
+    What can I do with Skynet?
+  </a>
+  
+    <nav class="md-nav" aria-label="What can I do with Skynet?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skyfeedhnssiaskynet" class="md-nav__link">
+    Skyfeed.hns.siasky.net
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdn-capabilities" class="md-nav__link">
+    CDN Capabilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-forward" class="md-nav__link">
+    Moving forward
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        More about Sia
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Sia" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          More about Sia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/history.html" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/foundation.html" class="md-nav__link">
+        Sia Foundation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/tokenomics.html" class="md-nav__link">
+        Tokenomics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/wallet.html" class="md-nav__link">
+        Wallets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/trading.html" class="md-nav__link">
+        Trading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/seed-management.html" class="md-nav__link">
+        Seed Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/explorers.html" class="md-nav__link">
+        Blockchain Explorers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="network-metrics.html" class="md-nav__link">
+        Network Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/mining-guide.html" class="md-nav__link">
+        Mining
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="storage-chains-compared.html" class="md-nav__link">
+        Storage Chains Compared
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/tools.html" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        More about Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Skynet" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          More about Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="registry.html" class="md-nav__link">
+        The Registry
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="portals.html" class="md-nav__link">
+        Skynet Portals
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Get paid for storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Get paid for storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Get paid for storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/introduction.html" class="md-nav__link">
+        Introduction to Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/useful-tools.html" class="md-nav__link">
+        Useful Hosting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Hosting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Hosting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hosting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/linux-hosting.html" class="md-nav__link">
+        Linux Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.sia.tech/hosting/how-to-host-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/host-manager-remote-connection.html" class="md-nav__link">
+        Host Manager: Remote Connection
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Using secure storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Using secure storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Using secure storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting/introduction.html" class="md-nav__link">
+        Introduction to Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting/useful-tools.html" class="md-nav__link">
+        Useful Renting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Renting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Renting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Renting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting.html" class="md-nav__link">
+        Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.sia.tech/renting/how-to-rent-storage-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Guides for Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides for Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Guides for Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/packaging-with-rift.html" class="md-nav__link">
+        Packaging with Rift
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/using-the-sdk.html" class="md-nav__link">
+        Using the SDK
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Explore Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Explore Skynet" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Explore Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/mysky.html" class="md-nav__link">
+        1. MySky - Decentralized Identity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/homescreen.html" class="md-nav__link">
+        2. Homescreen - Own your apps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/sky-os.html" class="md-nav__link">
+        3. SkyOS - System in a browser
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/popular-apps.html" class="md-nav__link">
+        4. Skynet Apps - Get some!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
+      
+      <label class="md-nav__link" for="__nav_6_5">
+        More
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          More
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/you-need-skynet.html" class="md-nav__link">
+        Why do I need Skynet?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/sending-files.html" class="md-nav__link">
+        Sending Files
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/faq.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/contributors.html" class="md-nav__link">
+        Contributors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/resource-sites.html" class="md-nav__link">
+        Resource Sites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/support.html" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-skynet" class="md-nav__link">
+    What is Skynet?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-skynet-work-in-theory" class="md-nav__link">
+    How does Skynet work in theory?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-skynet-work-in-practice" class="md-nav__link">
+    How does Skynet work in practice?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skynet-portals" class="md-nav__link">
+    Skynet Portals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-about-the-registry" class="md-nav__link">
+    What about the registry?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-can-i-do-with-skynet" class="md-nav__link">
+    What can I do with Skynet?
+  </a>
+  
+    <nav class="md-nav" aria-label="What can I do with Skynet?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#skyfeedhnssiaskynet" class="md-nav__link">
+    Skyfeed.hns.siasky.net
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cdn-capabilities" class="md-nav__link">
+    CDN Capabilities
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#moving-forward" class="md-nav__link">
+    Moving forward
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/skynet-guide/docs/edit/main/pages/tech/skynet-layer-two.en.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="skynet-decentralized-internet-layer-2">Skynet, Decentralized Internet (Layer 2)<a class="headerlink" href="#skynet-decentralized-internet-layer-2" title="Permanent link">#</a></h1>
+<p>Before reading this article, it is recommended to check <a href="/tech/sia-layer-one.html">Sia, Decentralized Storage (Layer 1)</a> first in order to have a better bearing of how everything works, and who is behind the project. While the top level ideas can be grasped pretty easily, the design behind Sia can be pretty complex, so keep that in mind.</p>
+<blockquote>
+<p>Since the introduction of Skynet a lot of time passes already, but if you want to read the document that introduced us to the full vision of Skynet for first time, don’t miss <a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">A Deep Dive into Skynet</a> on the Sia blog (published in Feb 2021). Also keep in mind that the monetization part described there is outdated and a whitepaper with a better take on monetization is expected by end of 2021.</p>
+</blockquote>
+<h2 id="what-is-skynet">What is Skynet?<a class="headerlink" href="#what-is-skynet" title="Permanent link">#</a></h2>
+<p>Skynet is a first party layer two solution to a decentralized file space that was built on top of the existing Sia network. So basically it allows file sharing. But combined with what can be created with it there is way more fitting words to describe what Skynet is - the decentralized internet**.</p>
+<blockquote>
+<p>You can find official Siasky.net support site and guides <a href="https://support.siasky.net" target="_blank" rel="noopener noreferrer">here</a>.</p>
+</blockquote>
+<h2 id="how-does-skynet-work-in-theory">How does Skynet work in theory?<a class="headerlink" href="#how-does-skynet-work-in-theory" title="Permanent link">#</a></h2>
+<p>I’m going to get a little bit more technical here, so make sure to read the renting article first.</p>
+<p>So the base level for how Skynet works is it that every node that wants to be able to access <code>Skyfiles</code> forms contracts with as many hosts as possible on the network. Then, when a node wants to upload a file, it sends the data off to a subset of that massive host pool and generates something called a <code>Skylink</code>.</p>
+<blockquote>
+<p>A <code>Skylink</code> is a 46 character string of base64 encoded data. This data represents a couple things, but for the most part, this link is storing the Merkle root of the file. Merkle roots are complicated and you can dive more into them <a href="https://hackernoon.com/getting-to-the-root-of-the-merkle-tree-concept-and-how-it-affects-blockchain-technology">here</a>. But basically, <code>Skylinks</code> are just unique file identifiers; every single combination of data (think video file) and metadata (think file size) has a unique <code>Merkle tree root</code>.</p>
+<p>Recently, Skynet Labs has also added something called a <code>Resolver Skylink</code>.The main difference is that this <code>Skylink</code> points to a registry entry instead of a file so it can later be updated.</p>
+</blockquote>
+<p>Then when you want to query a specific <code>Skylink</code> (think if you’re requesting a video on Skyfeed), your Skynet node make a bunch of requests to hosts it has contracted with to see if they have the <code>Skylink</code> in question. The first host to respond with the data chunk then sends over the file to the renter node, and gets paid. In practice, fetch latency can be incredibly small, rivaling that of the centralized internet.</p>
+<h2 id="how-does-skynet-work-in-practice">How does Skynet work in practice?<a class="headerlink" href="#how-does-skynet-work-in-practice" title="Permanent link">#</a></h2>
+<p>Unfortunately, as of today you cannot just run a Skynet portal in your browser. Due to the many limitations of running a Sia full node talked about in <a href="/guides/sia/renting/introduction.html">this article</a>, running a renter node is hard on your system. The main hard parts are:</p>
+<ul>
+<li>Consensus is 22GB+</li>
+<li>It requires high up-time to maintain files</li>
+<li>Requires a lot of RAM</li>
+<li>High CPU load (would kill battery life)</li>
+</ul>
+<p>But to be fair, this all is known and expected to be resolved by <a href="/sia/foundation.html">Sia Foundation</a> with <a href="https://forum.sia.tech/t/core-development-utreexo/54/14" target="_blank" rel="noopener noreferrer">Utreexo</a> support early in 2022. Proof of concept for Utreexo was released mid 2021 and since then the team is integrating it into Sia.</p>
+<p>So how did the team work around this? Well the idea is to use something called a <strong>Skynet Portal</strong>.</p>
+<h2 id="skynet-portals">Skynet Portals<a class="headerlink" href="#skynet-portals" title="Permanent link">#</a></h2>
+<p>A Skynet portal is a simple concept in practice. It is an entry point to the Sia network without having to run a node yourself. Someone else runs a dedicated server running a Sia node with Skynet access enabled, and there’s a front end in  that allows users to interact with it. For example, check out <a href="https://siasky.net" target="_blank" rel="noopener noreferrer">siasky</a>, Skynet Lab’s official portal.</p>
+<p>But what separates this from any other centralized file sharing platform out there like Dropbox or Mediafire? Well the main differentiator is that since the portals use the Sia network as a backend instead of their own servers, every file is available on every portal. For example Big Buck Bunny (an old Blender open source video file) is fully available at <a href="https://siasky.net/CACqf4NlIMlA0CCCieYGjpViPGyfyJ4v1x3bmuCKZX8FKA" target="_blank" rel="noopener noreferrer">siasky.net</a>, <a href="https://skyportal.xyz/CACqf4NlIMlA0CCCieYGjpViPGyfyJ4v1x3bmuCKZX8FKA" target="_blank" rel="noopener noreferrer">skyportal.xyz</a> and every other Skynet Portal at this Sia link: sia://CACqf4NlIMlA0CCCieYGjpViPGyfyJ4v1x3bmuCKZX8FKA. But these are not a duplicates of the file. You always access the same file, just through different portals. This is the next level up from federated, it’s decentralized!</p>
+<blockquote>
+<p>Note, some people claim that Skynet isn’t decentralized because the ingress/egress points are centralized. This is a fair point. But currently it isn’t possible to make something with a higher level of decentralization. It is being worked on, as stated above, but having site interoperability is pretty awesome in itself. Any file can be accessed from any portal, no matter who pins it or where they are. Now, each portal respectively can block any file they would like(for example, Skynet Labs won’t be paying for you to access content that’s illegal in their jurisdiction), but since anyone can set up their own portal, it’s not a huge issue. Also setting up your own Skynet portal isn’t easy, per say, but it is do-able if you have technical chops. For a guide on how to do this, look <a href="https://github.com/NebulousLabs/skynet-webportal/tree/master/setup-scripts" target="_blank" rel="noopener noreferrer">here</a>.</p>
+</blockquote>
+<h2 id="what-about-the-registry">What about the registry?<a class="headerlink" href="#what-about-the-registry" title="Permanent link">#</a></h2>
+<p>I haven’t talked about this so far because I didn’t want to overwhelm the reader with new stuff. But the registry, in essence, is a mutable file pointer built on top of the Sia network. Okay, but what does that mean? Each registry entry itself is only 256B on the hosts storage(usually on the main SSD) and it contains a couple things, though the only one I’m gonna be focusing on is the data field. In that data field, you can store up to 128B of whatever data you would like (though this is generally used to store a single <code>Skylink</code>).</p>
+<p>The registry works by effectively generating a private-public key pair and publishing the public key out there for everyone to access. Then stored inside this entry is the data field which can be changed at any time. But since the original creator is the only one who can sign the data with the private key, anyone accessing the entry knows this version of it was generated by the original user with the private key, public entries are not a thing as of now.</p>
+<blockquote>
+<p>Now, technically, any data can be stored in this "data" field, so you’d wonder why people wouldn’t store data directly in a registry entry? Well the main reason is cost. In order to upload that 256B file, you pay 50 hosts for 64KB off contract. So in total, for that 128B field, you end up paying for 3.2MB of space! Now, since it’s off contract, you don’t have to deal with the minimum file size, but you would have to pay for 25600x overhead so it’s not super practical. </p>
+<p>Side note, the registry is a key value, not a relational, database. Also, when abstractions are put onto the registry (like Skynet-JS) it is referred to as SkyDB. This can be limiting for some applications.</p>
+</blockquote>
+<p>For more in depth detail, see <a href="/tech/registry.html">here</a>.</p>
+<h2 id="what-can-i-do-with-skynet">What can I do with Skynet?<a class="headerlink" href="#what-can-i-do-with-skynet" title="Permanent link">#</a></h2>
+<blockquote>
+<p><strong>Important - Update by Danger (October 26, 2021):</strong>  This section is a bit outdated since it describes state before more than 6 months. A lot changed since then and if you want to know what Skynet lets you do today, check out our new dedicated section <code>Explore Skynet</code>. This section is kept around only to show how much progress has been done just in last few months and how many more apps were made since then.</p>
+</blockquote>
+<hr />
+<p><em>(Outdated)</em> As listed above, currently, Skynet has two real features; those being <code>Skyfiles</code>, which are accessible from any portal, and the registry(which when accessed through the SDK is referred to as <code>SkyDB</code>), which are mutable pointers that can be accessed or updated from any portal.</p>
+<p>Currently the biggest things on Skynet are Skyfeed and content distribution by using Skynet as a CDN on sites like <a href="https://d.tube/" target="_blank" rel="noopener noreferrer">DTube</a>.</p>
+<h4 id="skyfeedhnssiaskynet"><a href="https://skyfeed.hns.siasky.net" target="_blank" rel="noopener noreferrer">Skyfeed</a>.hns.siasky.net<a class="headerlink" href="#skyfeedhnssiaskynet" title="Permanent link">#</a></h4>
+<p>Skyfeed is a first Facebook-esque social media built on top of Skynet by community member Redsolver. It’s flagship features are mainly that if you run your own portal no one can limit your speech, and that there are no ads or tracking to speak of.</p>
+<h4 id="cdn-capabilities">CDN Capabilities<a class="headerlink" href="#cdn-capabilities" title="Permanent link">#</a></h4>
+<p>The first thing that Skynet was advertised as was a CDN with decentralized frills, and it is still pretty good at that. Though, because of the traditional web architecture that web portals are built on, they completely rely on horizontal load balancing to scale. Also due to the nature of Sia, speeds cap at about 1GBPS per node, so a huge amount of nodes and load balancing is required to accomplish something like a large live event. For example, if you wanted to have a streaming platform with 100k concurrent viewers, you would need 1k-2k nodes at a minimum (depending on quality of the stream). This will be fixed once Utreexo is implemented(or host→user websockets), but for the time being, it’s a lot of work just like any other CDN. Though, unlike traditional web architectures, the actual pool of data itself can be massive per portal node because they have access to every <code>Skyfile</code> and <code>SkyDB</code> entry.</p>
+<blockquote>
+<p>Discover more <a href="/explore-skynet/4-popular-apps.html">Skynet Apps</a>.</p>
+</blockquote>
+<h2 id="moving-forward">Moving forward<a class="headerlink" href="#moving-forward" title="Permanent link">#</a></h2>
+<p>Skynet is still under heavy development by Skynet Labs and a breadth of features are in the pipeline. For example, upcoming features include:</p>
+<ul>
+<li>Utreexo</li>
+<li>Beefed up <code>SkyDB</code> pipeline with web sockets</li>
+<li>Content monetization</li>
+<li>Direct host → user web sockets</li>
+<li>Massive performance improvements per node</li>
+<li>Node scalability improvements</li>
+<li>And much more</li>
+</ul>
+<hr />
+<p><em>Written by: Covalent &amp; Danger, Last Edit: January 23, 2022</em></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="sia-layer-one.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Sia - Decentralized Storage
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../sia/history.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              History
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

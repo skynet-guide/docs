@@ -1,0 +1,1432 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Community driven documentation of Sia & Skynet.">
+      
+      
+      
+        <meta name="author" content="Skynet Guide Contributors">
+      
+      
+      <link rel="icon" href="../../../static/assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Sending Files - Skynet Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sending-large-files-over-skynet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Skynet Guide" class="md-header__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../../../static/assets/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Skynet Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Sending Files
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_1">
+          <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+          </label>
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_2">
+          <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+          </label>
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <span class="md-header__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </span>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../../index.html" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Skynet Guide" class="md-nav__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../../../static/assets/favicon.png" alt="logo">
+
+    </a>
+    Skynet Guide
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Technology
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Technology" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Technology
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/introduction.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/sia-layer-one.html" class="md-nav__link">
+        Sia - Decentralized Storage
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/skynet-layer-two.html" class="md-nav__link">
+        Skynet - Decentralized Internet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        More about Sia
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Sia" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          More about Sia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sia/history.html" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sia/foundation.html" class="md-nav__link">
+        Sia Foundation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../siacoin/tokenomics.html" class="md-nav__link">
+        Tokenomics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../siacoin/wallet.html" class="md-nav__link">
+        Wallets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../siacoin/trading.html" class="md-nav__link">
+        Trading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../seed-management.html" class="md-nav__link">
+        Seed Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../siacoin/explorers.html" class="md-nav__link">
+        Blockchain Explorers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/network-metrics.html" class="md-nav__link">
+        Network Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../siacoin/mining-guide.html" class="md-nav__link">
+        Mining
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/storage-chains-compared.html" class="md-nav__link">
+        Storage Chains Compared
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sia/tools.html" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        More about Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Skynet" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          More about Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/registry.html" class="md-nav__link">
+        The Registry
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tech/portals.html" class="md-nav__link">
+        Skynet Portals
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Get paid for storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Get paid for storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Get paid for storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/hosting/introduction.html" class="md-nav__link">
+        Introduction to Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/hosting/useful-tools.html" class="md-nav__link">
+        Useful Hosting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Hosting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Hosting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hosting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/linux-hosting.html" class="md-nav__link">
+        Linux Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https:/support.sia.tech/hosting/how-to-host-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/hosting/host-manager-remote-connection.html" class="md-nav__link">
+        Host Manager: Remote Connection
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Using secure storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Using secure storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Using secure storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/renting/introduction.html" class="md-nav__link">
+        Introduction to Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/renting/useful-tools.html" class="md-nav__link">
+        Useful Renting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Renting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Renting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Renting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/renting.html" class="md-nav__link">
+        Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https:/support.sia.tech/renting/how-to-rent-storage-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Guides for Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides for Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Guides for Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="packaging-with-rift.html" class="md-nav__link">
+        Packaging with Rift
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="using-the-sdk.html" class="md-nav__link">
+        Using the SDK
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
+      
+      <label class="md-nav__link" for="__nav_6">
+        Explore Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Explore Skynet" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Explore Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explore-skynet/mysky.html" class="md-nav__link">
+        1. MySky - Decentralized Identity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explore-skynet/homescreen.html" class="md-nav__link">
+        2. Homescreen - Own your apps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explore-skynet/sky-os.html" class="md-nav__link">
+        3. SkyOS - System in a browser
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explore-skynet/popular-apps.html" class="md-nav__link">
+        4. Skynet Apps - Get some!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" checked>
+      
+      <label class="md-nav__link" for="__nav_6_5">
+        More
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          More
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../explore-skynet/you-need-skynet.html" class="md-nav__link">
+        Why do I need Skynet?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Sending Files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="sending-files.html" class="md-nav__link md-nav__link--active">
+        Sending Files
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#option-1-how-to-send-up-to-8-gb-for-free-without-registration" class="md-nav__link">
+    Option #1: How to send up to 8 GB for free without registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Option #1: How to send up to 8 GB for free without registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-upload-and-share-your-files-up-to-1gb-without-registration-up-to-90-days" class="md-nav__link">
+    How to upload and share your files up to 1GB without registration (up to 90 days)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-upload-and-share-files-up-to-8gb-without-registration-up-to-90-days" class="md-nav__link">
+    How to upload and share files up to 8GB without registration (up to 90 days)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#option-2-how-to-upload-store-and-share-your-files-for-lifetime" class="md-nav__link">
+    Option #2: How to upload, store and share your files for lifetime
+  </a>
+  
+    <nav class="md-nav" aria-label="Option #2: How to upload, store and share your files for lifetime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-setup-your-skynet-account" class="md-nav__link">
+    How to setup your Skynet account
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siasky-skysend-vs-wetransfer-google-drive-and-dropbox" class="md-nav__link">
+    SiaSky &amp; SkySend vs. WeTransfer, Google Drive and Dropbox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plans-and-features-for-paying-users" class="md-nav__link">
+    Plans and features for paying users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/faq.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/contributors.html" class="md-nav__link">
+        Contributors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/resource-sites.html" class="md-nav__link">
+        Resource Sites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/support.html" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#option-1-how-to-send-up-to-8-gb-for-free-without-registration" class="md-nav__link">
+    Option #1: How to send up to 8 GB for free without registration
+  </a>
+  
+    <nav class="md-nav" aria-label="Option #1: How to send up to 8 GB for free without registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-upload-and-share-your-files-up-to-1gb-without-registration-up-to-90-days" class="md-nav__link">
+    How to upload and share your files up to 1GB without registration (up to 90 days)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-upload-and-share-files-up-to-8gb-without-registration-up-to-90-days" class="md-nav__link">
+    How to upload and share files up to 8GB without registration (up to 90 days)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#option-2-how-to-upload-store-and-share-your-files-for-lifetime" class="md-nav__link">
+    Option #2: How to upload, store and share your files for lifetime
+  </a>
+  
+    <nav class="md-nav" aria-label="Option #2: How to upload, store and share your files for lifetime">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-setup-your-skynet-account" class="md-nav__link">
+    How to setup your Skynet account
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siasky-skysend-vs-wetransfer-google-drive-and-dropbox" class="md-nav__link">
+    SiaSky &amp; SkySend vs. WeTransfer, Google Drive and Dropbox
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plans-and-features-for-paying-users" class="md-nav__link">
+    Plans and features for paying users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/skynet-guide/docs/edit/main/pages/guides/skynet/sending-files.en.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="sending-large-files-over-skynet">Sending Large Files over Skynet<a class="headerlink" href="#sending-large-files-over-skynet" title="Permanent link">#</a></h1>
+<p>Sending large files over the internet is a common task. There are safer and faster alternatives to wetransfer.com or FTP. Here’s how to use Skynet and SkySend.</p>
+<p>Filesharing is a daily need, be it in business or private. If you need to send large files to a remote colleague or just want to share a video from your last vacation with friends and family, there are common options like the specialized website wetransfer.com or cloud services like Dropbox and Google Drive. But these solutions are centralized and come with a natural twist. You have no guarantee that your files stay online every given second or the services won’t be hacked, giving cybercriminals access to your sensitive business or private files and personal data.</p>
+<p>In this tutorial, we will guide you through using Skynet as an alternative, the layer 2-solution of Sia network. If you want to send a file just once or for a limited time, Skynet offers great services without the need of a user registration. Encryption and file-splitting on a trustless decentralized network will ensure, you – and noone else – can obtain power over your data.</p>
+<p>We also cover Skynet accounts, with which you can store and share your files forever. At the end, you find a little comparison of the basic features and what to consider, when using any of the mentioned services in this article.</p>
+<h2 id="option-1-how-to-send-up-to-8-gb-for-free-without-registration">Option #1: How to send up to 8 GB for free without registration<a class="headerlink" href="#option-1-how-to-send-up-to-8-gb-for-free-without-registration" title="Permanent link">#</a></h2>
+<p>Skynet offers different ways to easily send large files without registration. We focus on <a href=""></a><a href="https://siasky.net" target="_blank" rel="noopener noreferrer">SiaSky</a> and <a href=""></a><a href="https://skysend.hns.siasky.net" target="_blank" rel="noopener noreferrer">SkySend</a>, since they are the first available services for filesharing on Skynet. These are simple solutions to upload your data and share them with anyone you like. For files smaller than 1GB, you can just use siasky.net. But if you need something more, in order to get around the size limitation, you need to use some app that achieves the same result, but differently. Such an app is <a href=""></a><a href="https://skysend.hns.siasky.net" target="_blank" rel="noopener noreferrer">SkySend</a> developed by <a href=""></a><a href="https://github.com/redsolver" target="_blank" rel="noopener noreferrer">redsolver</a> and you can send up to 8GB with it.</p>
+<p>But keep in mind: Both SiaSky and SkySend are not final at the time of writing. SiaSky is meant for quick filesharing purposes and doesn’t offer end-2-end encryption at the moment. For SkySend, the encryption still needs to be audited. So consider not to using these services for sensitive data for the time being.</p>
+<h3 id="how-to-upload-and-share-your-files-up-to-1gb-without-registration-up-to-90-days">How to upload and share your files up to 1GB without registration (up to 90 days)<a class="headerlink" href="#how-to-upload-and-share-your-files-up-to-1gb-without-registration-up-to-90-days" title="Permanent link">#</a></h3>
+<ul>
+<li>Visit Siasky(https://siasky.net/) and you’ll find a self-explanatory interface</li>
+</ul>
+<p><img src="/static/assets/sending-files-over-skynet/image-2.jpg"></p>
+<ul>
+<li>click on “Browse“ and choose a file for uploading from your device. If you want to send a bunch of files, which in total are less than 1GB, we recommend to pack them into one archive file, i.e. with 7-Zip. With 7-Zip you can also consider to protect your file or archive with a password to optimize security.</li>
+<li>Depending on your internet connection, the upload will take some time.</li>
+<li>You can also upload folders and then reference the individual files where needed by adding “/folder/index.html” after the skylink.</li>
+</ul>
+<p>Once your upload is complete, siasky.net will give you a Skylink. With this link, you or your colleagues, family and friends can download your file. Make sure to save the Skylink for up to 90 days, if you want to share your files again at a later point. After these 90 days, the file is not pinned on Skynet anymore, and thus gets lost.</p>
+<h3 id="how-to-upload-and-share-files-up-to-8gb-without-registration-up-to-90-days">How to upload and share files up to 8GB without registration (up to 90 days)<a class="headerlink" href="#how-to-upload-and-share-files-up-to-8gb-without-registration-up-to-90-days" title="Permanent link">#</a></h3>
+<p>If you are in need of sending single files or archives up to 8GB, we recommend SkySend. Here’s how to use it for free and without any registration process:</p>
+<ul>
+<li>Visit <a href=""></a><a href="https://skysend.hns.siasky.net/" target="_blank" rel="noopener noreferrer">SkySend</a>, you find a minimalistic interface which offers everything you need.</li>
+<li>Click on “Browse” and choose your file for upload. Depending on the file-size and your internet connection, it can take a while.</li>
+</ul>
+<p><img src="/static/assets/sending-files-over-skynet/image-3.jpg"></p>
+<ul>
+<li>As you can see, the file is split and encrypted, giving you a maximum of security.</li>
+<li>Once your upload has finished, you will get a link, that – as before – can be shared with anyone you like.</li>
+<li>Make sure to save it for up to 90 days, if you want to share your files again at a later point. After these 90 days, the file is not pinned on Skynet anymore, and thus gets lost.</li>
+</ul>
+<blockquote>
+<p>Both these approaches are sharing the limited availability for up to 90 days. If you ask why, it is because in both cases we are using the siasky.net portal for the actual upload. Just in the second case, the data is not uploaded by the siasky.net app, but by SkySend that does it differently – splits it into pieces that match the limit and creates a new skyfile with references to the pieces and code necessary to rebuild the file. But since the actual uploaded data goes through the same portal, it shares the same limitations for unregistered users.</p>
+<p>However, if you want to upload temporarily, this gives you the ability to use any portal you want. See our list here.</p>
+</blockquote>
+<h2 id="option-2-how-to-upload-store-and-share-your-files-for-lifetime">Option #2: How to upload, store and share your files for lifetime<a class="headerlink" href="#option-2-how-to-upload-store-and-share-your-files-for-lifetime" title="Permanent link">#</a></h2>
+<p>You can sign-up for free on siasky.net, get 100 GB free cloud storage for lifetime and can share your files online with anyone within seconds – without any cost! For the time being, all you need is an email address and a password to get access to your personal dashboard. The dashboard gives you an overview of every upload and generated skylink that you have created while you were logged in.</p>
+<h3 id="how-to-setup-your-skynet-account">How to setup your Skynet account<a class="headerlink" href="#how-to-setup-your-skynet-account" title="Permanent link">#</a></h3>
+<ul>
+<li>Visit https://siasky.net/ and click on “Sign up now!“</li>
+<li>Provide an email address and choose a password to setup your account</li>
+</ul>
+<p><img src="/static/assets/sending-files-over-skynet/image-4.jpg"></p>
+<ul>
+<li>When you are logged in, any upload going through SiaSky.net will be collected on your dashboard with the appropriate Skylink. This includes not just SiaSky.net itself, but any Skynet app you are accessing through a SiaSky.net portal – like SkyID, Marstorage, SkyFeed, simply everything …</li>
+</ul>
+<blockquote>
+<p><strong>Notice:</strong> At the time being, SkySend-links are not visible on the SiaSky dashboard. <strong>Skynet Labs are working on DAC</strong> (Data Access Controller) and details will be revealed soon, which will allow Skapp developers to make it way cooler and easy to use. What does it mean for you right now? <strong>If you use SkySend, make sure to save your SkySend-links separately, until DAC is integrated. Only SiaSky links can be obtained from the dashboard right now.</strong></p>
+</blockquote>
+<p>Your files are hosted for lifetime without any limit and can be shared for as long as you wish. If you ask how it is possible to get this all for free and for a lifetime, you should learn more about the Skynet monetization model. Best resource available right now is from the developers themselves: <a href=""></a><a href="https://blog.sia.tech/a-deep-dive-into-skynet-a0fa037feea" target="_blank" rel="noopener noreferrer">A Deep Dive into Skynet</a>.</p>
+<blockquote>
+<p><strong>Did you know?</strong> As a free SiaSky user, you can use 7-Zip or any other similar program to split your own archives bigger than 8GB into pieces, each not bigger than 1GB (or 8GB in the future, after DAC has been deployed). If you want to avoid splitting files, consider to sign-up for one of the paid plans. They will give you even more freedom. Being logged in, you can check the <strong>tiers and Skynet prices</strong> on the appropriate site.</p>
+<p>Though keep in mind that the 1GB per-file-limit has not yet been lifted on portals. That should be next in line to change though.</p>
+</blockquote>
+<h2 id="siasky-skysend-vs-wetransfer-google-drive-and-dropbox">SiaSky &amp; SkySend vs. WeTransfer, Google Drive and Dropbox<a class="headerlink" href="#siasky-skysend-vs-wetransfer-google-drive-and-dropbox" title="Permanent link">#</a></h2>
+<p>The following table gives you an overview of storage capacities of SiaSky, SkySend and centralized competitors like WeTransfer, Google Drive and Dropbox.</p>
+<table>
+<thead>
+<tr>
+<th>Service</th>
+<th>SiaSky.net / SkySend</th>
+<th>wetransfer.com</th>
+<th>Google Drive</th>
+<th>Dropbox</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Developer</td>
+<td>Skynet Labs / Sia Community</td>
+<td>WeTransfer</td>
+<td>Google</td>
+<td>Dropbox</td>
+</tr>
+<tr>
+<td>Technology</td>
+<td>decentralized(ish)</td>
+<td>centralized</td>
+<td>centralized</td>
+<td>centralized</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>No / AES256</td>
+<td>AES256</td>
+<td>AES128 for storage</td>
+<td>AES256</td>
+</tr>
+<tr>
+<td>Free transfer (without registration)</td>
+<td>Yes</td>
+<td>Yes (recepient and sender email required)</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>File size limitation</td>
+<td>1 / 8GB</td>
+<td>2GB</td>
+<td>15GB</td>
+<td>2GB (100MB for sending)</td>
+</tr>
+<tr>
+<td>Storage (free use after registration)</td>
+<td>100GB</td>
+<td>2GB</td>
+<td>15GB</td>
+<td>2GB</td>
+</tr>
+<tr>
+<td>Hosting duration (free use)</td>
+<td>unlimited with registration,90 days without it  7 days (10 downloads)</td>
+<td>–</td>
+<td>–</td>
+<td></td>
+</tr>
+<tr>
+<td>Download speed</td>
+<td>unlimited</td>
+<td>unlimited</td>
+<td>unlimited</td>
+<td>unlimited</td>
+</tr>
+</tbody>
+</table>
+<h2 id="plans-and-features-for-paying-users">Plans and features for paying users<a class="headerlink" href="#plans-and-features-for-paying-users" title="Permanent link">#</a></h2>
+<p>If you plan to use a storage solution for longterm, it’s worth to look into pricing and the available plans. This is, what the services offer:</p>
+<ul>
+<li>SiaSky plans are simple. You get 100 GB for free. Beginning with $5/month for Skynet Plus, you can use 1TB. You get 4TB for $20/month with Skynet Pro and 20TB for $80/month with Skynet Extreme.</li>
+<li>WeTransfer offers Pro subscription for 12$/month. That will only give you 1TB storage, but you can send files with 20GB in size which can be shared via email 50 times.</li>
+<li>Google Drive has Google One as a paid plan, beginning at 1.99$/month for 100GB. That is a tenth of Skynet Plus’ storage capacity for 40% the price of the same Skynet plan. Further, Google gives you 200GB for 2.99$/month and 2TB for 9.99$/month. Comparing the highest tier of Google to Skynet Extreme in theory, you would have to pay 20% more for Google, to get the same amount of storage.</li>
+<li>Dropbox Plus begins at 9.99$/month without extending your 2TB storage. The limit per transfer is set to 2GB. Concentrating on these numbers alone, the 16.99$/month-family-plan just gives another 5 users access to the same storage capacity.</li>
+</ul>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>SiaSky and SkySend – or in essence Sia’s layer two, Skynet – is your primary choice, if you don’t want your data being stored by a centralized corporation. Comparing storage capacity and price, SiaSky is within a throwing distance of the competitors in terms of price/performance, while allowing a fully open API for skapp devs to take advantage of. Skynet is in active development and new features will be added time after time. Read this guide to understand, <a href="/explore-skynet/you-need-skynet.html">why do you need Skynet</a>.</p>
+<hr />
+<p><em>Written by: MLN284 &amp; Danger, Covalent, Last Edit: April 14, 2021</em></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../../explore-skynet/you-need-skynet.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Why do I need Skynet?
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../../about/faq.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              FAQ
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

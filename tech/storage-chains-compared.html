@@ -1,0 +1,1961 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Community driven documentation of Sia & Skynet.">
+      
+      
+      
+        <meta name="author" content="Skynet Guide Contributors">
+      
+      
+      <link rel="icon" href="../static/assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Storage Chains Compared - Skynet Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#storage-chains-compared" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Skynet Guide" class="md-header__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../static/assets/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Skynet Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Storage Chains Compared
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_1">
+          <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+          </label>
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_2">
+          <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+          </label>
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <span class="md-header__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </span>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../index.html" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Skynet Guide" class="md-nav__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../static/assets/favicon.png" alt="logo">
+
+    </a>
+    Skynet Guide
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Technology
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Technology" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Technology
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="sia-layer-one.html" class="md-nav__link">
+        Sia - Decentralized Storage
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="skynet-layer-two.html" class="md-nav__link">
+        Skynet - Decentralized Internet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        More about Sia
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Sia" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          More about Sia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/history.html" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/foundation.html" class="md-nav__link">
+        Sia Foundation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/tokenomics.html" class="md-nav__link">
+        Tokenomics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/wallet.html" class="md-nav__link">
+        Wallets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/trading.html" class="md-nav__link">
+        Trading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/seed-management.html" class="md-nav__link">
+        Seed Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/explorers.html" class="md-nav__link">
+        Blockchain Explorers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="network-metrics.html" class="md-nav__link">
+        Network Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../siacoin/mining-guide.html" class="md-nav__link">
+        Mining
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Storage Chains Compared
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="storage-chains-compared.html" class="md-nav__link md-nav__link--active">
+        Storage Chains Compared
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-from-a-technical-perspective" class="md-nav__link">
+    Chains compared: From a Technical Perspective
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: From a Technical Perspective">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-to-be-compared" class="md-nav__link">
+    What is to be Compared?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-consensus-algorithms" class="md-nav__link">
+    Chains compared: Consensus Algorithms
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Consensus Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_1" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_1" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_1" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_1" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-block-time" class="md-nav__link">
+    Chains compared: Block Time
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Block Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_2" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_2" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_2" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_2" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-enforcement-of-data-retention" class="md-nav__link">
+    Chains compared: Enforcement of Data Retention
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Enforcement of Data Retention">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_3" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_3" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_3" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_3" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-content-distribution" class="md-nav__link">
+    Chains compared: Content Distribution
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Content Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_4" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_4" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_4" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_4" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-sector-size" class="md-nav__link">
+    Chains compared: Sector Size
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Sector Size">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_5" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_5" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_5" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_5" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-decentralization" class="md-nav__link">
+    Chains compared: Decentralization
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Decentralization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sia_6" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_6" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_6" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#okay-so-who-wins" class="md-nav__link">
+    Okay, so who wins?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#honorable-mentions" class="md-nav__link">
+    Honorable mentions
+  </a>
+  
+    <nav class="md-nav" aria-label="Honorable mentions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arweave" class="md-nav__link">
+    Arweave
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/tools.html" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        More about Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Skynet" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          More about Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="registry.html" class="md-nav__link">
+        The Registry
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="portals.html" class="md-nav__link">
+        Skynet Portals
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Get paid for storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Get paid for storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Get paid for storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/introduction.html" class="md-nav__link">
+        Introduction to Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/useful-tools.html" class="md-nav__link">
+        Useful Hosting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Hosting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Hosting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hosting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/linux-hosting.html" class="md-nav__link">
+        Linux Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.sia.tech/hosting/how-to-host-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/host-manager-remote-connection.html" class="md-nav__link">
+        Host Manager: Remote Connection
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Using secure storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Using secure storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Using secure storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting/introduction.html" class="md-nav__link">
+        Introduction to Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting/useful-tools.html" class="md-nav__link">
+        Useful Renting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Renting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Renting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Renting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting.html" class="md-nav__link">
+        Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.sia.tech/renting/how-to-rent-storage-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Guides for Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides for Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Guides for Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/packaging-with-rift.html" class="md-nav__link">
+        Packaging with Rift
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/using-the-sdk.html" class="md-nav__link">
+        Using the SDK
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Explore Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Explore Skynet" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Explore Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/mysky.html" class="md-nav__link">
+        1. MySky - Decentralized Identity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/homescreen.html" class="md-nav__link">
+        2. Homescreen - Own your apps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/sky-os.html" class="md-nav__link">
+        3. SkyOS - System in a browser
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/popular-apps.html" class="md-nav__link">
+        4. Skynet Apps - Get some!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
+      
+      <label class="md-nav__link" for="__nav_6_5">
+        More
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          More
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/you-need-skynet.html" class="md-nav__link">
+        Why do I need Skynet?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/sending-files.html" class="md-nav__link">
+        Sending Files
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/faq.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/contributors.html" class="md-nav__link">
+        Contributors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/resource-sites.html" class="md-nav__link">
+        Resource Sites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/support.html" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-from-a-technical-perspective" class="md-nav__link">
+    Chains compared: From a Technical Perspective
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: From a Technical Perspective">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-to-be-compared" class="md-nav__link">
+    What is to be Compared?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-consensus-algorithms" class="md-nav__link">
+    Chains compared: Consensus Algorithms
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Consensus Algorithms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_1" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_1" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_1" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_1" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-block-time" class="md-nav__link">
+    Chains compared: Block Time
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Block Time">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_2" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_2" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_2" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_2" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-enforcement-of-data-retention" class="md-nav__link">
+    Chains compared: Enforcement of Data Retention
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Enforcement of Data Retention">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_3" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_3" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_3" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_3" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-content-distribution" class="md-nav__link">
+    Chains compared: Content Distribution
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Content Distribution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_4" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_4" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_4" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_4" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-sector-size" class="md-nav__link">
+    Chains compared: Sector Size
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Sector Size">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#filecoin_5" class="md-nav__link">
+    Filecoin
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sia_5" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_5" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_5" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chains-compared-decentralization" class="md-nav__link">
+    Chains compared: Decentralization
+  </a>
+  
+    <nav class="md-nav" aria-label="Chains compared: Decentralization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sia_6" class="md-nav__link">
+    Sia
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storj_6" class="md-nav__link">
+    Storj
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0chain_6" class="md-nav__link">
+    0Chain
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#okay-so-who-wins" class="md-nav__link">
+    Okay, so who wins?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#honorable-mentions" class="md-nav__link">
+    Honorable mentions
+  </a>
+  
+    <nav class="md-nav" aria-label="Honorable mentions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#arweave" class="md-nav__link">
+    Arweave
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/skynet-guide/docs/edit/main/pages/tech/storage-chains-compared.en.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="storage-chains-compared">Storage Chains Compared<a class="headerlink" href="#storage-chains-compared" title="Permanent link">#</a></h1>
+<p>This comparison has been made to let you understand the pros and cons of the “leading” projects in decentralized storage. Don’t expect any scoring or a table – many projects have these made in a way that highlights their own project and misinforms users about the others. We are trying to make the research easier for you and provide you with the technical information in easy to understand way.</p>
+<h2 id="chains-compared-from-a-technical-perspective">Chains compared: From a Technical Perspective<a class="headerlink" href="#chains-compared-from-a-technical-perspective" title="Permanent link">#</a></h2>
+<p>In this section, I will be breaking down the technical differences between the major players in the “decentralized” storage space (quotes will be explained later). Though, keep in mind that I am prominent in the Sia community so all of my opinions obviously have a bias and should be taken with a grain of salt.</p>
+<p>First off, we need to decide which players to consider in the breakdown. I have settled on four competitors.</p>
+<h3 id="filecoin">Filecoin<a class="headerlink" href="#filecoin" title="Permanent link">#</a></h3>
+<p>When people think “decentralized storage” this is the first thing to come to mind. <strong>They had a massive ICO that raised over $250M</strong> and a darling team from the decentralized community behind the product (Protocol Labs) which have previously developed IPFS (see more <a href="https://ipfs.io/" target="_blank" rel="noopener noreferrer">here</a>). To say the least, hopes have been very high for Filecoin and they finally reached mainnet after many years of work on new tech in late 2020. So, since they are the big name I’m of course going to include them in this comparison.</p>
+<h3 id="sia">Sia<a class="headerlink" href="#sia" title="Permanent link">#</a></h3>
+<p>Started in 2014, Sia was one of the first “decentralized storage” protocols to come to fruition. Not only that, it has been in mainnet for years now which has allowed a small but dedicated group of devs to work on the project. <strong>Total development cost over the years was around $6.6M for Sia and another $3M was raised for the development of Skynet in 2020.</strong></p>
+<blockquote>
+<p>It’s also worth mentioning that Sia never had an ICO and is the only of these projects that didn’t fund the development with the network’s own token, Siacoin (SC).</p>
+</blockquote>
+<p>Skynet is an interesting L2 (layer two) solution addressing content distribution that was released in early 2020 (which you may be reading this on right now) that utilizes Sia’s decentralized storage and makes Sia a good point to compare against.</p>
+<h3 id="storj">Storj<a class="headerlink" href="#storj" title="Permanent link">#</a></h3>
+<p>Storj was another one of the crypto projects that started in 2014. They released Storj v1 for public beta back right at inception and have aggressively targeted b2b customers by posing themselves as an S3 drop-in replacement. This has recently culminated in the real public release of Storj v3 through <a href="https://tardigrade.io/" target="_blank" rel="noopener noreferrer">tardigrade</a>. <strong>Storj raised $35.4M through multiple funding rounds, though most of it ($30M) was raised during its ICO in 2017.</strong></p>
+<h3 id="0chain">0Chain<a class="headerlink" href="#0chain" title="Permanent link">#</a></h3>
+<p>0Chain is a tad different than the other competitors due to its eccentric take on the network architecture. For example, their decision to do all transactions on-chain with sub-second block times is quite the contrast to Sia’s approach of the usual Bitcoin 10 minute block times.</p>
+<p>Despite 0chain not actually being in mainnet (which I was considering making a requirement to be in this comparison), I think the tech is advanced and interesting enough to warrant being part of this. <strong>0Chain raised $5.9M during its ICO in 2017.</strong></p>
+<h2 id="what-is-to-be-compared">What is to be Compared?<a class="headerlink" href="#what-is-to-be-compared" title="Permanent link">#</a></h2>
+<p>I thought the most important things to consider when comparing the technical sides of these storage chains would be the following:</p>
+<ul>
+<li>Consensus Algorithms</li>
+<li>Block time (and why)</li>
+<li>Enforcement of data retention</li>
+<li>Content distribution</li>
+<li>Sector size</li>
+<li>“Decentralization”</li>
+</ul>
+<p>Let us begin.</p>
+<h2 id="chains-compared-consensus-algorithms">Chains compared: Consensus Algorithms<a class="headerlink" href="#chains-compared-consensus-algorithms" title="Permanent link">#</a></h2>
+<p>This section is undoubtedly the most complex of all of the sections due to the wild variance between the different chains and how they find quorum. There is a good chance that I mess something up. If you do find anything wrong, feel free to send me a message on discord (I’m ℂ𝕠𝕧𝕒𝕝𝕖𝕟𝕥#5766 btw).</p>
+<h3 id="filecoin_1">Filecoin<a class="headerlink" href="#filecoin_1" title="Permanent link">#</a></h3>
+<p>Filecoin uses an odd variation of PoS (proof of stake) called PoSt (proof of space time). It effectively works by creating a “power table” by testing the usable capacity of the hosts that offer capacity to the network (also used capacity by users provides more power than just plain storage offered to the network). Then a “randomness beacon” is used to select a random host weighted by the power table. So if a miner offers twice the capacity of another miner, it is twice as likely to get chosen as the block leader. This block leader can then use previously grabbed transactions and form a new block-based on them (making sure to pay themselves). Read more <a href="https://spec.filecoin.io/systems/filecoin_blockchain/storage_power_consensus/" target="_blank" rel="noopener noreferrer">here</a>. This method of consensus is unproven and has its own set of issues; namely that the host and the miner (who have separate interests) are now acting as one entity. And due to the cutting-edge nature of the tech, we just don’t know when these motives will clash the hardest and when the algorithm will fall apart. Though, only time will tell how it plays out.</p>
+<h3 id="sia_1">Sia<a class="headerlink" href="#sia_1" title="Permanent link">#</a></h3>
+<p>Sia uses a near identical consensus algorithm as Bitcoin. I’m not gonna go into too much detail here because the fundamentals are much better explained <a href="https://www.youtube.com/watch?v=bBC-nXj3Ng4" target="_blank" rel="noopener noreferrer">here</a> by 3blue1brown than I ever could, but the basic idea is as follows:</p>
+<ol>
+<li>People broadcast transactions into the transaction pool. These transactions include a fee that is an incentive for miners to choose their transaction over others.</li>
+<li>Every miner looks into the transaction pool and grabs those transactions that’ll make them the most money. Then they create a transaction that will give them the block reward and incorporates the last block into a new one that ensures the immutability of the blockchain.</li>
+<li>Every miner then repeatedly tries to “hash” their respective newly created block with specialized hardware specific to the task called an ASIC (application specific integrated circuit).</li>
+<li>Finally, whoever gets a special number from this hash first gets to claim their block reward by broadcasting the block to the network. That makes the block part of blockchain and entire process repeats over and over with a next block.</li>
+</ol>
+<p>This is a dramatic over-simplification of PoW and I highly recommend the 3blue1brown video for those who want to understand it in more detail. But the essence is that very expensive and specialized hardware and a huge amount of electricity are used to perform effectively useless computation in order to make money and secure the network. It isn’t particularly efficient, doesn’t scale super well to a huge number of transactions, and requires a long block time to function properly; but it is extremely resilient to any number of attacks and has proved to work very well at its job through the success of Bitcoin which runs since 2009 with 100% uptime.</p>
+<h3 id="storj_1">Storj<a class="headerlink" href="#storj_1" title="Permanent link">#</a></h3>
+<p>Storj is the only project in this comparison that doesn’t have its own chain; the platform is built on Ethereum (currently built on PoW (proof of work) but exploring ways to change that). As described <a href="https://forum.storj.io/t/why-does-storj-use-the-storj-token/2987/38" target="_blank" rel="noopener noreferrer">here</a>, the reason they decided to build on the Ethereum network is because of the simplicity of using it as a method of exchange. From the start, Storj was never intended to be a true “decentralized storage” network. The idea was more of a ploy for distributed storage (this is further explored later in the “decentralization” section) and when the team looked at their options for paying the storage providers, using something like a coin on top of Ethereum just flat out made more sense.</p>
+<p>First, they could mint money to pay for development. Then, more importantly, they could get away from centralized payment providers like Paypal which would have taken a massive chunk of their profits.</p>
+<p>In any case, if you’re interested in how Eth consensus works (to get a better grasp of how Storj functions), see <a href="https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h3 id="0chain_1">0Chain<a class="headerlink" href="#0chain_1" title="Permanent link">#</a></h3>
+<p>0Chain is the only network here that uses PoS (proof of stake). PoS was introduced in 2016 and is at the cutting edge of blockchain tech. Only a few coins have moved to it, namely Dash, Polkadot, and Stellar. The actual details (like everything in crypto) are quite complex, but you can read about it <a href="https://drive.google.com/file/d/1KcfkQ1HmtGXvXzZtalNkVHMmIcwOiA7k/view" target="_blank" rel="noopener noreferrer">here</a>. The short version would look like this:</p>
+<ol>
+<li>Every miner that wants to take a place in the “active set” of miners and sharders has to lock up some ZCN to the network.</li>
+<li>Then, at every rotation period, some of the “active set” are rotated out, and the actors with the highest stake (squared) get chosen to join the set.</li>
+<li>The miners secure the network in return for coin and the sharders aggregate old blocks and serve them to those who request them in return for coin.</li>
+<li>Because the miners are “centralized” and limited to a set of thirty, transactions can be verified extremely quickly, though this does come at the cost of more trust being necessary to run the network.</li>
+</ol>
+<p>The big issue with PoS is the lack of resiliency, the untested nature of new tech, and the focusing of wealth at the top. If a PoS network goes down for a couple of days, it likely won’t come back because the nodes will never be able to settle on the true consensus. This is unlike PoW where it is very easy to verify chain weight and find consensus even after massive downtime by major shares of the network. Then there’s the fact that PoS hasn’t been tested thoroughly, there could be a myriad of issues that are completely unforeseen. Then of course there’s my major issue with the network, the incentivized wealth inequality. In reality, it’s unlikely that the network would ever go down for that long, and it’s not like the code hasn’t been reviewed, but the fact that the entire network’s “Sybil protection” is created in order to funnel wealth to the top just doesn’t sit right with me. Also if you didn’t already know, squared staking is squaring stakes to give the wealthy exponentially more influence over the network.</p>
+<h2 id="chains-compared-block-time">Chains compared: Block Time<a class="headerlink" href="#chains-compared-block-time" title="Permanent link">#</a></h2>
+<p>Block time is how long it takes for a transaction to go through on the network. There can be a myriad of reasons to have different block times depending on what the devs want for the network, but it’s good to keep in mind that the longer the block time is, the more likely it is for the network to be secure and the more ease of supporting nodes that are far apart.</p>
+<h3 id="filecoin_2">Filecoin<a class="headerlink" href="#filecoin_2" title="Permanent link">#</a></h3>
+<p>Filecoin uses a variation of PoS (proof of stake), PoSt (proof of space time) as described above, the block time is thirty seconds on average. This is a bit odd to me because it’s actually quite slow. Payment channels would be necessary but it still poses the issue of malicious miners screwing each other over by propagating outdated chains. Transactions are fast, which is nice for money transfers, but to me at least, this seems like kind of the worst of both worlds. You can read more <a href="https://docs.filecoin.io/about-filecoin/network-performance/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h3 id="sia_2">Sia<a class="headerlink" href="#sia_2" title="Permanent link">#</a></h3>
+<p>Since Sia is very closely based on Bitcoin, the block time is also ten minutes. The network itself is not designed for fast on-chain transactions and is only really meant for three things: transacting money (of course), creating payment channels (allowing instant payments between renters and host), and verifying storage contracts. So the slow block time isn’t really an issue since majority of all transactions happens in payment channels that are settled on-chain when the storage contract expires. <em>Did anyone say lightning network? 😉</em></p>
+<h3 id="storj_2">Storj<a class="headerlink" href="#storj_2" title="Permanent link">#</a></h3>
+<p>Storj is the only “dstorage” solution to not employ their own chain. As described above, they decided to use the Ethereum network due to the easy deployment of a coin on it. Because of this decision, the block time is twelve seconds and needs to deal with the consequences of sharing blockchain with other projects.</p>
+<h3 id="0chain_2">0Chain<a class="headerlink" href="#0chain_2" title="Permanent link">#</a></h3>
+<p>0Chain is interesting in this regard because it is the only chain that uses a high-frequency block time and “sharders” to handle the significant overhead of a chain that is secured with this method. Blocks occur every second or so on average, and because of this, payment channels aren’t really used to pay blobbers for storage.</p>
+<p>Side note, the transaction times can be this low without issues because of the nature of PoS. While I have my qualms with PoS in general, I do recognize this as one upside to the tech.</p>
+<h2 id="chains-compared-enforcement-of-data-retention">Chains compared: Enforcement of Data Retention<a class="headerlink" href="#chains-compared-enforcement-of-data-retention" title="Permanent link">#</a></h2>
+<p>There are many different methods that can be used to enforce data retention on data store-ers, all having their individual ups and downs.</p>
+<h3 id="filecoin_3">Filecoin<a class="headerlink" href="#filecoin_3" title="Permanent link">#</a></h3>
+<p>Due to Filecoin using PoSt( proof of space time) the entire network is designed around enforcement of data retention.</p>
+<ol>
+<li>When uploading a chunk of storage to Filecoin, the renter has to send some money to the host, and the miner has to “seal” this data into something that can be easily used to prove that they continue to store this data. When sealing, some Filecoin (the token of the same name) is also required to be locked up as collateral.</li>
+<li>Then, every time prompted by the network, the miner puts up proof that it still has the original storage that it was intended to store.</li>
+<li>If successful, the miner gets to put that amount stored into its own “storage power” (which is equivalent to hash power on a PoW network), and gains block rewards for doing so (as well as the coin sent by the user at the beginning).</li>
+<li>If the miner fails to provide valid proof, then they lose reputation and get “slashed”. Getting slashed means that they lose the collateral.<blockquote>
+<p>When a miner fails to keep his promise, it means also that only backup of the user’s data was irreversibly lost since Filecoin doesn’t use redundancy.</p>
+</blockquote>
+</li>
+</ol>
+<h3 id="sia_3">Sia<a class="headerlink" href="#sia_3" title="Permanent link">#</a></h3>
+<p>Sia uses a special type of smart contract called a “file contract”. This file contract effectively does two things:</p>
+<ol>
+<li>It locks up coins from the renter and host until the “proof window” hits and the host can submit proof to the network to prove that they still retain the data that the renter originally uploaded. Unlike something like Storj, there is no trust in either party, and the chain itself is the one that decides if the contract is valid or not.</li>
+<li>It facilities functions like downloading and uploading through RHPC2 (renter host protocol two) and now RHPC3 (renter host protocol three).</li>
+</ol>
+<p>When the contract successfully expires, the host receives both the collateral and reward. The host can set the collateral to anything they want (even to nothing) but any sane host selection algorithm makes sure that the host it’s using has a decent enough collateral multiplier to incentivize the host to keep the data safe and always available.</p>
+<blockquote>
+<p>If the host fails to keep its promise, all locked up coins are burnt and one fragment of the user’s data is lost. However, thanks to redundancy there are many replacements that allow reconstructions of the fragment and re-upload to different hosts.</p>
+</blockquote>
+<h3 id="storj_3">Storj<a class="headerlink" href="#storj_3" title="Permanent link">#</a></h3>
+<p>Unfortunately, the actual enforcement of data retention isn’t super clearly documented, the best resource I’ve come across is <a href="https://www.storj.io/blog/2018/12/decentralized-auditing-and-repair-the-low-key-life-of-data-resurrection/" target="_blank" rel="noopener noreferrer">this</a>. In essence though, each Satellite (the interface between the storage operators and the clients) does the enforcement of data retention all on their own. Each Satellite has its own subset of storage nodes that it knows have a good reputation and it trusts, it uses these hosts to upload data to. Then it, at regular intervals, checks random data segments with something called “Berlekamp-Welch” error correction to make sure that the data is still there. If it is, nothing happens. But if it isn’t there, the reputation of that host gets docked and data is migrated to a new host. It’s quite simple actually.</p>
+<p>Unlike the other three options, there isn’t chain-level enforcement for data retention; the Storj token is strictly a means to move value at a massive scale at a low cost. So, this means that the network is relatively trusty when it comes to stuff like payments (the storage operators just have to trust the satellites will pay them).</p>
+<h3 id="0chain_3">0Chain<a class="headerlink" href="#0chain_3" title="Permanent link">#</a></h3>
+<p>0Chain is quite similar to Filecoin in that the network itself ensures data retention by regularly challenging the hosts and requiring proofs. The idea of it is this though:</p>
+<ol>
+<li>The user and “blobber” (hosting nodes) form an agreement on pricing for bandwidth and storage.</li>
+<li>The user allocates funds to the “blobber reward pool” to be used for future payment.</li>
+<li>The user uploads data to “blobbers” and money is moved from the “reward pool” to the “challenge pool”.</li>
+<li>Then the network regularly challenges the blobber and requires proofs for the data it claims to store.</li>
+<li>If the blobber provides valid proof, the funds from the challenge pool will incrementally be moved to the host’s wallet where it can use that money as it pleases.</li>
+<li>If the blobber doesn’t provide valid proofs, it gets punished for its failures and the coin gets burned.</li>
+</ol>
+<h2 id="chains-compared-content-distribution">Chains compared: Content Distribution<a class="headerlink" href="#chains-compared-content-distribution" title="Permanent link">#</a></h2>
+<p>Content distribution is a bit of an oddity in the decentralized storage space for one main reason, people that want to watch videos in a browser don’t want to run a full node. Though, because of the nature of the space, full nodes are necessary in order to retrieve files. Different networks take different approaches to adding incentivized middlemen in order to distribute to the layman.</p>
+<h3 id="filecoin_4">Filecoin<a class="headerlink" href="#filecoin_4" title="Permanent link">#</a></h3>
+<p>Filecoin’s content distribution network is kinda odd to say the least. Since data has to be “sealed” to be counted as provable storage to the chain, and since this takes so much computation to do or undo, it really isn’t practical for the Filecoin miners to serve data.</p>
+<p>For reference, a 1MiB file can take 5-10 minutes to unseal, and a 32GiB file takes 3 hours to unseal on the minimum hardware requirements (which are 128GB of ram, 8 cores, and an SSD btw). Also, at this point, IPFS (a previous project by Protocol Labs) is effectively dead development-wise due to the lack of incentive structure.</p>
+<p>To address this issue, the Filecoin devs introduced a method to store cached and unsealed versions of the data while also storing the same data as sealed in order to provide proofs to the chain. This has the obvious issue of the miner having to store double the amount of data, while also posing the problem that unless this data is frequently accessed, the miners won’t store it because it won’t make them money.</p>
+<p>So something like a Google Photo’s equivalent on Filecoin really just isn’t practical because the data is infrequent enough where it doesn’t make sense to cache, while also being something that needs to be low latency (which is impossible if the data has to be sealed/unsealed often). Read more <a href="https://docs.filecoin.io/about-filecoin/network-performance/#data-retrieval" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h3 id="sia_4">Sia<a class="headerlink" href="#sia_4" title="Permanent link">#</a></h3>
+<p>The Sia network has had a dedicated content distribution platform for about a year now called Skynet. I delve into more detail about it <a href="/tech/sia-layer-one.html">here</a>.</p>
+<p>The gist of it though is that there is a “global file space” of things called Skylinks (Skylinks are 46 character long unique identifiers based on the “Merkle Tree Root” of the file). Any node (Skynet nodes are called portals) can access any Skylink by pinging hosts that it is contracted with until it finds the file and can send it off to the user. There is also another layer to this called “SkyDB” which allows for mutable file pointers as well.</p>
+<p>The tech is new, there are things to improve and bugs to fix, but in comparison to the rest of the space, it’s very fleshed out. Try out Skynet <a href="https://siasky.net/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h3 id="storj_4">Storj<a class="headerlink" href="#storj_4" title="Permanent link">#</a></h3>
+<p>Content distribution through Storj is actually quite simple. Due to the nature of the data only being accessible through the S3 gateway of centralized data Satellites, any data can be made public, and you can send anyone a link to that data easily. The downside of this is that for network throughput to scale, you have to have Storj Labs add more Satellites to the network because the Satellite software isn’t currently available to the public to set up themselves unlike Skynet Portals or 0Chain block explorer.</p>
+<p>Also, something to keep in mind is that due to Storj’s fixed pricing scheme for paying hosts, the hosts have to be paid $10/TB for egress, though different front ends charge different amounts. <a href="https://filebase.com/" target="_blank" rel="noopener noreferrer">Filebase</a> charges $15/TB and <a href="https://www.tardigrade.io/" target="_blank" rel="noopener noreferrer">Tardigrade</a> charges $45/TB. So no matter what, egress will always be somewhat expensive because pricing isn’t decided by a free market, unlike the other three competitors.</p>
+<h3 id="0chain_4">0Chain<a class="headerlink" href="#0chain_4" title="Permanent link">#</a></h3>
+<p>0Chain (as of now in the beta net) and Sia have somewhat similar approaches to content distribution. 0Chain has points to interact with the network; in essence, it is a lite wallet and renter combo. A server does all the work, keeping up with the consensus and proxying traffic to the browser.</p>
+<p>All files are globally available because they are stored, proven, and maintained by the chain. The eventual goal would be for every client to run a “full node themselves” (which is actually theoretically possible due to sharders dealing with the consensus portion of the network significantly reducing the load on the client), but a js/wasm is yet to see implementation.</p>
+<h2 id="chains-compared-sector-size">Chains compared: Sector Size<a class="headerlink" href="#chains-compared-sector-size" title="Permanent link">#</a></h2>
+<p>The sector size is often something that is ignored or not considered by someone new to the space. Effectively, sector size is the minimum amount of data you can send to the host and pay for. Different networks call it different things, and different networks have different sizes, but in essence it’s the smallest amount of payable storage.</p>
+<h3 id="filecoin_5">Filecoin<a class="headerlink" href="#filecoin_5" title="Permanent link">#</a></h3>
+<p>Filecoin actually has a fixed 32GiB sector size which is quite unwieldy. Also, for each 256B, 2B are reserved for proofs. Read more <a href="https://docs.filecoin.io/store/lotus/very-large-files/#maximizing-storage-per-sector" target="_blank" rel="noopener noreferrer">here</a>. So what would normally be a 32GiB sector(34,359,738,368B) would actually store 34,091,302,912B. This isn’t a huge cost, but it does mean ~1% of storage paid for is just proofs. Also, another thing to keep in mind is that everything to be sent to a Filecoin miner must be in a <a href="https://github.com/ipld/specs/blob/master/block-layer/content-addressable-archives.md" target="_blank" rel="noopener noreferrer">car</a> file which can be somewhat compute-heavy on the client-side. This is in contrast to other networks where you just send the host a binary blob and you’re all good.</p>
+<h3 id="sia_5">Sia<a class="headerlink" href="#sia_5" title="Permanent link">#</a></h3>
+<p>I have talked about Sia’s minimum sector size at length <a href="/guides/sia/renting/introduction.html#redundancy">here</a>, but the gist is this: at a protocol level, the minimum file size is 4MiB. This is done so the metadata doesn’t take up too much space on the renter (for 64B sectors, there would be a 1:2 metadata to data stored ratio). This is planned to be addressed at some point by adding a 64KiB option to sector size, but that has no planned release date. Due to the 4MiB sector size, it is not price efficient to store small files without compressing them first, but it’s fine for anything else (raw photos, videos, archives).</p>
+<p>In addition to that, Skynet (Sia’s layer two) allows different handling. While nothing changes for individual files (they take the size of a full chunk if they are smaller), a lot changes for folder uploads. Folders uploaded to Sia hosts through Skynet have their contents automatically packed into the 4 MiB chunks to allow you to store even large collections of tiny files efficiently.</p>
+<h3 id="storj_5">Storj<a class="headerlink" href="#storj_5" title="Permanent link">#</a></h3>
+<p>Storj is kinda odd when it comes to sector size because of how their network infrastructure works. As described above, Storj uses a set of centralized “Satellites” to aggregate data and ensure up-time of data for you, but because the Satellites (which are the ingress/egress points of the network) are completely in Storj Lab’s control, they can play some tricks to improve their performance in this category.</p>
+<p>For example, if the file is &lt; 4KB then it just gets stored on the Satellites in perpetuity it never reaches the hosts. And since the insides of how Storj works aren’t really known, the sector size isn’t clear. What we do know though, is that the object fee is $0.0000022 per file stored. So if you were to store 1TB of 64KB files, it would cost an extra $25 roughly. Nothing spectacular, their storage cost is already $45/TB/mo through Tardigrade. Though, it seems that in their lack of decentralized-ness here they actually incurred massive cost savings. Read more <a href="https://forum.storj.io/t/tardigrade-size-of-file-uploads/5976/13" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<h3 id="0chain_5">0Chain<a class="headerlink" href="#0chain_5" title="Permanent link">#</a></h3>
+<p>As described <a href="https://medium.com/@sculptex/distributed-storage-comparison-7c1b46ed480a" target="_blank" rel="noopener noreferrer">here</a> in a comparison article by Sculptex, 0chain also has a fixed sector size of 64KiB. This is quite impressive and is small enough to the point where if most people were just to upload all of their personal files to the network, most wouldn’t waste too much storage due to sector size inefficiency.</p>
+<h2 id="chains-compared-decentralization">Chains compared: Decentralization<a class="headerlink" href="#chains-compared-decentralization" title="Permanent link">#</a></h2>
+<p>I’ve used quotes multiple times when referring to these networks as “decentralized” because some of these networks just have less decentralization than others. I’ll go into more detail on what that means later on.</p>
+<p>Filecoin
+Something I didn’t touch on earlier in this article (because it wasn’t relevant to the other categories) is the absolute lunacy that is Filecoin’s hardware requirements for hosts. The base hardware requirements are:</p>
+<ol>
+<li>8 Core CPU</li>
+<li>128GB RAM</li>
+<li>Beefy GPU</li>
+<li>1TB SSD</li>
+</ol>
+<p>Read more <a href="https://docs.filecoin.io/mine/hardware-requirements/#general-hardware-requirements" target="_blank" rel="noopener noreferrer">here</a>. In theory, this wouldn’t actually change to what extent the network is decentralized, but you really have to think about who would actually have the resources to run a storage miner. On the other networks, basically anyone can run a storage node (most networks require at least 2 cores, 8GB of RAM and some storage), but on Filecoin, only big companies (or rich people) can run hosts. This significantly reduces the actual spread of the network, and is the reason many people (including myself) refer to Filecoin as a “decentralized marketplace for centralized providers.”</p>
+<p>Also, conflating the storage providers and the miners on the network is a serious blow to decentralization because it makes only one type of machine able to participate on the network.</p>
+<h3 id="sia_6">Sia<a class="headerlink" href="#sia_6" title="Permanent link">#</a></h3>
+<p>Sia, due to the heavy influence of Bitcoin, took a “decentralize at any cost” approach and because of this is as decentralized as it only can be.</p>
+<p>Anyone can run any node they’d like on low-end (in the crypto world at least) machines. This comes at the cost of renter having to run Sia at least once every month in order to let the software maintain file health (because trusting anyone but yourself to maintain files would cause a conflict of interest) and keep the hosts on their toes, but for those that want the true decentralization it’s the best option.</p>
+<p>Also, the fact that Sia is based on PoW is a good sign for those that respect the tech. It’s very inefficient and wasteful by design and as such it is extremely decentralized, secure, and battle-tested.</p>
+<blockquote>
+<p>Skynet is not mentioned here because it’s a layer two and isn’t relevant for the underlying protocol. Actually it’s closer to an open-source product built on top of Sia that utilizes Sia’s features to its maximum and that anyone can run.</p>
+</blockquote>
+<h3 id="storj_6">Storj<a class="headerlink" href="#storj_6" title="Permanent link">#</a></h3>
+<p>Storj is interesting in the regard of “decentralization” because it really isn’t decentralized. The trust in the Satellites is utmost and the blockchain nature of the Storj coin itself is only really designed for efficient transacting, not decentralized enforcement of data retention. So that really leaves Storj as great “distributed” storage, allowing for greater data durability and the likes, but it’s not really decentralized. Now to be fair to Storj, they really weren’t aiming for “full decentralization” anyway, so it’s not really a big deal. But it is a good thing to keep in mind.</p>
+<h3 id="0chain_6">0Chain<a class="headerlink" href="#0chain_6" title="Permanent link">#</a></h3>
+<p>0Chain is interesting in this regard because they actually did a great job in splitting up every possible role on the network. There are miners for mining coins, blobbers for storing arbitrary data, and sharders for storing consensus; this is a stark contrast to Filecoin where they made all the nodes do all the things, creating conflicts of interest. But at the same time PoS is unproven, squared staking is a funnel of wealth to the already wealthy, and the fact that KYC is required at the launch of their main-net to be a miner should make anyone with knowledge of decentralized systems seriously uncomfortable.</p>
+<h2 id="okay-so-who-wins">Okay, so who wins?<a class="headerlink" href="#okay-so-who-wins" title="Permanent link">#</a></h2>
+<p>Earlier I definitely interwove my opinions into the writing but I tried to stay mostly informative instead of trying to spread my ideals. Here though, I’m just gonna say what I believe (keep in mind that I’m an active Sia community member and what I’m saying is likely highly biased).</p>
+<p><strong>I think that Storj and Filecoin should immediately be eliminated from this running.</strong></p>
+<p>Filecoins issues are:
+- <strong>Transfers are egregiously slow</strong> due to the seal/unseal process.
+- There are conflicts of interest due to conflating miners and storage providers.
+- PoSt is unproven to actually be resilient against attacks
+- Hardware requirements are stupidly high.</p>
+<p><strong>Storj just isn’t really a decentralized storage provider</strong>. If you’re in the market for distributed storage though, check out <a href="https://filebase.com/" target="_blank" rel="noopener noreferrer">Filebase</a> (they’re a storage provider that works both on Sia and Storj for the back end).</p>
+<p>Then who wins between Sia and 0Chain? Well, right out of the gate one we have to keep in mind that <strong>0Chain just flat out doesn’t exist yet</strong>. It’s currently rapidly evolving in the beta-net stage and is slated to release in Q1 of 2021. The code is all public of course, but it’s not like you could begin to develop on it right now, it needs more time to mature. The promise of the chain handling contract maintenance sounds super awesome, as well as the idea of having “sharders” handle consensus so full nodes can run on literally any hardware. But my gripes as listed above in the “Decentralization” section are just too great; <strong>anything in crypto that requires KYC to get a priority spot in staking in the network makes me incredibly uncomfortable.</strong></p>
+<p>Now <strong>Sia isn’t perfect in the slightest</strong>, I list a lot of problems with it <a href="/guides/sia/renting/introduction.html">here</a>. But in the current decentralized storage space, it is the best option in my eyes.</p>
+<p>Also with developments like <a href="/tech/skynet-layer-two.html">Skynet</a>, the creation of the <a href="/sia/foundation.html">Sia Foundation</a>, and the possibility of implementing features like Utreexo, the future looks bright for Sia.</p>
+<p>To learn more about the insides of it, read an article Danger wrote <a href="/tech/sia-layer-one.html">here</a>.</p>
+<h2 id="honorable-mentions">Honorable mentions<a class="headerlink" href="#honorable-mentions" title="Permanent link">#</a></h2>
+<p>While the only actual usable/promising chains are broken down above, it’s not like they’re the only ones in the space. Some other honorable mentions are as follows.</p>
+<h3 id="arweave">Arweave<a class="headerlink" href="#arweave" title="Permanent link">#</a></h3>
+<p>Arweave gives the interesting proposition of immutable data forever stored on the blockchain.</p>
+<p>The only issue is that <strong>data isn’t incentivized to stay on-chain</strong> because the miners don’t get paid more over time for storing the data. They only keep accruing more and more data which will, in all likelihood, lead to a fork in a couple of years to allow miners to ditch data. In my opinion, it’s a bad design and cannot practically hold more than a couple of KB per user and sustain itself.</p>
+<hr />
+<p><em>Written by: Covalent &amp; Danger, Last Edit: May 3, 2021</em></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../siacoin/mining-guide.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Mining
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../sia/tools.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Tools
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

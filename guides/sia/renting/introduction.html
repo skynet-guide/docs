@@ -1,0 +1,1481 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Community driven documentation of Sia & Skynet.">
+      
+      
+      
+        <meta name="author" content="Skynet Guide Contributors">
+      
+      
+      <link rel="icon" href="../../../static/assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Introduction to Renting - Skynet Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("../../..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction-to-renting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../index.html" title="Skynet Guide" class="md-header__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../../../static/assets/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Skynet Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Introduction to Renting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_1">
+          <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+          </label>
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_2">
+          <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+          </label>
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <span class="md-header__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </span>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../../../index.html" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../index.html" title="Skynet Guide" class="md-nav__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../../../static/assets/favicon.png" alt="logo">
+
+    </a>
+    Skynet Guide
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      <label class="md-nav__link" for="__nav_2">
+        Technology
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Technology" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Technology
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/introduction.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/sia-layer-one.html" class="md-nav__link">
+        Sia - Decentralized Storage
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/skynet-layer-two.html" class="md-nav__link">
+        Skynet - Decentralized Internet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" >
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        More about Sia
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Sia" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          More about Sia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sia/history.html" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sia/foundation.html" class="md-nav__link">
+        Sia Foundation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../siacoin/tokenomics.html" class="md-nav__link">
+        Tokenomics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../siacoin/wallet.html" class="md-nav__link">
+        Wallets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../siacoin/trading.html" class="md-nav__link">
+        Trading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../seed-management.html" class="md-nav__link">
+        Seed Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../siacoin/explorers.html" class="md-nav__link">
+        Blockchain Explorers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/network-metrics.html" class="md-nav__link">
+        Network Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../siacoin/mining-guide.html" class="md-nav__link">
+        Mining
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/storage-chains-compared.html" class="md-nav__link">
+        Storage Chains Compared
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sia/tools.html" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        More about Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Skynet" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          More about Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/registry.html" class="md-nav__link">
+        The Registry
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tech/portals.html" class="md-nav__link">
+        Skynet Portals
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Get paid for storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Get paid for storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Get paid for storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hosting/introduction.html" class="md-nav__link">
+        Introduction to Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hosting/useful-tools.html" class="md-nav__link">
+        Useful Hosting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Hosting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Hosting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hosting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../linux-hosting.html" class="md-nav__link">
+        Linux Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.sia.tech/hosting/how-to-host-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hosting/host-manager-remote-connection.html" class="md-nav__link">
+        Host Manager: Remote Connection
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+      
+      <label class="md-nav__link" for="__nav_4">
+        Using secure storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Using secure storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Using secure storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Introduction to Renting
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="introduction.html" class="md-nav__link md-nav__link--active">
+        Introduction to Renting
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-renting" class="md-nav__link">
+    What is renting?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-it-work" class="md-nav__link">
+    How does it work?
+  </a>
+  
+    <nav class="md-nav" aria-label="How does it work?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host-selection-algorithm" class="md-nav__link">
+    Host selection algorithm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redundancy" class="md-nav__link">
+    Redundancy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-contracts" class="md-nav__link">
+    Storage contracts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erasure-coding" class="md-nav__link">
+    Erasure coding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    Encryption
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-renter" class="md-nav__link">
+    Setting up a renter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-should-i-know-before-i-start" class="md-nav__link">
+    What should I know before I start?
+  </a>
+  
+    <nav class="md-nav" aria-label="What should I know before I start?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimum-file-size" class="md-nav__link">
+    Minimum File Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-one-computer-at-a-time" class="md-nav__link">
+    Only One Computer at a Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockchain-vs-smaller-devices" class="md-nav__link">
+    Blockchain vs. Smaller Devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backups-are-unreliable" class="md-nav__link">
+    Backups are Unreliable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-of-sia-ui" class="md-nav__link">
+    Development of Sia-UI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-less-than-1tb-isnt-practical" class="md-nav__link">
+    Storing Less Than 1TB isn’t practical
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="useful-tools.html" class="md-nav__link">
+        Useful Renting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Renting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Renting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Renting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../renting.html" class="md-nav__link">
+        Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.sia.tech/renting/how-to-rent-storage-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Guides for Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides for Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Guides for Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skynet/packaging-with-rift.html" class="md-nav__link">
+        Packaging with Rift
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skynet/using-the-sdk.html" class="md-nav__link">
+        Using the SDK
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Explore Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Explore Skynet" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Explore Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explore-skynet/mysky.html" class="md-nav__link">
+        1. MySky - Decentralized Identity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explore-skynet/homescreen.html" class="md-nav__link">
+        2. Homescreen - Own your apps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explore-skynet/sky-os.html" class="md-nav__link">
+        3. SkyOS - System in a browser
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explore-skynet/popular-apps.html" class="md-nav__link">
+        4. Skynet Apps - Get some!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
+      
+      <label class="md-nav__link" for="__nav_6_5">
+        More
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          More
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../explore-skynet/you-need-skynet.html" class="md-nav__link">
+        Why do I need Skynet?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../skynet/sending-files.html" class="md-nav__link">
+        Sending Files
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/faq.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/contributors.html" class="md-nav__link">
+        Contributors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/resource-sites.html" class="md-nav__link">
+        Resource Sites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../about/support.html" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-is-renting" class="md-nav__link">
+    What is renting?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-does-it-work" class="md-nav__link">
+    How does it work?
+  </a>
+  
+    <nav class="md-nav" aria-label="How does it work?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#host-selection-algorithm" class="md-nav__link">
+    Host selection algorithm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redundancy" class="md-nav__link">
+    Redundancy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storage-contracts" class="md-nav__link">
+    Storage contracts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#erasure-coding" class="md-nav__link">
+    Erasure coding
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#encryption" class="md-nav__link">
+    Encryption
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#setting-up-a-renter" class="md-nav__link">
+    Setting up a renter
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-should-i-know-before-i-start" class="md-nav__link">
+    What should I know before I start?
+  </a>
+  
+    <nav class="md-nav" aria-label="What should I know before I start?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#minimum-file-size" class="md-nav__link">
+    Minimum File Size
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#only-one-computer-at-a-time" class="md-nav__link">
+    Only One Computer at a Time
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockchain-vs-smaller-devices" class="md-nav__link">
+    Blockchain vs. Smaller Devices
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backups-are-unreliable" class="md-nav__link">
+    Backups are Unreliable
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#development-of-sia-ui" class="md-nav__link">
+    Development of Sia-UI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#storing-less-than-1tb-isnt-practical" class="md-nav__link">
+    Storing Less Than 1TB isn’t practical
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/skynet-guide/docs/edit/main/pages/guides/sia/renting/introduction.en.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="introduction-to-renting">Introduction to Renting<a class="headerlink" href="#introduction-to-renting" title="Permanent link">#</a></h1>
+<p>As gone over in the introduction to Sia article, Sia is <code>decentralized storage platform</code>. It is composed mainly of three parties, renters, miners, and hosts. In this article, I will be going over the renter module; so I will be going over what it is, how it works, and how you can set one up today.</p>
+<h2 id="what-is-renting">What is renting?<a class="headerlink" href="#what-is-renting" title="Permanent link">#</a></h2>
+<p>In essence, a Sia renter nodes only do a couple of things. They pay hosts to store data for them as well as paying the host to download that data once uploaded. They do that in tandem with fancy math and a dedicated cryptocurrency to make sure the data is safe and highly available. Now, of course, in practice it’s a tad more complicated than that. But that’s all you really have to know in order to use it. So if you don’t particularly care about the technical side to it but want to store data on the Sia network, just skip to the <a href="/guides/sia/renting.html">Renting</a> guide.</p>
+<h2 id="how-does-it-work">How does it work?<a class="headerlink" href="#how-does-it-work" title="Permanent link">#</a></h2>
+<p>Before reading this it is probably best if you read the <a href="/tech/sia-layer-one.html">Introduction to Sia</a> article written by Danger so I don’t have to re-explain everything.</p>
+<p>Okay, now that you have read that, how does a renter node actually work assuming there is an established network of hosts and miners already doing their jobs? Well the main components/aspects that make a functional renter are following in no particular order:</p>
+<ul>
+<li>Host selection algorithm</li>
+<li>Redundancy</li>
+<li>Storage contracts</li>
+<li>Erasure coding</li>
+<li>Encryption</li>
+</ul>
+<h3 id="host-selection-algorithm">Host selection algorithm<a class="headerlink" href="#host-selection-algorithm" title="Permanent link">#</a></h3>
+<p>The host selection algorithm in <code>siad</code> is relatively simple. It effectively polls all hosts that are accepting new renters, checks their prices and response time, then chooses hosts based on those parameters and arbitrary weights the devs put on certain aspects of the hosts. For example, the devs may think that performance is more important than download price, so even if a host has a very cheap download price, <code>siad</code> may choose a host with lower latency to give a better experience to the user.</p>
+<blockquote>
+<p>Note, <code>siad</code> is the main module that pretty much everything Sia based is built upon. It contains the basic renter, host, miner, wallet, etc functionality necessary to use the Sia network. There are minimal clients available like <a href="https://github.com/lukechampine/us" target="_blank" rel="noopener noreferrer">Luke Champine’s <code>us</code></a>, but none are actually usable to an average user, they require custom built tooling to actually function unlike <code>siad</code>.</p>
+<p>Also the name is derived from Sia + daemon, so <code>siad</code>.</p>
+</blockquote>
+<p>Due to the decentralized nature of Sia, fresh renter nodes have no idea what hosts are reliable, fast, or really any metric that isn’t being advertised by the hosts(so basically anything but price). So often when new nodes are created, the renter has to “churn” a bunch of bad hosts before it can reach a set of hosts that is reliable enough to use. This can make storing &lt; 1TB of data seem inexplicably high in comparison to what is advertised on the <a href="https://sia.tech/" target="_blank" rel="noopener noreferrer">Sia website</a> or <a href="https://siastats.info/storage_pricing" target="_blank" rel="noopener noreferrer">Hakkane’s SiaStats</a>.</p>
+<h3 id="redundancy">Redundancy<a class="headerlink" href="#redundancy" title="Permanent link">#</a></h3>
+<p>This is kind of a basic component to the renter node, but the whole idea of Sia hinges on this to be price competitive; hosts don’t have to be reliable. Generally, for high availability, the amount of nine’s of uptime counted is the most important factor, so 99.9999% uptime would be good, but not incredible. The whole idea is flipped on it’s head with Sia, if a host is above 95%(that’s a week or so of downtime a year) uptime, it’s probably fine. One may say that this would make renting prohibitively expensive because you have to pay for the data multiple times, but this is contradicted by the fact that if you don’t have to have incredible uptime hardware costs are lower. You can cut costs by just not paying for a lot of the “traditional server” setup. To have a storage server traditionally, you’d have to pay for stable power, buy UPSes, purchase good dedicated internet, <em>pay for the facilities</em>, etc. But with Sia you can have a bunch of 8GB raspberry pis, with a couple of 12TB hard drives connected to each one in your basement and that’s it. Costs can be greatly reduced through cheap hosts, throughput can greatly increase due to parallelism, and reliability can greatly increase just by paying multiple hosts to store the data.</p>
+<blockquote>
+<p>By default, the Sia renter uploads each file 3 times, so 3x redundancy. Though it is a tad more complex than that because it also uses <strong>erasure coding</strong> to increase reliability.</p>
+<p>Also Skynet uses 10x redundancy because 3x wasn’t fast enough when it was initially created. Learn more in <a href="/tech/skynet-layer-two.html">Introduction to Skynet</a>. Though this is actually changing. Basically, the base sector(used to find the file on the hosts) is going to stay at 10x redundancy, but for anthing over that it will be stored in a 3x(10 of 30) redundancy scheme to lower costs. For something like video streaming, the origional 4MB sector should store a couple seconds worth of video(5 seconds at  8mbps) which should give <code>siad</code> plenty of time to find the location of the rest of the sectors.</p>
+</blockquote>
+<h3 id="storage-contracts">Storage contracts<a class="headerlink" href="#storage-contracts" title="Permanent link">#</a></h3>
+<p>Storage contracts are the magic that make Sia a truly permissionless storage network. On a high level, a storage contract is a payment channel between the renter and host with some metadata on top of it; for more info on payment channels listen to this <a href="https://www.youtube.com/watch?v=Hzv9WuqIzA0" target="_blank" rel="noopener noreferrer">talk</a>.</p>
+<blockquote>
+<p>For those that don’t feel like watching that, but want the gist of payment channels, effectively one party puts in a certain amount of crypto into a “smart contract.” This money is unavailable until the arbitrary end date of this contract when it will be resolved. Whenever the sender(in this case the renter node), wants to send money, instead of sending a transaction over the network and having to wait an hour for multiple confirmations, the sender just adds some coin to the “sent” section of the payment contract, then signs it. The other party(in this case the host) sees this signed contract, and knows that it can safely broadcast this later to get the money inside the channel. The sender cannot revoke this money sent because it has already signed it, and it cannot be iterated downwards, because the receiver could always just broadcast the transaction with more money to make more money. So this is safe way to send money with latency in milliseconds instead of hours.</p>
+</blockquote>
+<p>Anyhow, storage contracts have one other thing built in that makes them special in comparison to plain payment channels. This is the storage proof. What this means is that the host doesn’t only have to have the signature of the renter in order to take the money from the channel, but they have to prove that they still have the data from the renter by submitting a Merkle tree root that combines a hash of the data and some entropy to make sure that they cannot prove it in advance.</p>
+<p>I’m gonna stop here because it can get incredibly complex and nuanced, and you can learn more about it <a href="https://bitcoin.stackexchange.com/questions/10479/what-is-the-merkle-root" target="_blank" rel="noopener noreferrer">here</a>. But, basically, just know that the storage contract is the thing that allows the Sia network to function without trust.</p>
+<blockquote>
+<p>One more thing to note. It is often brought up how the minimum sector size with Sia is 4 MiB. And the reason the team originally made this decision is actually because of the limitations of the storage contract. You can read more about it from Luke <a href="https://forum.sia.tech/t/core-development-small-sector-support/77/5" target="_blank" rel="noopener noreferrer">here</a>. The basic idea was that Sia was originally based on 64B “segments”, but since storing one Merkle root is 32B, this made it so if you were storing 2TB of data, you’d have to store 1TB of metadata. They quickly saw this for what it was, a big issue. So in order to solve this problem, they tried to take a middle ground in “sector” size and take the root of that instead of the “segment.” They chose 4MiB as a nice middle ground between metadata size and performance arbitrarily. So if you now upload any file, it’ll be padded to 4MiB no matter the size in order to fit inside that sector. This is being actively worked on to be reduced.</p>
+</blockquote>
+<h3 id="erasure-coding">Erasure coding<a class="headerlink" href="#erasure-coding" title="Permanent link">#</a></h3>
+<p>Erasure coding is the second trick Sia uses to increase the availability of data. For a technical explanation, read <a href="https://oceanstore.cs.berkeley.edu/publications/papers/pdf/erasure_iptps.pdf" target="_blank" rel="noopener noreferrer">this</a>. If you didn’t read that the basic idea is this, fragmentation of data provides a far greater amount of reliability than redundancy does. So in order to take advantage of that, a normal Sia renter node uses a 10 of 30 scheme. So basically, instead of just uploading each sector to a different node 3 times, it does fancy math to zip-tie 10 sectors together make it so any 10 of the 30 uploaded sectors can retrieve the data of what was originally put in. Unfortunately, this does come at the cost of increasing the minimum file size to 40MB, but the devs thought it okay to do that because it made the renter node much more reliable.</p>
+<blockquote>
+<p>Side note, Skynet does not use erasure coding because it wasn’t fast enough on release, learn more in <a href="/tech/skynet-layer-two.html">Introduction to Skynet</a>. Again, as stated earlier, this is somewhat changing.</p>
+</blockquote>
+<h3 id="encryption">Encryption<a class="headerlink" href="#encryption" title="Permanent link">#</a></h3>
+<p>Encryption is effectively just fancy math that allows you to take data and a “password”(also knows as a private key), then turn that into another piece of data that can only be viewed if you have the corresponding private key. To get a better explanation with nice visuals, check out this <a href="https://www.youtube.com/watch?v=S9JGmA5_unY" target="_blank" rel="noopener noreferrer">3blue1brown video</a>.</p>
+<p>Technical details aside, the use of encryption makes it so you can safely send sensitive data to hosts without worry of them being able to view it. You never send the private key of your data to the host, so to them it’s just random jibber-jabber that they get paid to store. Security wise, it’s the same as just using a hard-drive you own.</p>
+<h3 id="setting-up-a-renter">Setting up a renter<a class="headerlink" href="#setting-up-a-renter" title="Permanent link">#</a></h3>
+<p>To set up a renter, follow the steps in <a href="/guides/sia/renting.html">Renting</a>.</p>
+<h2 id="what-should-i-know-before-i-start">What should I know before I start?<a class="headerlink" href="#what-should-i-know-before-i-start" title="Permanent link">#</a></h2>
+<p>While the Sia network is great in many ways in comparison to traditional storage providers (mainly censorship resistance and speed through parallelism, read more here), there are several things that you should be familiar with before you spend any money or time setting up your own renter, portal, or host.</p>
+<blockquote>
+<p>This article will make you aware of these issues while also offering another view. One, where many developers and community members are working hard to make our decentralized dream into reality. One, where there are not always the resources needed to get it done as soon as we would hope. But to be fair, other projects in the “decentralized” space have much worse issues, very often not only being technically wrong, but fundamentally. And it seems that even with many times higher funding, it’s not about the money. It is about how it works… and in this matter, Sia keeps moving unstoppably forward.</p>
+</blockquote>
+<p>Before continuing further, keep in mind that a lot of progress have been done and if you are looking for flexibility and being able to not just upload your backups privately (meaning that it is protected by its encryption key) but also share some of your data with others and benefit from other features that decentralized internet offers, you might instead want to look for Skynet and our guides in the Explore Skynet section.</p>
+<p>Below are a couple of things to consider before renting.</p>
+<h3 id="minimum-file-size">Minimum File Size<a class="headerlink" href="#minimum-file-size" title="Permanent link">#</a></h3>
+<p>The minimum file size is <strong>40MB</strong>. This is due to erasure coding and the minimum sector size on Sia.</p>
+<blockquote>
+<p>If you are trying to store a bunch of small files like a photos, songs or documents, either archive them together or don’t use Sia to store/back them up. If you were to store a bunch of 4KB files, you’d be over spending by over 1000x. To learn more about why, read here.</p>
+</blockquote>
+<h3 id="only-one-computer-at-a-time">Only One Computer at a Time<a class="headerlink" href="#only-one-computer-at-a-time" title="Permanent link">#</a></h3>
+<p>A Sia node can only be used on one computer at a time due to how file contracts work, so don’t expect a full dropbox-esque experience of having it on every device at once.</p>
+<h3 id="blockchain-vs-smaller-devices">Blockchain vs. Smaller Devices<a class="headerlink" href="#blockchain-vs-smaller-devices" title="Permanent link">#</a></h3>
+<p>In order to sync the blockchain, you must download and maintain a ~22GB consensus file which makes a full Sia node completely impractical to run on anything but a mid-to-high tier desktop computer. This means <strong>you won’t be running a Sia node on your phone anytime soon</strong>.</p>
+<blockquote>
+<p>One way around this issue is to use Luke Champine’s <code>us</code> (see <a href="https://github.com/lukechampine/us" target="_blank" rel="noopener noreferrer">here</a>). It allows you to use something called a <code>shard</code> node which can run the consensus on a remote server for many clients at the same time, thus shifting the load away from the edge clients. In such case you have to depend on centralized server, even if it’s yours.</p>
+<p>Another future option is the planned implementation of <a href="https://dci.mit.edu/utreexo" target="_blank" rel="noopener noreferrer">Utreexo</a>, which would effectively allow you to run a full node but instead of having to store the whole chain history, you’d only have to store the chain state (which would be around 50 KB). This would be great, but due to the <a href="/sia/foundation.html">Sia Foundation</a> being in its infancy, I wouldn’t expect Utreexo to be complete till at earliest 2022.</p>
+</blockquote>
+<h3 id="backups-are-unreliable">Backups are Unreliable<a class="headerlink" href="#backups-are-unreliable" title="Permanent link">#</a></h3>
+<p>If you are to run your node continuously and you never run into any bugs (which actually aren’t too common in <code>siad</code>), you likely will never lose a single file over any period of time when renting on Sia. Only issue is, it isn’t exactly practical to constantly run something like a Sia renter node and this is where backups come into play. The renter node can be backed up in two ways:</p>
+<ol>
+<li>
+<p><strong>Back up the <code>renter</code> folder.</strong>
+Backups of the <code>renter/</code> folder become completely useless if any of the contracts are updated. That means uploading a file, downloading a file, etc will make your backup meaningless. This is due to the nature of the host and renter having to have synced contracts, so if they fall out of sync, you can’t do anything with the contracts anymore.</p>
+</li>
+<li>
+<p><strong>Take a contract snapshot to take advantage of seed based file recovery.</strong>
+Seed based file recovery is currently unreliable. It is quoted as 95% reliable by the devs, but some users can less lucky experience. Though even if it does work, it only saves a contract snapshot and cannot be deleted. So if you upload a file after the snapshot, it cannot be recovered.</p>
+</li>
+</ol>
+<blockquote>
+<p>Covalent (April 14, 2021): “I cannot speak on others experiences, but in my personal experience seed based file recovery has a reliability of 50% at best. It SHOULD NOT be relied upon for important data, treat it as a nice to have, not a foundation to rely on.”</p>
+</blockquote>
+<p>While Sia Foundation is expected to address this, it might take some time. Until then, if you are looking for something more reliable, one such way is to use Skynet which is using the same Sia hosts but manage the renting in a way that not a single file was ever lost. </p>
+<h3 id="development-of-sia-ui">Development of Sia-UI<a class="headerlink" href="#development-of-sia-ui" title="Permanent link">#</a></h3>
+<p>The Skynet Team doesn’t have much time for anything but Skynet, but the Sia Foundation has hired a UX/UI developer to work on upcoming apps in the Sia ecosystem, one of them being a newly tooled Sia-UI. There are other option to store your data in the meantime though, namely: <a href="https://siasky.net/" target="_blank" rel="noopener noreferrer">Skynet</a>, and <a href="https://filebase.com/" target="_blank" rel="noopener noreferrer">Filebase</a>. Though, you have to keep in mind that they are effectively centralized service providers with a dash of decentralization, not the same fully-permissionless-ness of Sia-UI.</p>
+<h3 id="storing-less-than-1tb-isnt-practical">Storing Less Than 1TB isn’t practical<a class="headerlink" href="#storing-less-than-1tb-isnt-practical" title="Permanent link">#</a></h3>
+<p>Due to the contract formation fees of contracting hosts, if you’re storing less than 1TB of data, you will end up spending the pricing is inflated greatly. This is becase you need to form some number of contracts no matter how much you plan to store and the more you store, the smaller part of your overall expenses will be spent on contract forming.</p>
+<p>Now if you understand all that and still wish to rent on Sia, feel free! Check out the <a href="/guides/sia/renting.html">Renting Guide</a>.</p>
+<hr />
+<p><em>Written by: Covalent &amp; Danger, Last Edit: Febuary 26, 2022</em></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../hosting/host-manager-remote-connection.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Host Manager: Remote Connection
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="useful-tools.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Useful Renting Tools
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.fe42c31b.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>

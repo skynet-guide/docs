@@ -1,0 +1,1421 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Community driven documentation of Sia & Skynet.">
+      
+      
+      
+        <meta name="author" content="Skynet Guide Contributors">
+      
+      
+      <link rel="icon" href="../static/assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-7.1.0">
+    
+    
+      
+        <title>Tokenomics - Skynet Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.33e2939f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tokenomics-sc-sf" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="Skynet Guide" class="md-header__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../static/assets/favicon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Skynet Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Tokenomics
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_1">
+          <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 10a2 2 0 0 1 2 2 2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2m10-3a5 5 0 0 1 5 5 5 5 0 0 1-5 5H7a5 5 0 0 1-5-5 5 5 0 0 1 5-5h10M7 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3h10a3 3 0 0 0 3-3 3 3 0 0 0-3-3H7z"/></svg>
+          </label>
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="" type="radio" name="__palette" id="__palette_2">
+          <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3z"/></svg>
+          </label>
+        
+      </form>
+    
+    
+      <div class="md-header__option">
+        <div class="md-select">
+          
+          <span class="md-header__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.52 17.52 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04M18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12m-2.62 7 1.62-4.33L19.12 17h-3.24z"/></svg>
+          </span>
+          <div class="md-select__inner">
+            <ul class="md-select__list">
+              
+                <li class="md-select__item">
+                  <a href="../index.html" class="md-select__link">
+                    English
+                  </a>
+                </li>
+                
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="Skynet Guide" class="md-nav__button md-logo" aria-label="Skynet Guide" data-md-component="logo">
+      
+  <img src="../static/assets/favicon.png" alt="logo">
+
+    </a>
+    Skynet Guide
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/skynet-guide/docs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      <label class="md-nav__link" for="__nav_2">
+        Technology
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Technology" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Technology
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/introduction.html" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/sia-layer-one.html" class="md-nav__link">
+        Sia - Decentralized Storage
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/skynet-layer-two.html" class="md-nav__link">
+        Skynet - Decentralized Internet
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_4" type="checkbox" id="__nav_2_4" checked>
+      
+      <label class="md-nav__link" for="__nav_2_4">
+        More about Sia
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Sia" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_4">
+          <span class="md-nav__icon md-icon"></span>
+          More about Sia
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/history.html" class="md-nav__link">
+        History
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/foundation.html" class="md-nav__link">
+        Sia Foundation
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Tokenomics
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="tokenomics.html" class="md-nav__link md-nav__link--active">
+        Tokenomics
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#siacoin-sc" class="md-nav__link">
+    Siacoin (SC)
+  </a>
+  
+    <nav class="md-nav" aria-label="Siacoin (SC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-they-get-made" class="md-nav__link">
+    How they get made
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-the-supply-really-unlimited" class="md-nav__link">
+    Is the supply really unlimited?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-51-attack-and-is-it-a-threat-or-not" class="md-nav__link">
+    What is a 51% attack and is it a threat or not?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-importance-of-sia-having-its-own-currency" class="md-nav__link">
+    The importance of Sia having its own currency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-hosts-to-keep-and-protect-my-data-instead-of-deleting-them" class="md-nav__link">
+    What makes hosts to keep and protect my data instead of deleting them?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-it-a-good-investment" class="md-nav__link">
+    Is it a good investment?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siafund-sf" class="md-nav__link">
+    Siafund (SF)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-buy" class="md-nav__link">
+    Where to buy?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="wallet.html" class="md-nav__link">
+        Wallets
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="trading.html" class="md-nav__link">
+        Trading
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/seed-management.html" class="md-nav__link">
+        Seed Management
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="explorers.html" class="md-nav__link">
+        Blockchain Explorers
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/network-metrics.html" class="md-nav__link">
+        Network Metrics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="mining-guide.html" class="md-nav__link">
+        Mining
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/storage-chains-compared.html" class="md-nav__link">
+        Storage Chains Compared
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sia/tools.html" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_5" type="checkbox" id="__nav_2_5" >
+      
+      <label class="md-nav__link" for="__nav_2_5">
+        More about Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More about Skynet" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_5">
+          <span class="md-nav__icon md-icon"></span>
+          More about Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/registry.html" class="md-nav__link">
+        The Registry
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tech/portals.html" class="md-nav__link">
+        Skynet Portals
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      <label class="md-nav__link" for="__nav_3">
+        Get paid for storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Get paid for storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Get paid for storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/introduction.html" class="md-nav__link">
+        Introduction to Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/useful-tools.html" class="md-nav__link">
+        Useful Hosting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_3" type="checkbox" id="__nav_3_3" >
+      
+      <label class="md-nav__link" for="__nav_3_3">
+        Hosting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Hosting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_3_3">
+          <span class="md-nav__icon md-icon"></span>
+          Hosting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/linux-hosting.html" class="md-nav__link">
+        Linux Hosting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.sia.tech/hosting/how-to-host-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/hosting/host-manager-remote-connection.html" class="md-nav__link">
+        Host Manager: Remote Connection
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      <label class="md-nav__link" for="__nav_4">
+        Using secure storage
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Using secure storage" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Using secure storage
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting/introduction.html" class="md-nav__link">
+        Introduction to Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting/useful-tools.html" class="md-nav__link">
+        Useful Renting Tools
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4_3" type="checkbox" id="__nav_4_3" >
+      
+      <label class="md-nav__link" for="__nav_4_3">
+        Renting Guides
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Renting Guides" data-md-level="2">
+        <label class="md-nav__title" for="__nav_4_3">
+          <span class="md-nav__icon md-icon"></span>
+          Renting Guides
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/sia/renting.html" class="md-nav__link">
+        Renting
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://support.sia.tech/renting/how-to-rent-storage-on-sia" class="md-nav__link">
+        Official Guide -> sia.tech
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      <label class="md-nav__link" for="__nav_5">
+        Guides for Developers
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Guides for Developers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Guides for Developers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/packaging-with-rift.html" class="md-nav__link">
+        Packaging with Rift
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/using-the-sdk.html" class="md-nav__link">
+        Using the SDK
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      <label class="md-nav__link" for="__nav_6">
+        Explore Skynet
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Explore Skynet" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Explore Skynet
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/mysky.html" class="md-nav__link">
+        1. MySky - Decentralized Identity
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/homescreen.html" class="md-nav__link">
+        2. Homescreen - Own your apps
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/sky-os.html" class="md-nav__link">
+        3. SkyOS - System in a browser
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/popular-apps.html" class="md-nav__link">
+        4. Skynet Apps - Get some!
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6_5" type="checkbox" id="__nav_6_5" >
+      
+      <label class="md-nav__link" for="__nav_6_5">
+        More
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="More" data-md-level="2">
+        <label class="md-nav__title" for="__nav_6_5">
+          <span class="md-nav__icon md-icon"></span>
+          More
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../explore-skynet/you-need-skynet.html" class="md-nav__link">
+        Why do I need Skynet?
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/skynet/sending-files.html" class="md-nav__link">
+        Sending Files
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" >
+      
+      <label class="md-nav__link" for="__nav_7">
+        About
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="About" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          About
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/faq.html" class="md-nav__link">
+        FAQ
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/contributors.html" class="md-nav__link">
+        Contributors
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/resource-sites.html" class="md-nav__link">
+        Resource Sites
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/support.html" class="md-nav__link">
+        Support
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#siacoin-sc" class="md-nav__link">
+    Siacoin (SC)
+  </a>
+  
+    <nav class="md-nav" aria-label="Siacoin (SC)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-they-get-made" class="md-nav__link">
+    How they get made
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-the-supply-really-unlimited" class="md-nav__link">
+    Is the supply really unlimited?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-a-51-attack-and-is-it-a-threat-or-not" class="md-nav__link">
+    What is a 51% attack and is it a threat or not?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-importance-of-sia-having-its-own-currency" class="md-nav__link">
+    The importance of Sia having its own currency
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-makes-hosts-to-keep-and-protect-my-data-instead-of-deleting-them" class="md-nav__link">
+    What makes hosts to keep and protect my data instead of deleting them?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is-it-a-good-investment" class="md-nav__link">
+    Is it a good investment?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#siafund-sf" class="md-nav__link">
+    Siafund (SF)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-to-buy" class="md-nav__link">
+    Where to buy?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/skynet-guide/docs/edit/main/pages/siacoin/tokenomics.en.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
+                
+                
+                <h1 id="tokenomics-sc-sf">Tokenomics (SC &amp; SF)<a class="headerlink" href="#tokenomics-sc-sf" title="Permanent link">#</a></h1>
+<p>There is a lot of misunderstanding around when it comes to tokens flowing through the Sia network. Most common concern is about its so called “unlimited” supply and inflation. So let’s take a deeper look at it.</p>
+<blockquote>
+<p>Quick Links: <a href="#siacoin-sc">Siacoin (SC)</a>, <a href="#siafund-sf">Siafund (SF)</a>, <a href="#where-to-buy">Where to buy?</a></p>
+</blockquote>
+<h2 id="siacoin-sc">Siacoin (SC)<a class="headerlink" href="#siacoin-sc" title="Permanent link">#</a></h2>
+<p>The first and most common mistake we see all the time is people calling the currency <strong>SIA</strong>, the same name as the network. It seems to make sense to them if they only hold it, but is very confusing to anyone actually using it. The network is called <strong>Sia</strong> and the currency enabling us to use it is <strong>Siacoin</strong> with <strong>SC</strong> as the ticker symbol commonly used on exchanges.</p>
+<p>Siacoin is a cryptocurrency that was never pre-mined, there was no ICO and it is not a trusted setup. Siacoins are not even securities. In <a href="https://sia.tech/settlement2019" target="_blank" rel="noopener noreferrer">2019 SEC was looking into Sia</a> and didn’t initiate any action against SC. Only issues they had were with the first and very small $120,000 Sianotes (later converted to Siafunds) offering from 2014, few years before SEC even started providing guidance to projects in 2017.</p>
+<p>Siacoin can be divided up tp 10^24 units called <strong>hastings</strong> and is only entering circulation as a result of mining. You can find more details about it in our <a href="/siacoin/mining-guide.html">Mining Guide</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Prefix</th>
+<th>Full amount</th>
+<th>Scientific notation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>H</td>
+<td>hasting</td>
+<td>0.000000000000000000000001 SC</td>
+<td>10^-24 SC</td>
+</tr>
+<tr>
+<td>pS</td>
+<td>pico</td>
+<td>0.000000000001 SC</td>
+<td>10^-12 SC</td>
+</tr>
+<tr>
+<td>nS</td>
+<td>nano</td>
+<td>0.000000001 SC</td>
+<td>10^-9 SC</td>
+</tr>
+<tr>
+<td>μS</td>
+<td>micro</td>
+<td>0.000001 SC</td>
+<td>10^-6 SC</td>
+</tr>
+<tr>
+<td>mS</td>
+<td>milli</td>
+<td>0.001 SC</td>
+<td>10^-3 SC</td>
+</tr>
+<tr>
+<td>SC</td>
+<td>Siacoin</td>
+<td>1 SC</td>
+<td>10^1 SC</td>
+</tr>
+<tr>
+<td>KS</td>
+<td>kilo</td>
+<td>1000 SC</td>
+<td>10^3 SC</td>
+</tr>
+<tr>
+<td>MS</td>
+<td>mega</td>
+<td>1000000 SC</td>
+<td>10^6 SC</td>
+</tr>
+<tr>
+<td>GS</td>
+<td>giga</td>
+<td>1000000000 SC</td>
+<td>10^9 SC</td>
+</tr>
+<tr>
+<td>TS</td>
+<td>tera</td>
+<td>1000000000000 SC</td>
+<td>10^12 SC</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Did you know?</strong> Not many projects can say that they never participated in any paid listings on exchanges. Sia is a rare example of such project that accomplished it purely for its fundamentals.</p>
+</blockquote>
+<h3 id="how-they-get-made">How they get made<a class="headerlink" href="#how-they-get-made" title="Permanent link">#</a></h3>
+<p>Those who earn the new coins by mining do it as a paid service. They buy and use expensive hardware with a single purpose  –  mining crypto. It’s a very specific device because it cannot be used for anything else. But it provides an important security layer to the network by powering the transactions that take place.</p>
+<p>They earn Siacoin (SC) as their mining reward and then distribute it with profit to the broader community, usually via exchanges. For those who know Bitcoin, this is the same process, but with its own network and Proof of Work algorithm. The only difference is that while Bitcoin has a limit of coins that can be mined, Siacoin doesn’t. And because this is something that makes newcomers to Sia worried, let’s look at it in more detail.</p>
+<h3 id="is-the-supply-really-unlimited">Is the supply really unlimited?<a class="headerlink" href="#is-the-supply-really-unlimited" title="Permanent link">#</a></h3>
+<p>Many people have concerns about unlimited supply of Siacoin and its inflation. These concerns have roots in lack of understanding and can be easily dismissed.</p>
+<p>There is always going to be some block reward to ensure that there are new coins entering circulation. Remember, <strong>this is not just a currency like Bitcoin, this is a data storage network. If it becomes successful, it can happen that a majority of the coins will be locked in storage contracts</strong>. There are also concerns about the other extreme, risk of someone accumulating and holding majority, if not all of the Siacoins. This all has been foreseen and by design the supply has been made “unlimited”.</p>
+<p>However, <strong>“unlimited” supply doesn’t mean you can “print” endless amount of coins right now</strong>. It means that there is no limit and coins will keep entering circulation at known rate. As you know the block reward, you can tell how many coins there will be in the existence at any point in time. And you can achieve really infinite supply only if you have infinite time. But the human kind doesn’t have such life expectation. In our lifetimes, the total supply of Siacoin won’t increase much. And that is correct even if Sia Foundation adds extra coins to the block rewards.</p>
+<blockquote>
+<p>In 2015, <strong>Sia’s block reward started with genesis block at 300,000 SC</strong> and was decreasing by 1 with each new block. The bottom by design was set to 30 000 SC per block and this limit was reached in 2020. Since then the block reward is fixed. In Q1 of 2021 this is changing with Sia Foundation, (you can find more about it in <a href="/tech/sia-layer-one.html">Introduction to Sia</a>) but even with block reward doubled to 60 000 SC per block the <strong>inflation will be much lower than for other projects</strong> and actually lower than it wasthen it was a couple years ago. Not just that though, half of these coins will be used for good of the network and if it cannot be reasonably and transparently spent in its support, it will be burnt. Ask yourself, if you knew year ago that 50% of block rewards are going into support of the Sia ecosystem instead of profit taking (where money leave the ecosystem), wouldn’t it be <strong>great news</strong>?</p>
+</blockquote>
+<p>The existence of the block reward guarantees that the network can continue performing smoothly and users always have the option of either buying it on exchange, using some middleman (storage services built on top of Sia and providing fiat payment gates), or mining it themselves. This helps to keep everything working and self-balancing. Another self-balancing technique that the network uses is coin destruction. Some coins are burnt by host announcements and lost in collateral from bad-actor hosts.</p>
+<h3 id="what-is-a-51-attack-and-is-it-a-threat-or-not">What is a 51% attack and is it a threat or not?<a class="headerlink" href="#what-is-a-51-attack-and-is-it-a-threat-or-not" title="Permanent link">#</a></h3>
+<p>There is one question that is brought up constantly since many other projects were affected by it, especially those allowing GPU mining or algorithms shared by many projects allowing hashrate to be easily rented just for those attacks.</p>
+<p>A 51% attack is when a malicious party controls more than 50% of the network’s hashrate. This allows the attacker to rewrite the blockchain history. The most common form of this attack is the “double-spend attack”, where the attacker pays a counterparty, then rewinds the blockchain history to “undo” their payment.</p>
+<p>All proof-of-work blockchains are vulnerable to 51% attacks, but <strong>Sia is more secure than most PoW chains because of it's employment of ASICs</strong>. Before ASICs for Sia were released, mining was performed with GPUs. This left the network vulnerable to large GPU mining pools whose total hashrate exceeded 50% of Sia’s hashrate. Recognizing this threat, Nebulous spun off a subsidiary company, Obelisk and started a public fundraising in order to develop and deliver ASIC miners for Sia.</p>
+<p>Obelisk was careful to prevent any one entity from controlling too many of these ASICs, but the situation dramatically changed long before their delivery as other manufacturers noticed the public announcement of ASICs being made for Sia and rushed in with inferior, but sooner delivered units. They flooded Sia’s ecosystem with way more than was healthy and even competed with own customers. About half year later, when one such manufacturer got close to 50% of block rewards moving into single wallet address without even trying to hide it, there was no other option and the community unanymously forked anything but Obelisk SC1 away from the network.</p>
+<p>Today, there are still many Obelisks on the network but majority of hashrate is from other products that have become available for Sia as well. As a result, Sia’s hashrate is well-distributed. At this point, in order for a 51% attack to be performed, an attacker would need to control multiple mining pools, and/or develop custom ASICs at enormous expense.</p>
+<p>But miners are just where it begins. You probably know that when it comes to decentralized storage, your paper currency is quite useless. Not even the funds on your bank account can help you as there is no payment gateway. Some other projects have them and those gateways are the points of failure, because if they go down, you cannot access your files.</p>
+<h3 id="the-importance-of-sia-having-its-own-currency">The importance of Sia having its own currency<a class="headerlink" href="#the-importance-of-sia-having-its-own-currency" title="Permanent link">#</a></h3>
+<p>And that’s where Siacoins come into play. It is a cryptocurrency specifically designed for this kind of service. Its blockchain supports storage contracts so you can form these with the selected hosts directly. Once the contract is formed, all payments between you and the other side are instant through the payment channel and in the near future there will even be pre-payments possible.</p>
+<p>Thanks to this you only pay for what you really use. We believe this is beginning of the internet where you have the option to pay tiny micro-transactions only for content you see instead of blanket subscription fees.</p>
+<p>However, this doesn’t mean you won’t have that option. In this new world, it is up to users to decide. Services built with this tech can offer such experience for those who want to use the decentralized internet without worrying about crypto wallet management and just pay with fiat currency. And the recent development with Skynet makes this future look like coming true.</p>
+<blockquote>
+<p>If you want to know more about Skynet, see our <a href="/tech/skynet-layer-two.html">Introduction to Skynet</a>.</p>
+</blockquote>
+<h3 id="what-makes-hosts-to-keep-and-protect-my-data-instead-of-deleting-them">What makes hosts to keep and protect my data instead of deleting them?<a class="headerlink" href="#what-makes-hosts-to-keep-and-protect-my-data-instead-of-deleting-them" title="Permanent link">#</a></h3>
+<p>Hosts also use Siacoin. For them it is not just a reward. Before they get chance to store any of your data, they must provide a collateral. If you met a stranger on the street that would tell you that he will keep and protect your phone if you give it to him, would you trust him without giving you something of at least same value? And would you trust a stranger with your most precious data? We don’t think so. While there are many good people, you would most likely lose your phone and never see your data again as well.</p>
+<p>This is why the incentives must be set right, especially in decentralized system that claims to have no point of failure. In a good faith, hosts need to provide collateral which is usually about two times higher than expected earnings for the rented storage. The host will get his collateral back as well as the earnings only if he keeps providing proofs that he still holds your data until the contract duration expires. This is usually called a successful storage contract. On the other side, if it fails, the collateral and expected earnings are burnt. This is why hosting is considered a serious and responsible job, because if you cannot protect user’s data, you are going to lose money. And that makes sense, right?</p>
+<h3 id="is-it-a-good-investment">Is it a good investment?<a class="headerlink" href="#is-it-a-good-investment" title="Permanent link">#</a></h3>
+<p>Very often people ask if Siacoin (SC) is a good investment. They also remember that developers said they don’t care about the price. While we won’t give you financial advice, we can provide some facts and views that might improve your understanding and enable you to make own judgement and decisions.</p>
+<p>The way Sia works, all coins in circulation were mined by community (miners). The developers had less than 1% of coins but accidentaly lost them and since then they have less than 0.1% of entire supply. They don’t participate in speculation, they are probably one of few super rare projects that never paid a single cent for any of the listings on exchanges. And their incentives are the Siafunds (and since 2021 also Skynet business model) which only start generating meaningful income when the network gets more used. And guess what, Siafunds are paying rewards in SC.</p>
+<p>Simply said, Sia developers are not in control of the network, markets or price and are very motivated to make Sia succeed in order to generate income in SC. Say what you want, but it is clear that they care about price of SC but what we think they wanted to say is that they are not in control and cannot affect it other way than by their hard work and more people using Sia. The price depends only on supply and demand and markets are tools to help traders discover it.</p>
+<h2 id="siafund-sf">Siafund (SF)<a class="headerlink" href="#siafund-sf" title="Permanent link">#</a></h2>
+<p>Siafund is a supplementary token of the Sia network with only 10,000 SF that will ever be in existence. Unlike Siacoins, which can be divided up, a single SF cannot be split. They are only transferred or held in whole units.</p>
+<p>You can hold it in the same wallet, but will never see it mentioned (at least in Sia-UI) unless you have one. These tokens are securities, and you can read more about the landmark <a href="https://sia.tech/settlement2019" target="_blank" rel="noopener noreferrer">2019 SEC settlement that declared them so</a>.</p>
+<p>They are used for <strong>revenue sharing</strong> on the Sia network; a <strong>3.9% fee from every storage-related transaction on Sia</strong> is distributed to the holders of Siafunds. The developers (Skynet Labs) currently hold approximately 85% of all Siafunds while the remaining approx. 1,500 SF were distributed to the community in a total of three offerings since 2014.</p>
+<h2 id="where-to-buy">Where to buy?<a class="headerlink" href="#where-to-buy" title="Permanent link">#</a></h2>
+<p>If you are interested in buying Siacoin or Siafund, check our <a href="/siacoin/trading.html">Trading guide</a>. It will lead you through everything you need to to know in order to securely and responsibly manage your assets and execute trade orders.</p>
+<hr />
+<p><em>Written by: Danger &amp; Covalent, Last Edit: April 14, 2021</em></p>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../sia/foundation.html" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Sia Foundation
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="wallet.html" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Wallets
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.d892486b.min.js"></script>
+      
+    
+  </body>
+</html>
